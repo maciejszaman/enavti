@@ -128,6 +128,22 @@ io.on("connection", (socket) => {
       }
     });
   });
+
+  socket.on("chat-message-req", ({ lobbyId, playerId, message }) => {
+    const lobby = lobbies.get(lobbyId);
+    if (!lobby) return;
+    const player = lobby.players.find((p) => p.id === socket.id);
+    if (!player) return;
+
+    io.to(lobbyId).emit("chat-message-broadcast", {
+      playerId: playerId,
+      playerName: player.name,
+      message: message,
+      timestamp: Date.now(),
+    });
+
+    console.log(`[Server] ${player.name}: ${message}`);
+  });
 });
 
 const PORT = process.env.PORT || 3001;

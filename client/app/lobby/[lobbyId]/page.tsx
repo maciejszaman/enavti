@@ -4,13 +4,14 @@ import { Button } from "@chakra-ui/react/button";
 import { Card, CardDescription, CardTitle } from "@chakra-ui/react/card";
 import { Input } from "@chakra-ui/react/input";
 import { useParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { io, type Socket } from "socket.io-client";
 import { ERROR_MSG } from "../../../../lib/constants/errorMessages";
 import toast from "react-hot-toast";
 import * as Shared from "../../../../lib/types/Shared.types";
 import { useRouter } from "next/navigation";
-import axios from "axios";
+
+import GameView from "@/components/GameView/GameView";
 
 export default function LobbyPage() {
   const [socket, setSocket] = useState<Socket | null>(null);
@@ -18,6 +19,8 @@ export default function LobbyPage() {
   const [playerName, setPlayerName] = useState<string | null>(null);
   const [tempName, setTempName] = useState("");
   const [copied, setCopied] = useState(false);
+  const [chatMessage, setChatMessage] = useState("");
+  const [chatMessages, setChatMessages] = useState<Shared.ChatMessage[]>([]);
 
   const params = useParams();
   const lobbyId = params.lobbyId as string;
@@ -66,9 +69,30 @@ export default function LobbyPage() {
     router.push(`/`);
   };
 
+  const handleSendChat = () => {
+    if (!chatMessage.trim() || !socket) return;
+
+    socket.emit("chat-message-req", {
+      lobbyId,
+      playerId: socket.id,
+      message: chatMessage.trim(),
+    });
+
+    setChatMessage("");
+  };
+
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    <div className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
+      <main className="flex flex-col gap-8 row-start-2 items-center w-full max-w-5xl">
+        {playerName && (
+          <GameView
+            players={players}
+            currentPlayerId={socket?.id}
+            chatMessages={chatMessages}
+            socket={socket}
+          />
+        )}
+
         <Card.Root className="w-[400px]">
           <Card.Body className="gap-4">
             <div>
@@ -93,30 +117,16 @@ export default function LobbyPage() {
               </div>
             ) : (
               <>
-                <div className="flex flex-col gap-3">
-                  <div className="flex items-center justify-between">
-                    <h3 className="text-sm font-medium">
-                      Players ({players.length})
-                    </h3>
-                  </div>
-
-                  <div className="flex flex-col gap-2">
-                    {players.length === 0 ? (
-                      <p className="text-sm text-muted-foreground">
-                        Waiting for players...
-                      </p>
-                    ) : (
-                      players.map((player) => (
-                        <div
-                          key={player.id}
-                          className="flex items-center gap-2 p-2 bg-muted rounded-md"
-                        >
-                          <div className="w-2 h-2 bg-green-500 rounded-full" />
-                          <span className="text-sm">{player.name}</span>
-                        </div>
-                      ))
-                    )}
-                  </div>
+                <div className="flex gap-2">
+                  <Input
+                    placeholder="Type a message..."
+                    value={chatMessage}
+                    onChange={(e) => setChatMessage(e.target.value)}
+                    onKeyDown={(e) => e.key === "Enter" && handleSendChat()}
+                  />
+                  <Button onClick={handleSendChat} variant="outline">
+                    Send
+                  </Button>
                 </div>
 
                 <div className="flex flex-col gap-2 pt-2">
