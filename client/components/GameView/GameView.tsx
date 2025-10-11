@@ -83,13 +83,15 @@ export default function GameView({
 
               <div className="character gap-2 relative flex flex-col items-center">
                 {/* Name */}
-                <div className="p-4 bg-black text-amber-900">{player.name}</div>
+                <div className="playerCharacterName bg-black text-white">
+                  {player.name}
+                </div>
 
                 {/* Character */}
                 <img
                   src={`/img${index + 1}.jpg`}
                   alt="Player"
-                  className="w-16 h-16 aspect-square border-2 border-white rounded-[100%]"
+                  className="playerCharacterImg w-16 h-16 aspect-square rounded-[100%]"
                 />
 
                 {/* Lives temporary */}
@@ -103,7 +105,7 @@ export default function GameView({
       </div>
 
       {/* Player count */}
-      <div className="absolute top-4 left-4 bg-black/30 backdrop-blur-sm rounded-sm shadow-lg">
+      <div className="playerCount absolute top-4 left-4 bg-black/30 backdrop-blur-sm rounded-sm shadow-lg">
         <span className="text-sm p-4 text-white">
           {players.length} {players.length === 1 ? "Player" : "Players"}
         </span>
