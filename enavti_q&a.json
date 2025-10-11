@@ -1,0 +1,1728 @@
+{
+  "id": 1,
+  "question": "Kto był pierwszym papieżem pochodzącym z Polski?",
+  "answer": "Jan Paweł II",
+  "multiple_choise": false
+},
+{
+  "id": 2,
+  "question": "W którym roku upadł mur berliński?",
+  "answer": "1989",
+  "multiple_choise": false
+},
+{
+  "id": 3,
+  "question": "Jakie miasto jest stolicą Kanady?",
+  "answer": "Ottawa",
+  "multiple_choise": false
+},
+{
+  "id": 4,
+  "question": "Który pierwiastek chemiczny oznaczany jest symbolem Fe?",
+  "answer": "Żelazo",
+  "multiple_choise": false
+},
+{
+  "id": 5,
+  "question": "Kto był pierwszym człowiekiem, który stanął na Księżycu?",
+  "answer": "Neil Armstrong",
+  "multiple_choise": false
+},
+{
+  "id": 6,
+  "question": "Jak nazywa się rzeka przepływająca przez Warszawę?",
+  "answer": "Wisła",
+  "multiple_choise": false
+},
+{
+  "id": 7,
+  "question": "Jak nazywa się najwyższy szczyt w Polsce?",
+  "answer": "Rysy",
+  "multiple_choise": false
+},
+{
+  "id": 8,
+  "question": "Który polski reżyser zdobył Oscara za film 'Pianista'?",
+  "answer": "Roman Polański",
+  "multiple_choise": false
+},
+{
+  "id": 9,
+  "question": "Jak nazywa się stolica Szwajcarii?",
+  "answer": "Berno",
+  "multiple_choise": false
+},
+{
+  "id": 10,
+  "question": "Jakie zwierzę widnieje w godle Polski?",
+  "answer": "Orzeł biały",
+  "multiple_choise": false
+},
+{
+  "id": 11,
+  "question": "W którym roku Polska przystąpiła do Unii Europejskiej?",
+  "answer": "2004",
+  "multiple_choise": true
+},
+{
+  "id": 12,
+  "question": "Jakie imię nosił słynny polski astronom, który sformułował teorię heliocentryczną?",
+  "answer": "Mikołaj Kopernik",
+  "multiple_choise": true
+},
+{
+  "id": 13,
+  "question": "Jak nazywał się pierwszy polski prezydent wybrany w wyborach po 1989 roku?",
+  "answer": "Lech Wałęsa",
+  "multiple_choise": true
+},
+{
+  "id": 14,
+  "question": "Jak nazywa się stolica Austrii?",
+  "answer": "Wiedeń",
+  "multiple_choise": false
+},
+{
+  "id": 15,
+  "question": "Jak nazywa się słynny zespół rockowy, którego wokalistą był Freddie Mercury?",
+  "answer": "Queen",
+  "multiple_choise": true
+},
+{
+  "id": 16,
+  "question": "Jak nazywa się najdłuższa rzeka w Europie?",
+  "answer": "Wołga",
+  "multiple_choise": false
+},
+{
+  "id": 17,
+  "question": "Jakie miasto było stolicą Polski przed Warszawą?",
+  "answer": "Kraków",
+  "multiple_choise": false
+},
+{
+  "id": 18,
+  "question": "Kto był twórcą żarówki elektrycznej?",
+  "answer": "Thomas Edison",
+  "multiple_choise": true
+},
+{
+  "id": 19,
+  "question": "Jak nazywa się najpopularniejszy polski portal informacyjny założony w 2001 roku?",
+  "answer": "Onet",
+  "multiple_choise": true
+},
+{
+  "id": 20,
+  "question": "Jakie imię nosił słynny angielski przyrodnik, autor teorii ewolucji?",
+  "answer": "Karol Darwin",
+  "multiple_choise": true
+},
+{
+  "id": 21,
+  "question": "Jak nazywa się największy ocean na Ziemi?",
+  "answer": "Ocean Spokojny",
+  "multiple_choise": false
+},
+{
+  "id": 22,
+  "question": "Jakie miasto jest stolicą Hiszpanii?",
+  "answer": "Madryt",
+  "multiple_choise": false
+},
+{
+  "id": 23,
+  "question": "Kto był pierwszym prezydentem Stanów Zjednoczonych?",
+  "answer": "George Washington",
+  "multiple_choise": true
+},
+{
+  "id": 24,
+  "question": "Jak nazywa się znana polska piosenkarka, która śpiewała 'Papaya'?",
+  "answer": "Urszula Dudziak",
+  "multiple_choise": true
+},
+{
+  "id": 25,
+  "question": "Jakie miasto jest siedzibą Unii Europejskiej?",
+  "answer": "Bruksela",
+  "multiple_choise": false
+},
+{
+  "id": 26,
+  "question": "Jak nazywa się największa pustynia na świecie?",
+  "answer": "Sahara",
+  "multiple_choise": false
+},
+{
+  "id": 27,
+  "question": "Jak nazywa się jednostka używana do mierzenia mocy elektrycznej?",
+  "answer": "Wat",
+  "multiple_choise": false
+},
+{
+  "id": 28,
+  "question": "Jak nazywa się reżyser trylogii 'Władca Pierścieni'?",
+  "answer": "Peter Jackson",
+  "multiple_choise": true
+},
+{
+  "id": 29,
+  "question": "Jakie państwo jest największe powierzchniowo na świecie?",
+  "answer": "Rosja",
+  "multiple_choise": false
+},
+{
+  "id": 30,
+  "question": "Jak nazywa się stolica Czech?",
+  "answer": "Praga",
+  "multiple_choise": false
+},
+  {
+    "id": 31,
+    "question": "Jak nazywa się proces zmiany wody w parę?",
+    "answer": "Parowanie",
+    "multiple_choice": false
+  },
+  {
+    "id": 32,
+    "question": "Jak nazywał się lider zespołu The Beatles, który został zastrzelony w 1980 roku?",
+    "answer": "John Lennon",
+    "multiple_choice": true
+  },
+  {
+    "id": 33,
+    "question": "Jak nazywa się polska noblistka w dziedzinie literatury z 1996 roku?",
+    "answer": "Wisława Szymborska",
+    "multiple_choice": false
+  },
+  {
+    "id": 34,
+    "question": "Jakie państwo ma największą liczbę ludności na świecie?",
+    "answer": "Chiny",
+    "multiple_choice": true
+  },
+  {
+    "id": 35,
+    "question": "Jak nazywa się stolica Grecji?",
+    "answer": "Ateny",
+    "multiple_choice": false
+  },
+  {
+    "id": 36,
+    "question": "Jakie imię nosił legendarny polski himalaista, który zdobył Mount Everest zimą?",
+    "answer": "Krzysztof Wielicki",
+    "multiple_choice": true
+  },
+  {
+    "id": 37,
+    "question": "Jakie imię nosił autor powieści 'Lalka'?",
+    "answer": "Bolesław Prus",
+    "multiple_choice": true
+  },
+  {
+    "id": 38,
+    "question": "Jak nazywa się największa planeta w Układzie Słonecznym?",
+    "answer": "Jowisz",
+    "multiple_choice": false
+  },
+  {
+    "id": 39,
+    "question": "Jakie miasto było gospodarzem Letnich Igrzysk Olimpijskich w 1992 roku?",
+    "answer": "Barcelona",
+    "multiple_choice": true
+  },
+  {
+    "id": 40,
+    "question": "Jak nazywa się waluta obowiązująca w Wielkiej Brytanii?",
+    "answer": "Funt szterling",
+    "multiple_choice": false
+  },
+  {
+    "id": 41,
+    "question": "Jak nazywa się polski zespół rockowy znany z utworu 'Autobiografia'?",
+    "answer": "Perfect",
+    "multiple_choice": false
+  },
+  {
+    "id": 42,
+    "question": "Jak nazywa się główny bohater powieści 'Pan Tadeusz'?",
+    "answer": "Tadeusz Soplica",
+    "multiple_choice": false
+  },
+  {
+    "id": 43,
+    "question": "Jakie miasto jest stolicą Stanów Zjednoczonych?",
+    "answer": "Waszyngton",
+    "multiple_choice": true
+  },
+  {
+    "id": 44,
+    "question": "Jak nazywa się jednostka temperatury w skali absolutnej?",
+    "answer": "Kelwin",
+    "multiple_choice": false
+  },
+  {
+    "id": 45,
+    "question": "Jakie imię nosiła grecka bogini mądrości?",
+    "answer": "Atena",
+    "multiple_choice": true
+  },
+  {
+    "id": 46,
+    "question": "Jakie polskie miasto słynie z Hali Stulecia i wrocławskiego rynku?",
+    "answer": "Wrocław",
+    "multiple_choice": true
+  },
+  {
+    "id": 47,
+    "question": "Jakie imię nosił polski fizyk i chemik, laureat dwóch Nagród Nobla?",
+    "answer": "Maria Skłodowska-Curie",
+    "multiple_choice": true
+  },
+  {
+    "id": 48,
+    "question": "Jakie imię nosił słynny malarz, autor 'Mony Lisy'?",
+    "answer": "Leonardo da Vinci",
+    "multiple_choice": true
+  },
+  {
+    "id": 49,
+    "question": "Jak nazywa się popularna jednostka prędkości używana w lotnictwie?",
+    "answer": "Węzeł",
+    "multiple_choice": false
+  },
+  {
+    "id": 50,
+    "question": "Jak nazywa się największe jezioro w Polsce?",
+    "answer": "Śniardwy",
+    "multiple_choice": false
+  },
+  {
+    "id": 51,
+    "question": "Jak nazywa się platforma społecznościowa należąca do Elona Muska, wcześniej znana jako Twitter?",
+    "answer": "X",
+    "multiple_choice": false
+  },
+  {
+    "id": 52,
+    "question": "Która aplikacja służy głównie do tworzenia i oglądania krótkich filmików w pionowym formacie i pochodzi z Chin?",
+    "answer": "TikTok",
+    "multiple_choice": true
+  },
+  {
+    "id": 53,
+    "question": "Jak nazywa się najpopularniejsza gra typu battle royale wydana przez Epic Games?",
+    "answer": "Fortnite",
+    "multiple_choice": false
+  },
+  {
+    "id": 54,
+    "question": "Jakie imię nosi sztuczna inteligencja stworzona przez OpenAI, z której korzystasz teraz?",
+    "answer": "ChatGPT",
+    "multiple_choice": true
+  },
+  {
+    "id": 55,
+    "question": "W jakim kraju powstała firma Samsung?",
+    "answer": "Korea Południowa",
+    "multiple_choice": false
+  },
+  {
+    "id": 56,
+    "question": "Jak nazywa się najpopularniejsza kryptowaluta oparta na technologii blockchain?",
+    "answer": "Bitcoin",
+    "multiple_choice": false
+  },
+  {
+    "id": 57,
+    "question": "Który piłkarz zdobył najwięcej Złotych Piłek do 2024 roku?",
+    "answer": "Lionel Messi",
+    "multiple_choice": true
+  },
+  {
+    "id": 58,
+    "question": "Jak nazywa się fikcyjny kraj z uniwersum Marvela, z którego pochodzi Czarna Pantera?",
+    "answer": "Wakanda",
+    "multiple_choice": false
+  },
+  {
+    "id": 59,
+    "question": "Jak nazywa się platforma streamingowa, na której można oglądać seriale takie jak 'Stranger Things'?",
+    "answer": "Netflix",
+    "multiple_choice": false
+  },
+  {
+    "id": 60,
+    "question": "Jaką nazwę nosi system operacyjny stworzony przez Apple dla komputerów Mac?",
+    "answer": "macOS",
+    "multiple_choice": true
+  },
+  {
+    "id": 61,
+    "question": "Jak nazywa się technologia wykorzystywana do tworzenia trójwymiarowych wirtualnych światów, znana m.in. z gier VR?",
+    "answer": "Wirtualna rzeczywistość",
+    "multiple_choice": false
+  },
+  {
+    "id": 62,
+    "question": "Jak nazywa się aplikacja służąca do komunikacji, popularna wśród graczy, której logo to biały pad na fioletowym tle?",
+    "answer": "Discord",
+    "multiple_choice": false
+  },
+  {
+    "id": 63,
+    "question": "Jak nazywa się znana piosenkarka, autorka hitu 'Bad Guy'?",
+    "answer": "Billie Eilish",
+    "multiple_choice": false
+  },
+  {
+    "id": 64,
+    "question": "Która platforma streamingowa należy do Amazona?",
+    "answer": "Prime Video",
+    "multiple_choice": true
+  },
+  {
+    "id": 65,
+    "question": "Jak nazywa się amerykański miliarder, właściciel Tesli i SpaceX?",
+    "answer": "Elon Musk",
+    "multiple_choice": false
+  },
+  {
+    "id": 66,
+    "question": "Jak nazywa się język programowania stworzony przez Guido van Rossuma w 1991 roku, popularny w nauce o danych?",
+    "answer": "Python",
+    "multiple_choice": false
+  },
+  {
+    "id": 67,
+    "question": "Która aplikacja była wcześniej znana jako Musical.ly?",
+    "answer": "TikTok",
+    "multiple_choice": true
+  },
+  {
+    "id": 68,
+    "question": "Jak nazywa się miasto, w którym odbywają się Igrzyska Olimpijskie 2024?",
+    "answer": "Paryż",
+    "multiple_choice": true
+  },
+  {
+    "id": 69,
+    "question": "Jak nazywa się popularny polski raper, autor albumów 'Romantic Psycho' i 'Hotel Maffija'?",
+    "answer": "Mata",
+    "multiple_choice": false
+  },
+  {
+    "id": 70,
+    "question": "Jak nazywa się usługa streamingu muzyki należąca do firmy Spotify AB?",
+    "answer": "Spotify",
+    "multiple_choice": false
+  },
+   {
+    "id": 71,
+    "question": "Jak nazywa się nauka zajmująca się sztuczną inteligencją i uczeniem maszynowym?",
+    "answer": "Informatyka",
+    "multiple_choice": false
+  },
+  {
+    "id": 72,
+    "question": "Jak nazywa się najpopularniejsza przeglądarka internetowa stworzona przez Google?",
+    "answer": "Google Chrome",
+    "multiple_choice": false
+  },
+  {
+    "id": 73,
+    "question": "Jakie imię nosi wirtualny świat należący do firmy Meta (dawniej Facebook)?",
+    "answer": "Metaverse",
+    "multiple_choice": true
+  },
+  {
+    "id": 74,
+    "question": "Jak nazywa się japońska konsola do gier, której popularnym tytułem jest 'The Legend of Zelda: Breath of the Wild'?",
+    "answer": "Nintendo Switch",
+    "multiple_choice": false
+  },
+  {
+    "id": 75,
+    "question": "Jak nazywa się największy ocean na Ziemi?",
+    "answer": "Ocean Spokojny",
+    "multiple_choice": false
+  },
+  {
+    "id": 76,
+    "question": "Jakie imię nosi główny bohater serialu 'The Witcher' w wersji Netflix?",
+    "answer": "Geralt z Rivii",
+    "multiple_choice": true
+  },
+  {
+    "id": 77,
+    "question": "Jak nazywa się amerykański raper, który stworzył album 'Astroworld'?",
+    "answer": "Travis Scott",
+    "multiple_choice": true
+  },
+  {
+    "id": 78,
+    "question": "Jak nazywa się popularna gra komputerowa o budowaniu świata z bloków?",
+    "answer": "Minecraft",
+    "multiple_choice": false
+  },
+  {
+    "id": 79,
+    "question": "Jak nazywa się kraj, w którym znajduje się Wielki Mur?",
+    "answer": "Chiny",
+    "multiple_choice": true
+  },
+  {
+    "id": 80,
+    "question": "Jak nazywa się główna waluta używana w Unii Europejskiej?",
+    "answer": "Euro",
+    "multiple_choice": false
+  },
+  {
+    "id": 81,
+    "question": "Jak nazywa się firma produkująca serię smartfonów Galaxy?",
+    "answer": "Samsung",
+    "multiple_choice": false
+  },
+  {
+    "id": 82,
+    "question": "Jak nazywa się sport, w którym zawodnicy zjeżdżają na desce po stoku?",
+    "answer": "Snowboard",
+    "multiple_choice": true
+  },
+  {
+    "id": 83,
+    "question": "Jak nazywa się platforma z krótkimi filmami konkurująca z TikTokiem, należąca do YouTube?",
+    "answer": "YouTube Shorts",
+    "multiple_choice": false
+  },
+  {
+    "id": 84,
+    "question": "Jakie imię nosi główny bohater anime 'Naruto'?",
+    "answer": "Naruto Uzumaki",
+    "multiple_choice": true
+  },
+  {
+    "id": 85,
+    "question": "Jak nazywa się technologia wykorzystywana do tworzenia obrazów przez sztuczną inteligencję?",
+    "answer": "Generatywna AI",
+    "multiple_choice": false
+  },
+  {
+    "id": 86,
+    "question": "Jak nazywa się główny język urzędowy w Kanadzie obok angielskiego?",
+    "answer": "Francuski",
+    "multiple_choice": false
+  },
+  {
+    "id": 87,
+    "question": "Jak nazywa się popularny memiczny pies rasy Shiba Inu, który stał się symbolem kryptowaluty Dogecoin?",
+    "answer": "Doge",
+    "multiple_choice": true
+  },
+  {
+    "id": 88,
+    "question": "Jakie imię nosi główny bohater serii gier 'God of War'?",
+    "answer": "Kratos",
+    "multiple_choice": true
+  },
+  {
+    "id": 89,
+    "question": "Jak nazywa się największa planeta w Układzie Słonecznym?",
+    "answer": "Jowisz",
+    "multiple_choice": false
+  },
+  {
+    "id": 90,
+    "question": "Jak nazywa się proces przekształcania energii słonecznej w elektryczność?",
+    "answer": "Fotowoltaika",
+    "multiple_choice": false
+  },
+  {
+    "id": 91,
+    "question": "Jak nazywa się główna bohaterka filmu 'Barbie' z 2023 roku grana przez Margot Robbie?",
+    "answer": "Barbie",
+    "multiple_choice": false
+  },
+  {
+    "id": 92,
+    "question": "Jakie miasto jest stolicą Norwegii?",
+    "answer": "Oslo",
+    "multiple_choice": true
+  },
+  {
+    "id": 93,
+    "question": "Jak nazywa się aplikacja firmy Meta służąca do udostępniania zdjęć i relacji?",
+    "answer": "Instagram",
+    "multiple_choice": false
+  },
+  {
+    "id": 94,
+    "question": "Jak nazywa się popularny komunikator należący do firmy Meta?",
+    "answer": "Messenger",
+    "multiple_choice": false
+  },
+  {
+    "id": 95,
+    "question": "Jak nazywa się główny antagonista w uniwersum 'Harry'ego Pottera'?",
+    "answer": "Lord Voldemort",
+    "multiple_choice": false
+  },
+  {
+    "id": 96,
+    "question": "Jak nazywa się styl tańca popularny w mediach społecznościowych, często wykonywany do piosenek pop?",
+    "answer": "Taniec TikTokowy",
+    "multiple_choice": false
+  },
+  {
+    "id": 97,
+    "question": "Jak nazywa się popularny format plików wykorzystywany do przechowywania zdjęć cyfrowych?",
+    "answer": "JPEG",
+    "multiple_choice": false
+  },
+  {
+    "id": 98,
+    "question": "Jakie imię nosi wirtualna asystentka stworzona przez Apple?",
+    "answer": "Siri",
+    "multiple_choice": true
+  },
+  {
+    "id": 99,
+    "question": "Jak nazywa się język programowania, z którego korzysta się do stylizacji stron internetowych?",
+    "answer": "CSS",
+    "multiple_choice": false
+  },
+  {
+    "id": 100,
+    "question": "Jak nazywa się amerykańska firma technologiczna, która stworzyła system Windows?",
+    "answer": "Microsoft",
+    "multiple_choice": true
+  },
+  {
+    "id": 101,
+    "question": "Jak nazywa się największy półwysep na świecie?",
+    "answer": "Półwysep Arabski",
+    "multiple_choice": false
+  },
+  {
+    "id": 102,
+    "question": "Który gaz stanowi około 78% objętości atmosfery ziemskiej?",
+    "answer": "Azot",
+    "multiple_choice": true
+  },
+  {
+    "id": 103,
+    "question": "Jak nazywa się najstarszy uniwersytet w Polsce?",
+    "answer": "Uniwersytet Jagielloński",
+    "multiple_choice": false
+  },
+  {
+    "id": 104,
+    "question": "Jakie imię nosi autor teorii względności?",
+    "answer": "Albert Einstein",
+    "multiple_choice": true
+  },
+  {
+    "id": 105,
+    "question": "Który polski król wprowadził reformy znane jako 'konstytucja 3 maja'?",
+    "answer": "Stanisław August Poniatowski",
+    "multiple_choice": true
+  },
+  {
+    "id": 106,
+    "question": "Jak nazywa się najgłębsze miejsce w oceanach?",
+    "answer": "Rów Mariański",
+    "multiple_choice": false
+  },
+  {
+    "id": 107,
+    "question": "Który kontynent jest najmniejszy pod względem powierzchni?",
+    "answer": "Australia",
+    "multiple_choice": true
+  },
+  {
+    "id": 108,
+    "question": "Jakie imię nosił mitologiczny król Krety, ojciec Minotaura?",
+    "answer": "Minos",
+    "multiple_choice": true
+  },
+  {
+    "id": 109,
+    "question": "Jak nazywa się proces rozszczepiania jądra atomu w celu uzyskania energii?",
+    "answer": "Reakcja jądrowa",
+    "multiple_choice": false
+  },
+  {
+    "id": 110,
+    "question": "Jak nazywa się stolica Nowej Zelandii?",
+    "answer": "Wellington",
+    "multiple_choice": false
+  },
+  {
+    "id": 111,
+    "question": "Jak nazywa się największy księżyc Saturna?",
+    "answer": "Tytan",
+    "multiple_choice": false
+  },
+  {
+    "id": 112,
+    "question": "Który polski malarz stworzył cykl obrazów 'Bitwa pod Grunwaldem'?",
+    "answer": "Jan Matejko",
+    "multiple_choice": true
+  },
+  {
+    "id": 113,
+    "question": "Jak nazywa się nauka o pochodzeniu i rozwoju człowieka?",
+    "answer": "Antropologia",
+    "multiple_choice": false
+  },
+  {
+    "id": 114,
+    "question": "Jakie miasto jest największym portem morskim w Europie?",
+    "answer": "Rotterdam",
+    "multiple_choice": true
+  },
+  {
+    "id": 115,
+    "question": "Jak nazywa się pierwsza kobieta premier Wielkiej Brytanii?",
+    "answer": "Margaret Thatcher",
+    "multiple_choice": false
+  },
+  {
+    "id": 116,
+    "question": "Jakie imię nosił mitologiczny bohater, który zabił Meduzę?",
+    "answer": "Perseusz",
+    "multiple_choice": true
+  },
+  {
+    "id": 117,
+    "question": "Jak nazywa się nauka zajmująca się badaniem starożytnych kultur poprzez wykopaliska?",
+    "answer": "Archeologia",
+    "multiple_choice": false
+  },
+  {
+    "id": 118,
+    "question": "Jak nazywa się najdłuższa rzeka w Ameryce Południowej?",
+    "answer": "Amazonka",
+    "multiple_choice": false
+  },
+  {
+    "id": 119,
+    "question": "Jakie imię nosił cesarz Francji, który został zesłany na wyspę Elbę?",
+    "answer": "Napoleon Bonaparte",
+    "multiple_choice": true
+  },
+  {
+    "id": 120,
+    "question": "Jak nazywa się proces tworzenia cząsteczek z prostszych substancji w organizmach żywych?",
+    "answer": "Anabolizm",
+    "multiple_choice": false
+  },
+   {
+    "id": 121,
+    "question": "Jak nazywa się najstarsza konstytucja na świecie, która nadal obowiązuje?",
+    "answer": "Konstytucja Stanów Zjednoczonych",
+    "multiple_choice": false
+  },
+  {
+    "id": 122,
+    "question": "Jak nazywa się najmniejszy kraj świata pod względem powierzchni?",
+    "answer": "Watykan",
+    "multiple_choice": false
+  },
+  {
+    "id": 123,
+    "question": "Jakie imię nosił grecki bóg wojny?",
+    "answer": "Ares",
+    "multiple_choice": false
+  },
+  {
+    "id": 124,
+    "question": "Jakie miasto jest siedzibą Europejskiego Banku Centralnego?",
+    "answer": "Frankfurt nad Menem",
+    "multiple_choice": false
+  },
+  {
+    "id": 125,
+    "question": "Jak nazywa się polska noblistka w dziedzinie literatury z 2018 roku?",
+    "answer": "Olga Tokarczuk",
+    "multiple_choice": false
+  },
+  {
+    "id": 126,
+    "question": "Jakie imię nosił wynalazca druku?",
+    "answer": "Johannes Gutenberg",
+    "multiple_choice": false
+  },
+  {
+    "id": 127,
+    "question": "Jak nazywa się stolica Kanady?",
+    "answer": "Ottawa",
+    "multiple_choice": false
+  },
+  {
+    "id": 128,
+    "question": "Jak nazywa się proces przekształcania glukozy w energię w komórkach?",
+    "answer": "Oddychanie komórkowe",
+    "multiple_choice": false
+  },
+  {
+    "id": 129,
+    "question": "Jakie imię nosił rzymski bóg mórz i oceanów?",
+    "answer": "Neptun",
+    "multiple_choice": false
+  },
+  {
+    "id": 130,
+    "question": "Jakie miasto było stolicą Polski w latach 1038–1079?",
+    "answer": "Gniezno",
+    "multiple_choice": false
+  },
+  {
+    "id": 131,
+    "question": "Jakie imię nosił fizyk, który odkrył prawo powszechnego ciążenia?",
+    "answer": "Isaac Newton",
+    "multiple_choice": false
+  },
+  {
+    "id": 132,
+    "question": "Jak nazywa się największy archipelag na świecie?",
+    "answer": "Archipelag Malajski",
+    "multiple_choice": false
+  },
+  {
+    "id": 133,
+    "question": "Jakie państwo opuściło Unię Europejską w 2020 roku?",
+    "answer": "Wielka Brytania",
+    "multiple_choice": false
+  },
+  {
+    "id": 134,
+    "question": "Jakie imię nosił egipski faraon, którego grobowiec odkrył Howard Carter w 1922 roku?",
+    "answer": "Tutanchamon",
+    "multiple_choice": false
+  },
+  {
+    "id": 135,
+    "question": "Jak nazywa się proces rozpadu jądra atomowego z emisją promieniowania?",
+    "answer": "Promieniotwórczość",
+    "multiple_choice": false
+  },
+  {
+    "id": 136,
+    "question": "Jak nazywa się najstarsza znana cywilizacja Mezopotamii?",
+    "answer": "Sumerowie",
+    "multiple_choice": false
+  },
+  {
+    "id": 137,
+    "question": "Jak nazywa się język urzędowy w Brazylii?",
+    "answer": "Portugalski",
+    "multiple_choice": false
+  },
+  {
+    "id": 138,
+    "question": "Jakie imię nosiła żona króla Henryka VIII, która została ścięta?",
+    "answer": "Anna Boleyn",
+    "multiple_choice": false
+  },
+  {
+    "id": 139,
+    "question": "Jakie miasto jest stolicą Finlandii?",
+    "answer": "Helsinki",
+    "multiple_choice": false
+  },
+  {
+    "id": 140,
+    "question": "Jak nazywa się największy kontynent na Ziemi?",
+    "answer": "Azja",
+    "multiple_choice": false
+  },
+  {
+    "id": 141,
+    "question": "Jak nazywa się pierwiastek chemiczny oznaczony symbolem K?",
+    "answer": "Potas",
+    "multiple_choice": false
+  },
+  {
+    "id": 142,
+    "question": "Jak nazywa się nauka o chorobach roślin?",
+    "answer": "Fitopatologia",
+    "multiple_choice": false
+  },
+  {
+    "id": 143,
+    "question": "Jak nazywa się polski uczony, który opracował tablice logarytmiczne?",
+    "answer": "Jan Śniadecki",
+    "multiple_choice": false
+  },
+  {
+    "id": 144,
+    "question": "Jak nazywa się proces powstawania gór?",
+    "answer": "Orogeneza",
+    "multiple_choice": false
+  },
+  {
+    "id": 145,
+    "question": "Jakie imię nosił rosyjski car, który zreformował państwo i założył Petersburg?",
+    "answer": "Piotr I Wielki",
+    "multiple_choice": false
+  },
+  {
+    "id": 146,
+    "question": "Jak nazywa się najdłuższy łańcuch górski na świecie?",
+    "answer": "Andy",
+    "multiple_choice": false
+  },
+  {
+    "id": 147,
+    "question": "Jak nazywa się nauka zajmująca się badaniem zachowań człowieka?",
+    "answer": "Psychologia",
+    "multiple_choice": false
+  },
+  {
+    "id": 148,
+    "question": "Jak nazywa się główny bohater eposu 'Iliada'?",
+    "answer": "Achilles",
+    "multiple_choice": false
+  },
+  {
+    "id": 149,
+    "question": "Jak nazywa się japońska forma teatru, w której aktorzy noszą maski?",
+    "answer": "Nō",
+    "multiple_choice": false
+  },
+  {
+    "id": 150,
+    "question": "Jak nazywa się najgłębsze jezioro świata?",
+    "answer": "Bajkał",
+    "multiple_choice": false
+  },
+  {
+    "id": 151,
+    "question": "Jak nazywa się system operacyjny stworzony przez Linusa Torvaldsa?",
+    "answer": "Linux",
+    "multiple_choice": false
+  },
+  {
+    "id": 152,
+    "question": "Jak nazywa się nauka zajmująca się strukturą i funkcją organizmów żywych?",
+    "answer": "Biologia",
+    "multiple_choice": false
+  },
+  {
+    "id": 153,
+    "question": "Jak nazywa się włoski miastopaństwo znane z kanałów i gondoli?",
+    "answer": "Wenecja",
+    "multiple_choice": false
+  },
+  {
+    "id": 154,
+    "question": "Jakie imię nosił grecki filozof, uczeń Platona i nauczyciel Aleksandra Wielkiego?",
+    "answer": "Arystoteles",
+    "multiple_choice": false
+  },
+  {
+    "id": 155,
+    "question": "Jak nazywa się okres w dziejach Ziemi, w którym wyginęły dinozaury?",
+    "answer": "Kreda",
+    "multiple_choice": false
+  },
+  {
+    "id": 156,
+    "question": "Jak nazywa się jednostka ciśnienia w układzie SI?",
+    "answer": "Paskal",
+    "multiple_choice": false
+  },
+  {
+    "id": 157,
+    "question": "Jakie miasto jest siedzibą NATO?",
+    "answer": "Bruksela",
+    "multiple_choice": false
+  },
+  {
+    "id": 158,
+    "question": "Jak nazywa się nauka o dźwiękach w języku?",
+    "answer": "Fonetyka",
+    "multiple_choice": false
+  },
+  {
+    "id": 159,
+    "question": "Jak nazywa się strefa atmosfery, w której występuje warstwa ozonowa?",
+    "answer": "Stratosfera",
+    "multiple_choice": false
+  },
+  {
+    "id": 160,
+    "question": "Jak nazywa się największa pustynia w Azji?",
+    "answer": "Gobi",
+    "multiple_choice": false
+  },
+  {
+    "id": 161,
+    "question": "Jakie imię nosił grecki filozof, który wypił cykutę?",
+    "answer": "Sokrates",
+    "multiple_choice": false
+  },
+  {
+    "id": 162,
+    "question": "Jak nazywa się proces tworzenia cząstek elementarnych w akceleratorach?",
+    "answer": "Synteza cząstek",
+    "multiple_choice": false
+  },
+  {
+    "id": 163,
+    "question": "Jak nazywa się zjawisko, w którym światło zmienia kierunek podczas przejścia przez granicę ośrodków?",
+    "answer": "Załamanie światła",
+    "multiple_choice": false
+  },
+  {
+    "id": 164,
+    "question": "Jakie imię nosił pierwszy człowiek w kosmosie?",
+    "answer": "Jurij Gagarin",
+    "multiple_choice": false
+  },
+  {
+    "id": 165,
+    "question": "Jakie miasto jest stolicą Turcji?",
+    "answer": "Ankara",
+    "multiple_choice": false
+  },
+  {
+    "id": 166,
+    "question": "Jakie imię nosił rzymski bóg ognia?",
+    "answer": "Wulkan",
+    "multiple_choice": false
+  },
+  {
+    "id": 167,
+    "question": "Jak nazywa się największy lodowiec na świecie?",
+    "answer": "Lambert",
+    "multiple_choice": false
+  },
+  {
+    "id": 168,
+    "question": "Jakie imię nosił autor tragedii 'Makbet'?",
+    "answer": "William Shakespeare",
+    "multiple_choice": false
+  },
+  {
+    "id": 169,
+    "question": "Jakie miasto jest stolicą Irlandii?",
+    "answer": "Dublin",
+    "multiple_choice": false
+  },
+  {
+    "id": 170,
+    "question": "Jak nazywa się jednostka mocy silników, skrót HP pochodzi od angielskiego terminu?",
+    "answer": "Koń mechaniczny",
+    "multiple_choice": false
+  },
+  {
+    "id": 171,
+    "question": "Jak nazywa się chemiczny symbol złota?",
+    "answer": "Au",
+    "multiple_choice": false
+  },
+  {
+    "id": 172,
+    "question": "Jak nazywa się teoria, która zakłada rozszerzanie się Wszechświata?",
+    "answer": "Teoria Wielkiego Wybuchu",
+    "multiple_choice": false
+  },
+  {
+    "id": 173,
+    "question": "Jak nazywa się największy stan w USA?",
+    "answer": "Alaska",
+    "multiple_choice": false
+  },
+  {
+    "id": 174,
+    "question": "Jak nazywa się nauka o atmosferze i zjawiskach pogodowych?",
+    "answer": "Meteorologia",
+    "multiple_choice": false
+  },
+  {
+    "id": 175,
+    "question": "Jakie imię nosił filozof, autor dzieła 'Państwo'?",
+    "answer": "Platon",
+    "multiple_choice": false
+  },
+  {
+    "id": 176,
+    "question": "Jak nazywa się system komputerowy używany do przechowywania danych w chmurze przez Google?",
+    "answer": "Google Drive",
+    "multiple_choice": false
+  },
+  {
+    "id": 177,
+    "question": "Jak nazywa się proces powstawania planet z pyłu kosmicznego?",
+    "answer": "Akreacja",
+    "multiple_choice": false
+  },
+  {
+    "id": 178,
+    "question": "Jakie miasto jest stolicą Maroka?",
+    "answer": "Rabat",
+    "multiple_choice": false
+  },
+  {
+    "id": 179,
+    "question": "Jak nazywa się jednostka częstotliwości w układzie SI?",
+    "answer": "Herc",
+    "multiple_choice": false
+  },
+  {
+    "id": 180,
+    "question": "Jak nazywa się najwyższy szczyt Afryki?",
+    "answer": "Kilimandżaro",
+    "multiple_choice": false
+  },
+  {
+    "id": 181,
+    "question": "Jakie imię nosił rosyjski pisarz, autor 'Zbrodni i kary'?",
+    "answer": "Fiodor Dostojewski",
+    "multiple_choice": false
+  },
+  {
+    "id": 182,
+    "question": "Jak nazywa się największy oceaniczny prąd ciepły na półkuli północnej?",
+    "answer": "Prąd Zatokowy",
+    "multiple_choice": false
+  },
+  {
+    "id": 183,
+    "question": "Jak nazywa się najdłuższa granica lądowa na świecie między dwoma państwami?",
+    "answer": "Granica między USA i Kanadą",
+    "multiple_choice": false
+  },
+  {
+    "id": 184,
+    "question": "Jakie imię nosił niemiecki kanclerz, który zjednoczył Niemcy w XIX wieku?",
+    "answer": "Otto von Bismarck",
+    "multiple_choice": false
+  },
+  {
+    "id": 185,
+    "question": "Jak nazywa się proces przekształcania cieczy w gaz bez wrzenia?",
+    "answer": "Parowanie",
+    "multiple_choice": false
+  },
+  {
+    "id": 186,
+    "question": "Jak nazywa się stolica Kazachstanu?",
+    "answer": "Astana",
+    "multiple_choice": false
+  },
+  {
+    "id": 187,
+    "question": "Jakie imię nosił wynalazca telefonu?",
+    "answer": "Alexander Graham Bell",
+    "multiple_choice": false
+  },
+  {
+    "id": 188,
+    "question": "Jakie imię nosił filozof, który powiedział 'Myślę, więc jestem'?",
+    "answer": "René Descartes",
+    "multiple_choice": false
+  },
+  {
+    "id": 189,
+    "question": "Jak nazywa się proces zużywania się skał pod wpływem warunków atmosferycznych?",
+    "answer": "Wietrzenie",
+    "multiple_choice": false
+  },
+  {
+    "id": 190,
+    "question": "Jakie miasto jest stolicą Korei Południowej?",
+    "answer": "Seul",
+    "multiple_choice": false
+  },
+  {
+    "id": 191,
+    "question": "Proszę wymienić wszystkie państwa które brały udział w rozbiorach Polski?",
+    "answer": "Rosja, Prusy, Austria",
+    "multiple_choice": true
+  },
+  {
+    "id": 192,
+    "question": "Przez jakie u piszemy słowo szkatułka ?",
+    "answer": "u",
+    "multiple_choice": true
+  },
+  {
+    "id": 193,
+    "question": "Kto jest autorem powieści Anna Karenina ?",
+    "answer": "Lew Tołstoj",
+    "multiple_choice": true
+  },
+  {
+    "id": 194,
+    "question": "Kier, karo, pik i trefl - które z tych kolorów są czerwone?",
+    "answer": "kier, karo",
+    "multiple_choice": true
+  },
+  {
+    "id": 195,
+    "question": "Jaką funkcję w Klasztorze Paulinów w Częstochowie pełnił Klemens Kordecki czyli Ojciec Augustyn?",
+    "answer": "przeor",
+    "multiple_choice": true
+  },
+  {
+    "id": 196,
+    "question": "Która rzeka jest dłuższa - Warta czy Narew?",
+    "answer": "Warta",
+    "multiple_choice": true
+  },
+  {
+    "id": 197,
+    "question": "Ilu duchownych sprawowało i sprawuje urząd papieża w XXI w.?",
+    "answer": "3",
+    "multiple_choice": true
+  },
+  {
+    "id": 198,
+    "question": "Jak ma na imię piosenkarka występująca pod pseudonimem Doda?",
+    "answer": "Dorota",
+    "multiple_choice": false
+  },
+  {
+    "id": 199,
+    "question": "Którą część ciała nasze babcie chroniły przed mrozem mufką?",
+    "answer": "ręce",
+    "multiple_choice": false
+  },
+  {
+    "id": 200,
+    "question": "Edward Drożniak, Władysław Baka i Hanna Gronkiewicz-Waltz pełnili funkcję prezesa którego banku?",
+    "answer": "Narodowy Bank Polski",
+    "multiple_choice": true
+  },
+  {
+    "id": 201,
+    "question": "100 g którego owocu ma więcej kalorii - arbuza czy winogron?",
+    "answer": "winogrona",
+    "multiple_choice": true
+  },
+  {
+    "id": 202,
+    "question": "Jak nazywano ziemię nadawaną przez seniora w użytkowanie wasalowi?",
+    "answer": "lenno",
+    "multiple_choice": false
+  },
+  {
+    "id": 203,
+    "question": "Listy św. Pawła, św. Piotra i św. Jana należą do Starego czy Nowego Testamentu?",
+    "answer": "Nowy Testament",
+    "multiple_choice": true
+  },
+  {
+    "id": 204,
+    "question": "Jentki to ptaki, ryby czy owady?",
+    "answer": "owady",
+    "multiple_choice": true
+  },
+  {
+    "id": 205,
+    "question": "Taką samą nazwę noszą potrawa z surowych warzyw, niebielone płótno lniane oraz stop żelaza z węglem - jaka to nazwa?",
+    "answer": "surówka",
+    "multiple_choice": false
+  },
+  {
+    "id": 206,
+    "question": "Proszę dokończyć przysłowie - co za dużo…?",
+    "answer": "to niezdrowo",
+    "multiple_choice": true
+  },
+  {
+    "id": 207,
+    "question": "W jaki sposób zakończył żywot Ludwik XVI?",
+    "answer": "został ścięty",
+    "multiple_choice": true
+  },
+  {
+    "id": 208,
+    "question": "Jakim chorym ptakiem opiekowała się Calineczka z bajki dla dzieci?",
+    "answer": "jaskółka",
+    "multiple_choice": false
+  },
+  {
+    "id": 209,
+    "question": "Na terenie którego współczesnego państwa leżą wykopaliska Troi, miasta o które toczyła się wojna opisana w Iliadzie ?",
+    "answer": "Turcja",
+    "multiple_choice": true
+  },
+  {
+    "id": 210,
+    "question": "Jak nazywają się krystaliczne nacieki zwisające ze stropu jaskini?",
+    "answer": "stalaktyty",
+    "multiple_choice": false
+  },
+  {
+    "id": 211,
+    "question": "Epilog jest końcową czy początkową częscią utworu literackiego?",
+    "answer": "końcowa",
+    "multiple_choice": true
+  },
+  {
+    "id": 212,
+    "question": "Które miasto jest stolicą Irlandii Północnej?",
+    "answer": "Belfast",
+    "multiple_choice": true
+  },
+  {
+    "id": 213,
+    "question": "Czy na nowożytnych igrzyskach olimpijskich w Atenach w 1896 r. startowały kobiety?",
+    "answer": "nie",
+    "multiple_choice": true
+  },
+  {
+    "id": 214,
+    "question": "W którym roku powstała Europejska Wspólnota Węgla i Stali?",
+    "answer": "1952 r.",
+    "multiple_choice": false
+  },
+  {
+    "id": 215,
+    "question": "Co oznacza w dosłownym tłumaczeniu włoskie określenie salto mortale ?",
+    "answer": "stop śmierci",
+    "multiple_choice": true
+  },
+  {
+    "id": 216,
+    "question": "Czy kryptolodzy zajmują się głównie badaniem starych grobów, piramid?",
+    "answer": "nie",
+    "multiple_choice": true
+  },
+  {
+    "id": 217,
+    "question": "Kto był ojcem Izaaka?",
+    "answer": "Abraham",
+    "multiple_choice": true
+  },
+  {
+    "id": 218,
+    "question": "Różnica 2 liczb parzystych jest liczbą parzystą czy nieparzystą?",
+    "answer": "parzysta",
+    "multiple_choice": true
+  },
+  {
+    "id": 219,
+    "question": "Która część Warszawy występuje w tekście piosenki Małgośka i pachnie bzem?",
+    "answer": "Saska Kępa",
+    "multiple_choice": false
+  },
+  {
+    "id": 220,
+    "question": "Chłopski rozum to inaczej obłęd czy zdrowy rozsądek?",
+    "answer": "zdrowy rozsądek",
+    "multiple_choice": true
+  },
+  {
+    "id": 221,
+    "question": "Za panowania którego króla miała miejsce inkorporacja Prus do Polski w 1454 r.?",
+    "answer": "Kazimierz Jagiellończyk",
+    "multiple_choice": true
+  },
+  {
+    "id": 222,
+    "question": "Jak nazywa się obszar pozostający pod wspólnym panowaniem dwóch albo większej liczby państw?",
+    "answer": "kondominium",
+    "multiple_choice": false
+  },
+  {
+    "id": 223,
+    "question": "Jak ma na imię Papkin - postać z Zemsty Aleksandra Fredry?",
+    "answer": "Józef",
+    "multiple_choice": false
+  },
+  {
+    "id": 224,
+    "question": "Jaki smak ma aspartam - niskokaloryczny środek dodawany do żywności?",
+    "answer": "słodki",
+    "multiple_choice": false
+  },
+  {
+    "id": 225,
+    "question": "Jakiego wyznania jest większość mieszkańców Rumunii?",
+    "answer": "prawosławie",
+    "multiple_choice": true
+  },
+  {
+    "id": 226,
+    "question": "Do którego oceanu wpada rzeka Missisipi?",
+    "answer": "Ocean Atlantycki",
+    "multiple_choice": true
+  },
+  {
+    "id": 227,
+    "question": "Kto jest autorem powieści Młode lwy i Pogoda dla bogaczy ?",
+    "answer": "Irwin Shaw",
+    "multiple_choice": true
+  },
+  {
+    "id": 228,
+    "question": "Czy Ulisses był synem Odysa?",
+    "answer": "nie",
+    "multiple_choice": true
+  },
+  {
+    "id": 229,
+    "question": "Kim z zawodu był tytułowy bohater filmu Kazimierza Kuca Pułkownik Kwiatkowski , grał go Marek Kondrat?",
+    "answer": "wojskowy lekarz",
+    "multiple_choice": false
+  },
+    {
+    "id": 231,
+    "question": "Które miasto było do roku 1991 stolicą Republiki Federalnej Niemiec?",
+    "answer": "Bonn",
+    "multiple_choice": true
+  },
+  {
+    "id": 232,
+    "question": "Na którym kontynencie wznoszą się Góry Admiralicji?",
+    "answer": "Antarktyda",
+    "multiple_choice": false
+  },
+  {
+    "id": 233,
+    "question": "Kogo baronowa Krzeszowska oskarżyła o kradzież lalki w powieści Lalka Bolesława Prusa?",
+    "answer": "córka Stawskiej - Helenka",
+    "multiple_choice": false
+  },
+  {
+    "id": 234,
+    "question": "Jakie imię nosi słynny hiszpański tenor Carreras?",
+    "answer": "Jose",
+    "multiple_choice": true
+  },
+  {
+    "id": 235,
+    "question": "W którym mieście rozgrywa się akcja kryminałów Marka Krajewskiego, których bohaterem jest detektyw Eberhard Mock?",
+    "answer": "Wrocław",
+    "multiple_choice": false
+  },
+  {
+    "id": 236,
+    "question": "Dawny urzędnik dworski zwany krajczym kroił potrawy czy szył szaty?",
+    "answer": "kroił potrawy",
+    "multiple_choice": true
+  },
+  {
+    "id": 237,
+    "question": "Jak nazywa się utwór wierszowany w którym każdy wiersz albo każdy wyraz zaczyna się od tej samej litery?",
+    "answer": "tautogram",
+    "multiple_choice": true
+  },
+  {
+    "id": 238,
+    "question": "Skrót CBOS oznacza Centrum Badań Oglądalności Statystycznej czy Centrum Badania Opinii Społecznej?",
+    "answer": "Centrum Badania Opinii Społecznej",
+    "multiple_choice": true
+  },
+  {
+    "id": 239,
+    "question": "Fiat 126p jest wyposażony w silnik 4-suwowy, ile cylindrów ma silnik małego fiata?",
+    "answer": "2",
+    "multiple_choice": true
+  },
+  {
+    "id": 240,
+    "question": "Jaki pseudonim nosił zły czarodziej, morderca rodziców Harry'ego Pottera?",
+    "answer": "Lord Voldemort",
+    "multiple_choice": false
+  },
+  {
+    "id": 241,
+    "question": "Fryderyk Chopin wyjechał na stałe z Polski przed czy po wybuchu powstania listopadowego?",
+    "answer": "przed",
+    "multiple_choice": true
+  },
+  {
+    "id": 242,
+    "question": "Jak nazywał się ojciec bogini ogniska domowego Hestii?",
+    "answer": "Kronos",
+    "multiple_choice": false
+  },
+  {
+    "id": 243,
+    "question": "Z którego państwa wywodzi się buddyzm?",
+    "answer": "Indie",
+    "multiple_choice": true
+  },
+  {
+    "id": 244,
+    "question": "Na terenie którego województwa leży Grunwald w okolicach którego odbyła się słynna bitwa?",
+    "answer": "warmińsko-mazurskie",
+    "multiple_choice": true
+  },
+  {
+    "id": 245,
+    "question": "Jak nazywał się arcybiskup metropolita krakowski, który w 1945 r. powołał do życia Tygodnik Powszechny?",
+    "answer": "Adam Stefan Sapiecha",
+    "multiple_choice": false
+  },
+  {
+    "id": 246,
+    "question": "Jak w tłumaczeniu na język polski brzmi napis nad bramą piekła w Boskiej komedii Dantego?",
+    "answer": "porzućcie wszelką nadzieję, wy, którzy tu wchodzicie",
+    "multiple_choice": false
+  },
+  {
+    "id": 247,
+    "question": "Która europejska stolica jest siedzibą Biura Rady i Sekretariatu Międzynarodówki Socjalistycznej, utworzonej we Frankfurcie nad Menem w 1951 r.?",
+    "answer": "Londyn",
+    "multiple_choice": false
+  },
+  {
+    "id": 248,
+    "question": "Jak nazywa się kadr filmowy polegający na pokazaniu postaci od wysokości nieco powyżej kolan do wysokości nieco powyżej głową?",
+    "answer": "plan amerykański",
+    "multiple_choice": true
+  },
+  {
+    "id": 249,
+    "question": "Do którego państwa należą wyspy Lofoty?",
+    "answer": "Norwegia",
+    "multiple_choice": true
+  },
+  {
+    "id": 250,
+    "question": "Powiedzenie przypisywane Georges Clemenceau brzmi wojna jest zbyt poważną rzeczą, by powierzyć ją … komu?",
+    "answer": "wojskowym",
+    "multiple_choice": false
+  },
+  {
+    "id": 251,
+    "question": "Jak podczas II wojny światowej potocznie nazywano polskojęzyczne pisma wydawane z upoważnienia okupanta?",
+    "answer": "gadzinówki",
+    "multiple_choice": false
+  },
+  {
+    "id": 252,
+    "question": "Jak nazywa się najjaśniejsza gwiazda na nocnym niebie?",
+    "answer": "Syriusz / Psia Gwiazda",
+    "multiple_choice": false
+  },
+  {
+    "id": 253,
+    "question": "Humbaki to ryby czy ssaki?",
+    "answer": "ssaki",
+    "multiple_choice": true
+  },
+  {
+    "id": 254,
+    "question": "Jakie imię nosił staroitalski bóg płodności, bydła, roli, wolnej przyrody i lasów?",
+    "answer": "Sylwan",
+    "multiple_choice": true
+  },
+  {
+    "id": 255,
+    "question": "Jak nazywa się rodzaj sportu ekstremalnego polegający na staczaniu się ze zbocza wzgórza wewnątrz kuli wypełnionej powietrzem?",
+    "answer": "zorbing",
+    "multiple_choice": false
+  },
+  {
+    "id": 256,
+    "question": "Jaki tytuł nosi film Federico Felliniego, który został nagrodzony Oscarem, powstał w 1954 r. a główne role grali Giulietta Masina i Anthony Quinn?",
+    "answer": "La Strada",
+    "multiple_choice": true
+  },
+  {
+    "id": 257,
+    "question": "W czerwcu 1967 r. na Bliskim Wschodzie wybuchła wojna między Egiptem, Syrią i Jordanią a Izraelem, jaka jest potoczna nazwa tego konfliktu?",
+    "answer": "wojna sześciodniowa",
+    "multiple_choice": false
+  },
+  {
+    "id": 258,
+    "question": "Który astronom założył w XVI w. obserwatorium astronomiczne Uraniborg?",
+    "answer": "Tycho de Brahe",
+    "multiple_choice": false
+  },
+  {
+    "id": 259,
+    "question": "W którym wieku żył Nikołaj Przewalski, rosyjski podróżnik, badacz Azji Środkowej?",
+    "answer": "XIX w.",
+    "multiple_choice": false
+  },
+  {
+    "id": 260,
+    "question": "Jaką nazwę nosił szwedzki statek, który w 1956 r. zderzył się na Atlantyku z włoskim transatlantykiem Andrea Doria?",
+    "answer": "Sztokholm",
+    "multiple_choice": true
+  },
+  {
+    "id": 261,
+    "question": "Który rzeźbiarz związany z Krakowem jest autorem płyty nagrobnej arcybiskupa Zbigniewa Oleśnickiego w Katedrze Gnieźnieńskiej, ta płyta została wykonana w końcu XV w.?",
+    "answer": "Wit Stwosz",
+    "multiple_choice": false
+  },
+  {
+    "id": 262,
+    "question": "Jak nazywa się nagroda przyznawana rokrocznie od 2005 r. przez Instytut Książki za zasługi w popularyzacji polskiej literatury za granicą?",
+    "answer": "Transatlantyk",
+    "multiple_choice": false
+  },
+  {
+    "id": 263,
+    "question": "W którym europejskim państwie podziwiać można zrekonstruowany wielki ołtarz Zeusa zbudowany w II w. p.n.e. w greckim Pergamonie?",
+    "answer": "Niemcy",
+    "multiple_choice": false
+  },
+  {
+    "id": 264,
+    "question": "Sole sodu barwią płomień na czerwono, niebiesko czy na żółto?",
+    "answer": "żółto",
+    "multiple_choice": true
+  },
+  {
+    "id": 265,
+    "question": "Jakie imiona noszą założyciele rodu Bohatyrowiczów w Nad Niemnem Elizy Orzeszkowej?",
+    "answer": "Jan i Cecylia",
+    "multiple_choice": true
+  },
+  {
+    "id": 266,
+    "question": "Który starożytny filozof mieszkał w beczce i spacerował w biały dzień z latarnią szukając człowieka?",
+    "answer": "Diogenes z Synopy",
+    "multiple_choice": false
+  },
+  {
+    "id": 267,
+    "question": "Langusta to skorupiak słodkowodny czy morski?",
+    "answer": "morski",
+    "multiple_choice": true
+  },
+  {
+    "id": 268,
+    "question": "Ilu braci Michaela Jacksona występowało w zespole Jackson Five?",
+    "answer": "4",
+    "multiple_choice": true
+  },
+  {
+    "id": 269,
+    "question": "Kolonią którego państwa był Singapur po II wojnie światowej zanim zyskał niepodległość?",
+    "answer": "Wielka Brytania",
+    "multiple_choice": true
+  },
+  {
+    "id": 270,
+    "question": "Kiedy ogłoszono Deklarację niepodległości Stanów Zjednoczonych w XVII, XVIII czy XIX w.?",
+    "answer": "XVIII w.",
+    "multiple_choice": true
+  },
+  {
+    "id": 271,
+    "question": "Który kompozytor późnego baroku miał przydomek Rudy Ksiądz?",
+    "answer": "Antonio Vivaldi",
+    "multiple_choice": false
+  },
+  {
+    "id": 272,
+    "question": "Jak nazywa się miękki ser z niekwaszonego mleka owczego wytwarzany głównie w Karpatach?",
+    "answer": "bryndza",
+    "multiple_choice": false
+  },
+  {
+    "id": 273,
+    "question": "JFK to tytuł amerykańskiego dramatu politycznego z 1991 r. Co oznacza tytuł JFK ?",
+    "answer": "John Fitzgerald Kennedy",
+    "multiple_choice": true
+  },
+  {
+    "id": 274,
+    "question": "Infernalny to pochodzący z piekła czy z nieba?",
+    "answer": "z piekła",
+    "multiple_choice": true
+  },
+  {
+    "id": 275,
+    "question": "W którym państwie leży miasto Fatima, gdzie w 1917 r. Matka Boża objawiła się trójce dzieci?",
+    "answer": "Portugalia",
+    "multiple_choice": false
+  },
+  {
+    "id": 276,
+    "question": "Ile lat miał bohater piosenki Perfectu Autobiografia , kiedy świat usłyszał o Elvisie Presley'u?",
+    "answer": "10",
+    "multiple_choice": true
+  },
+  {
+    "id": 277,
+    "question": "Co po polsku znaczą pierwsze słowa dziękczynnego hymnu Te Deum laudamus ?",
+    "answer": "Ciebie Boże chwalimy",
+    "multiple_choice": true
+  },
+  {
+    "id": 278,
+    "question": "Na której japońskiej wyspie leżą miasta Jokohama, Osaka, Kiyoto, Nagoya?",
+    "answer": "Honsiu",
+    "multiple_choice": true
+  },
+  {
+    "id": 279,
+    "question": "Czy w ziarnach zbóż występuje krochmal?",
+    "answer": "tak",
+    "multiple_choice": true
+  },
+  {
+    "id": 280,
+    "question": "Jak nazywa się postać z powieści Aleksandra Dumas Trzej muszkieterowie - kobieta-szpieg kardynała?",
+    "answer": "Milady de Winter",
+    "multiple_choice": false
+  },
+  {
+    "id": 281,
+    "question": "W której katedrze pochowani się uczeni Izaak Newton i Karol Darwin?",
+    "answer": "Westminster",
+    "multiple_choice": true
+  },
+  {
+    "id": 282,
+    "question": "Jaki militarnie brzmiący tytuł nosił serial wyreżyserowany przez Jerzego Gruzę pół wieku temu?",
+    "answer": "Wojna domowa",
+    "multiple_choice": false
+  },
+  {
+    "id": 283,
+    "question": "W którym hiszpańskim mieście odbywa się gonitwa byków i ludzi po ulicach z okazji święta świętego Fermina?",
+    "answer": "Pampeluna",
+    "multiple_choice": false
+  },
+  {
+    "id": 284,
+    "question": "Od której strony czytamy po rosyjsku - od lewej do prawej czy od prawej do lewej?",
+    "answer": "od lewej do prawej",
+    "multiple_choice": true
+  },
+  {
+    "id": 285,
+    "question": "Który grecki komediopisarz jest autorem sztuki Lizystrata ?",
+    "answer": "Arystofanes",
+    "multiple_choice": false
+  },
+  {
+    "id": 286,
+    "question": "W którym wieku miała miejsce I wyprawa krzyżowa do której wezwał papież Urban II na synodzie w Clermont?",
+    "answer": "XI w.",
+    "multiple_choice": true
+  },
+  {
+    "id": 287,
+    "question": "Jak nazywa się hiszpański reżyser, twórca filmów Nakramić kruki , Carmen , Tango , Fados ?",
+    "answer": "Carlos Saura",
+    "multiple_choice": false
+  },
+  {
+    "id": 288,
+    "question": "Kto sprawił, że królowi Midasowi w mitologii greckiej wyrosły ośle uszy?",
+    "answer": "Apollin",
+    "multiple_choice": true
+  },
+  {
+    "id": 289,
+    "question": "W którym państwie odbyły się w 1960 r. pierwsze Mistrzostwa Europy w Piłce Nożnej?",
+    "answer": "Francja",
+    "multiple_choice": false
+  },
