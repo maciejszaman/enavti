@@ -9,6 +9,11 @@ import axios from "axios";
 import { ERROR_MSG } from "../../lib/constants/errorMessages";
 import toast from "react-hot-toast";
 
+// Define your client URL here, or import it from your config/environment
+const CLIENT_URL = process.env.NEXT_PUBLIC_CLIENT_URL || "http://localhost";
+console.log(process.env.NEXT_PUBLIC_CLIENT_URL);
+console.log(CLIENT_URL);
+
 export default function Home() {
   const [lobbyCode, setLobbyCode] = useState("");
   const [isCreating, setIsCreating] = useState(false);
@@ -18,7 +23,7 @@ export default function Home() {
     setIsCreating(true);
 
     try {
-      const response = await axios.post("http://localhost:3001/createLobby", {
+      const response = await axios.post(`${CLIENT_URL}:3001/createLobby`, {
         headers: { "Content-Type": "application/json" },
       });
 

@@ -13,6 +13,9 @@ import { useRouter } from "next/navigation";
 
 import GameView from "@/components/GameView/GameView";
 
+// Define CLIENT_URL for socket connection
+const CLIENT_URL = process.env.NEXT_PUBLIC_CLIENT_URL || "http://localhost";
+
 export default function LobbyPage() {
   const [socket, setSocket] = useState<Socket | null>(null);
   const [players, setPlayers] = useState<Shared.Player[]>([]);
@@ -27,7 +30,7 @@ export default function LobbyPage() {
   const router = useRouter();
 
   useEffect(() => {
-    const newSocket = io("http://localhost:3001", {
+    const newSocket = io(`${CLIENT_URL}:3001`, {
       transports: ["websocket", "polling"],
     });
     setSocket(newSocket);
