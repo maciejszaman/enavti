@@ -7,6 +7,7 @@ export interface Lobby {
   id: string;
   players: Player[];
   createdAt: Date;
+  gameState: GameState;
 }
 
 export interface ChatMessage {
@@ -15,4 +16,14 @@ export interface ChatMessage {
   message: string;
   timestamp: number;
   visible?: boolean;
+}
+
+export interface Announcement {
+  type: "info" | "wrong-answer" | "right-answer" | "game-start" | "game-end";
+  message: string;
+  gameState?: GameState;
+}
+
+export interface GameState {
+  stage: "lobby" | "roundOne" | "roundTwo" | "roundThree" | "ended" | null;
 }

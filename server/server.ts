@@ -59,6 +59,7 @@ app.post("/createLobby", (req, res) => {
     id: lobbyId,
     players: [],
     createdAt: new Date(),
+    gameState: { stage: "lobby" },
   };
 
   lobbies.set(lobbyId, lobby);
@@ -73,6 +74,19 @@ app.post("/createLobby", (req, res) => {
 
 io.on("connection", (socket) => {
   console.log(`[Server] Client connected: ${socket.id}`);
+
+  socket.on("lobby-update-req", ({ lobbyId }) => {
+    const lobby = lobbies.get(lobbyId);
+    if (lobby) {
+      console.log(`[Server] Sending lobby update to ${socket.id}`);
+      socket.emit("lobby-update", {
+        players: lobby.players,
+        gameState: lobby.gameState,
+      });
+    } else {
+      socket.emit("error", { message: "Lobby not found" });
+    }
+  });
 
   socket.on("join-lobby", ({ lobbyId, playerName }) => {
     const lobby = lobbies.get(lobbyId);
@@ -95,8 +109,11 @@ io.on("connection", (socket) => {
 
     socket.join(lobbyId);
 
+    console.log(lobby.gameState.stage);
+
     io.to(lobbyId).emit("lobby-update", {
       players: lobby.players,
+      gameState: lobby.gameState,
     });
 
     console.log(
@@ -142,7 +159,32 @@ io.on("connection", (socket) => {
       timestamp: Date.now(),
     });
 
+    ///PLACEHOLDER -------- REMOVE LATER
+
+    const announcement: Shared.Announcement = {
+      type: "info",
+      message: `[${message}]`,
+    };
+    io.to(lobbyId).emit("announcement", announcement);
+
     console.log(`[Server] ${player.name}: ${message}`);
+  });
+  // START GAME LOGIC
+
+  socket.on("start-game", ({ lobbyId }) => {
+    const lobby = lobbies.get(lobbyId);
+    if (!lobby) return;
+    if (socket.id !== lobby.players[0]?.id) return; // Sender must be the host
+
+    lobby.gameState.stage = "roundOne";
+
+    const announcement: Shared.Announcement = {
+      type: "game-start",
+      message: "Game started",
+      gameState: lobby.gameState,
+    };
+    io.to(lobbyId).emit("announcement", announcement);
+    console.log(`[Server] Game started in lobby ${lobbyId}`);
   });
 });
 

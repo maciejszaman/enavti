@@ -1,183 +1,184 @@
-{
-  "id": 1,
-  "question": "Kto był pierwszym papieżem pochodzącym z Polski?",
-  "answer": "Jan Paweł II",
-  "multiple_choise": false
-},
-{
-  "id": 2,
-  "question": "W którym roku upadł mur berliński?",
-  "answer": "1989",
-  "multiple_choise": false
-},
-{
-  "id": 3,
-  "question": "Jakie miasto jest stolicą Kanady?",
-  "answer": "Ottawa",
-  "multiple_choise": false
-},
-{
-  "id": 4,
-  "question": "Który pierwiastek chemiczny oznaczany jest symbolem Fe?",
-  "answer": "Żelazo",
-  "multiple_choise": false
-},
-{
-  "id": 5,
-  "question": "Kto był pierwszym człowiekiem, który stanął na Księżycu?",
-  "answer": "Neil Armstrong",
-  "multiple_choise": false
-},
-{
-  "id": 6,
-  "question": "Jak nazywa się rzeka przepływająca przez Warszawę?",
-  "answer": "Wisła",
-  "multiple_choise": false
-},
-{
-  "id": 7,
-  "question": "Jak nazywa się najwyższy szczyt w Polsce?",
-  "answer": "Rysy",
-  "multiple_choise": false
-},
-{
-  "id": 8,
-  "question": "Który polski reżyser zdobył Oscara za film 'Pianista'?",
-  "answer": "Roman Polański",
-  "multiple_choise": false
-},
-{
-  "id": 9,
-  "question": "Jak nazywa się stolica Szwajcarii?",
-  "answer": "Berno",
-  "multiple_choise": false
-},
-{
-  "id": 10,
-  "question": "Jakie zwierzę widnieje w godle Polski?",
-  "answer": "Orzeł biały",
-  "multiple_choise": false
-},
-{
-  "id": 11,
-  "question": "W którym roku Polska przystąpiła do Unii Europejskiej?",
-  "answer": "2004",
-  "multiple_choise": true
-},
-{
-  "id": 12,
-  "question": "Jakie imię nosił słynny polski astronom, który sformułował teorię heliocentryczną?",
-  "answer": "Mikołaj Kopernik",
-  "multiple_choise": true
-},
-{
-  "id": 13,
-  "question": "Jak nazywał się pierwszy polski prezydent wybrany w wyborach po 1989 roku?",
-  "answer": "Lech Wałęsa",
-  "multiple_choise": true
-},
-{
-  "id": 14,
-  "question": "Jak nazywa się stolica Austrii?",
-  "answer": "Wiedeń",
-  "multiple_choise": false
-},
-{
-  "id": 15,
-  "question": "Jak nazywa się słynny zespół rockowy, którego wokalistą był Freddie Mercury?",
-  "answer": "Queen",
-  "multiple_choise": true
-},
-{
-  "id": 16,
-  "question": "Jak nazywa się najdłuższa rzeka w Europie?",
-  "answer": "Wołga",
-  "multiple_choise": false
-},
-{
-  "id": 17,
-  "question": "Jakie miasto było stolicą Polski przed Warszawą?",
-  "answer": "Kraków",
-  "multiple_choise": false
-},
-{
-  "id": 18,
-  "question": "Kto był twórcą żarówki elektrycznej?",
-  "answer": "Thomas Edison",
-  "multiple_choise": true
-},
-{
-  "id": 19,
-  "question": "Jak nazywa się najpopularniejszy polski portal informacyjny założony w 2001 roku?",
-  "answer": "Onet",
-  "multiple_choise": true
-},
-{
-  "id": 20,
-  "question": "Jakie imię nosił słynny angielski przyrodnik, autor teorii ewolucji?",
-  "answer": "Karol Darwin",
-  "multiple_choise": true
-},
-{
-  "id": 21,
-  "question": "Jak nazywa się największy ocean na Ziemi?",
-  "answer": "Ocean Spokojny",
-  "multiple_choise": false
-},
-{
-  "id": 22,
-  "question": "Jakie miasto jest stolicą Hiszpanii?",
-  "answer": "Madryt",
-  "multiple_choise": false
-},
-{
-  "id": 23,
-  "question": "Kto był pierwszym prezydentem Stanów Zjednoczonych?",
-  "answer": "George Washington",
-  "multiple_choise": true
-},
-{
-  "id": 24,
-  "question": "Jak nazywa się znana polska piosenkarka, która śpiewała 'Papaya'?",
-  "answer": "Urszula Dudziak",
-  "multiple_choise": true
-},
-{
-  "id": 25,
-  "question": "Jakie miasto jest siedzibą Unii Europejskiej?",
-  "answer": "Bruksela",
-  "multiple_choise": false
-},
-{
-  "id": 26,
-  "question": "Jak nazywa się największa pustynia na świecie?",
-  "answer": "Sahara",
-  "multiple_choise": false
-},
-{
-  "id": 27,
-  "question": "Jak nazywa się jednostka używana do mierzenia mocy elektrycznej?",
-  "answer": "Wat",
-  "multiple_choise": false
-},
-{
-  "id": 28,
-  "question": "Jak nazywa się reżyser trylogii 'Władca Pierścieni'?",
-  "answer": "Peter Jackson",
-  "multiple_choise": true
-},
-{
-  "id": 29,
-  "question": "Jakie państwo jest największe powierzchniowo na świecie?",
-  "answer": "Rosja",
-  "multiple_choise": false
-},
-{
-  "id": 30,
-  "question": "Jak nazywa się stolica Czech?",
-  "answer": "Praga",
-  "multiple_choise": false
-},
+[
+  {
+    "id": 1,
+    "question": "Kto był pierwszym papieżem pochodzącym z Polski?",
+    "answer": "Jan Paweł II",
+    "multiple_choice": false
+  },
+  {
+    "id": 2,
+    "question": "W którym roku upadł mur berliński?",
+    "answer": "1989",
+    "multiple_choice": false
+  },
+  {
+    "id": 3,
+    "question": "Jakie miasto jest stolicą Kanady?",
+    "answer": "Ottawa",
+    "multiple_choice": false
+  },
+  {
+    "id": 4,
+    "question": "Który pierwiastek chemiczny oznaczany jest symbolem Fe?",
+    "answer": "Żelazo",
+    "multiple_choice": false
+  },
+  {
+    "id": 5,
+    "question": "Kto był pierwszym człowiekiem, który stanął na Księżycu?",
+    "answer": "Neil Armstrong",
+    "multiple_choice": false
+  },
+  {
+    "id": 6,
+    "question": "Jak nazywa się rzeka przepływająca przez Warszawę?",
+    "answer": "Wisła",
+    "multiple_choice": false
+  },
+  {
+    "id": 7,
+    "question": "Jak nazywa się najwyższy szczyt w Polsce?",
+    "answer": "Rysy",
+    "multiple_choice": false
+  },
+  {
+    "id": 8,
+    "question": "Który polski reżyser zdobył Oscara za film 'Pianista'?",
+    "answer": "Roman Polański",
+    "multiple_choice": false
+  },
+  {
+    "id": 9,
+    "question": "Jak nazywa się stolica Szwajcarii?",
+    "answer": "Berno",
+    "multiple_choice": false
+  },
+  {
+    "id": 10,
+    "question": "Jakie zwierzę widnieje w godle Polski?",
+    "answer": "Orzeł biały",
+    "multiple_choice": false
+  },
+  {
+    "id": 11,
+    "question": "W którym roku Polska przystąpiła do Unii Europejskiej?",
+    "answer": "2004",
+    "multiple_choice": true
+  },
+  {
+    "id": 12,
+    "question": "Jakie imię nosił słynny polski astronom, który sformułował teorię heliocentryczną?",
+    "answer": "Mikołaj Kopernik",
+    "multiple_choice": true
+  },
+  {
+    "id": 13,
+    "question": "Jak nazywał się pierwszy polski prezydent wybrany w wyborach po 1989 roku?",
+    "answer": "Lech Wałęsa",
+    "multiple_choice": true
+  },
+  {
+    "id": 14,
+    "question": "Jak nazywa się stolica Austrii?",
+    "answer": "Wiedeń",
+    "multiple_choice": false
+  },
+  {
+    "id": 15,
+    "question": "Jak nazywa się słynny zespół rockowy, którego wokalistą był Freddie Mercury?",
+    "answer": "Queen",
+    "multiple_choice": true
+  },
+  {
+    "id": 16,
+    "question": "Jak nazywa się najdłuższa rzeka w Europie?",
+    "answer": "Wołga",
+    "multiple_choice": false
+  },
+  {
+    "id": 17,
+    "question": "Jakie miasto było stolicą Polski przed Warszawą?",
+    "answer": "Kraków",
+    "multiple_choice": false
+  },
+  {
+    "id": 18,
+    "question": "Kto był twórcą żarówki elektrycznej?",
+    "answer": "Thomas Edison",
+    "multiple_choice": true
+  },
+  {
+    "id": 19,
+    "question": "Jak nazywa się najpopularniejszy polski portal informacyjny założony w 2001 roku?",
+    "answer": "Onet",
+    "multiple_choice": true
+  },
+  {
+    "id": 20,
+    "question": "Jakie imię nosił słynny angielski przyrodnik, autor teorii ewolucji?",
+    "answer": "Karol Darwin",
+    "multiple_choice": true
+  },
+  {
+    "id": 21,
+    "question": "Jak nazywa się największy ocean na Ziemi?",
+    "answer": "Ocean Spokojny",
+    "multiple_choice": false
+  },
+  {
+    "id": 22,
+    "question": "Jakie miasto jest stolicą Hiszpanii?",
+    "answer": "Madryt",
+    "multiple_choice": false
+  },
+  {
+    "id": 23,
+    "question": "Kto był pierwszym prezydentem Stanów Zjednoczonych?",
+    "answer": "George Washington",
+    "multiple_choice": true
+  },
+  {
+    "id": 24,
+    "question": "Jak nazywa się znana polska piosenkarka, która śpiewała 'Papaya'?",
+    "answer": "Urszula Dudziak",
+    "multiple_choice": true
+  },
+  {
+    "id": 25,
+    "question": "Jakie miasto jest siedzibą Unii Europejskiej?",
+    "answer": "Bruksela",
+    "multiple_choice": false
+  },
+  {
+    "id": 26,
+    "question": "Jak nazywa się największa pustynia na świecie?",
+    "answer": "Sahara",
+    "multiple_choice": false
+  },
+  {
+    "id": 27,
+    "question": "Jak nazywa się jednostka używana do mierzenia mocy elektrycznej?",
+    "answer": "Wat",
+    "multiple_choice": false
+  },
+  {
+    "id": 28,
+    "question": "Jak nazywa się reżyser trylogii 'Władca Pierścieni'?",
+    "answer": "Peter Jackson",
+    "multiple_choice": true
+  },
+  {
+    "id": 29,
+    "question": "Jakie państwo jest największe powierzchniowo na świecie?",
+    "answer": "Rosja",
+    "multiple_choice": false
+  },
+  {
+    "id": 30,
+    "question": "Jak nazywa się stolica Czech?",
+    "answer": "Praga",
+    "multiple_choice": false
+  },
   {
     "id": 31,
     "question": "Jak nazywa się proces zmiany wody w parę?",
@@ -418,7 +419,7 @@
     "answer": "Spotify",
     "multiple_choice": false
   },
-   {
+  {
     "id": 71,
     "question": "Jak nazywa się nauka zajmująca się sztuczną inteligencją i uczeniem maszynowym?",
     "answer": "Informatyka",
@@ -718,7 +719,7 @@
     "answer": "Anabolizm",
     "multiple_choice": false
   },
-   {
+  {
     "id": 121,
     "question": "Jak nazywa się najstarsza konstytucja na świecie, która nadal obowiązuje?",
     "answer": "Konstytucja Stanów Zjednoczonych",
@@ -1372,7 +1373,7 @@
     "answer": "wojskowy lekarz",
     "multiple_choice": false
   },
-    {
+  {
     "id": 231,
     "question": "Które miasto było do roku 1991 stolicą Republiki Federalnej Niemiec?",
     "answer": "Bonn",
@@ -1726,3 +1727,10 @@
     "answer": "Francja",
     "multiple_choice": false
   },
+  {
+    "id": 290,
+    "question": "Jak nazywa się najdłuższa rzeka w Polsce?",
+    "answer": "Wisła",
+    "multiple_choice": false
+  }
+]
