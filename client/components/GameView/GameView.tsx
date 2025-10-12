@@ -3,8 +3,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import * as Shared from "../../../lib/types/Shared.types";
 import * as Types from "./GameView.Types";
 import { useChat } from "@/hooks/useChat";
-import { Box, Button, Text } from "@chakra-ui/react";
 import { Info, User } from "lucide-react";
+import { ModalContent } from "../Modals";
 
 export default function GameView({
   players,
@@ -16,14 +16,30 @@ export default function GameView({
   const [announcement, setAnnouncement] = useState<Shared.Announcement | null>(
     null
   );
+  const [modal, setModal] = useState<Shared.Modal>({ open: false, type: null });
 
   useEffect(() => {
     if (!socket) return;
 
     const handleAnnouncement = (announcement: Shared.Announcement) => {
       console.log(announcement);
-      setAnnouncement(announcement);
-      setTimeout(() => setAnnouncement(null), 5000);
+      if (announcement.type === "info") {
+        setAnnouncement(announcement);
+        setTimeout(() => setAnnouncement(null), 5000);
+      }
+      if (announcement.type === "modal") {
+        if (modal.open) return;
+        setModal({
+          open: true,
+          type: announcement.message as Shared.ModalType,
+        });
+      }
+      if (announcement.type === "closeModal") {
+        setModal({
+          open: false,
+          type: "shufflingPlayers",
+        });
+      }
     };
 
     socket.on("announcement", handleAnnouncement);
@@ -34,7 +50,8 @@ export default function GameView({
   }, [socket]);
 
   return (
-    <div className="gameWindow relative w-full h-[500px] bg-gradient-to-br from-slate-600 to-slate-700 rounded-lg overflow-hidden border-2 border-[#27272a]">
+    <div className="gameWindow relative w-full h-[500px] bg-[#8572ab] rounded-lg overflow-hidden border-2 border-[#27272a]">
+      {/* Announcement */}
       <AnimatePresence>
         {announcement && (
           <motion.div
@@ -52,8 +69,36 @@ export default function GameView({
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* Modal */}
+      <AnimatePresence>
+        {modal.open && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
+            className="absolute inset-0 z-40 flex items-center justify-center pointer-events-none"
+          >
+            {/* Blurred backdrop */}
+            <div className="absolute inset-0 bg-black" />
+
+            {/* Modal content - Quiz show style */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8, rotateX: -15 }}
+              animate={{ opacity: 1, scale: 1, rotateX: 0 }}
+              exit={{ opacity: 0, scale: 0.8, rotateX: 15 }}
+              transition={{ duration: 0.4, type: "spring", bounce: 0.3 }}
+              className="gameViewContainer w-[400px] h-[400px] relative z-50 pointer-events-auto"
+            >
+              <ModalContent type={modal.type} data={{ players }} />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       {/* Players */}
-      <div className="absolute bottom-32 left-0 right-0 flex items-end justify-center gap-8 px-8">
+      <div className="absolute bottom-4 left-0 right-0 flex items-end justify-center gap-8 px-8">
         {players.map((player, index) => {
           const chatBubble = getChatBubbleForPlayer(player.id);
           const isCurrentPlayer = player.id === currentPlayerId;
@@ -90,15 +135,24 @@ export default function GameView({
                   transition={{ type: "spring", duration: 0.5 }}
                 >
                   <div className="character gap-2 relative flex flex-col items-center">
-                    <img
-                      src={`/img${index + 1}.jpg`}
-                      alt="Player"
-                      className="playerCharacterImg w-16 h-16 aspect-square rounded-[100%]"
-                    />
                     {/* Name */}
                     <div className="gameViewContainer rounded-xl">
                       {player.name}
                     </div>
+
+                    {/* CharacterRender */}
+                    <img
+                      src={
+                        player.character
+                          ? `/${player.character}`
+                          : index % 2 === 0
+                          ? "/maciej.svg"
+                          : "/kuba.svg"
+                      }
+                      alt="Player"
+                      className="playerCharacterImg z-20 object-contain"
+                    />
+                    <div className="h-8 w-32 absolute bottom-[15px] z-0 rounded-2xl bg-black/10"></div>
                   </div>
                 </motion.div>
               </AnimatePresence>
@@ -111,15 +165,16 @@ export default function GameView({
           );
         })}
       </div>
+
       {/* Game state */}
       <div className="gameViewContainer absolute top-4 left-4 bg-black/30 rounded-lg flex gap-2">
-        {gameState.stage === "lobby" ? (
+        {gameState === "lobby" ? (
           <>
             <User />
             <span className="text-sm p-4 text-white">{players.length}</span>
           </>
         ) : (
-          gameState.stage
+          gameState
         )}
       </div>
     </div>

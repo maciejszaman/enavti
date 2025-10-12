@@ -63,5 +63,14 @@ body {
 }
 
 .playerCharacterImg {
-  border: 2px solid #27272a;
+  height: 300px;
+  width: auto;
+}
+
+.modalContent {
+  padding: 8px;
+}
+
+.modalPlayer {
+  padding: 8px;
 }

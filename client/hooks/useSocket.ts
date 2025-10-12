@@ -6,9 +6,11 @@ import * as Shared from "../../lib/types/Shared.types";
 export function useSocket(lobbyId: string, router: any) {
   const [socket, setSocket] = useState<Socket | null>(null);
   const [players, setPlayers] = useState<Shared.Player[]>([]);
-  const [gameState, setGameState] = useState<Shared.GameState>({ stage: null });
+  const [gameState, setGameState] = useState<Shared.GameState>(null);
 
   const clientUrl = process.env.NEXT_PUBLIC_CLIENT_URL || "http://localhost";
+
+  console.log(gameState);
 
   useEffect(() => {
     const newSocket = io(`${clientUrl}:3001`, {
@@ -26,11 +28,8 @@ export function useSocket(lobbyId: string, router: any) {
       }
     );
 
-    newSocket.on("announcement", (announcement: Shared.Announcement) => {
-      if (announcement.gameState) {
-        setGameState(announcement.gameState);
-      }
-    });
+    // Note: gameState updates are handled by "lobby-update" event
+    // Announcements are handled by GameView component for display only
 
     newSocket.on("error", (data: { message: string }) => {
       toast.error(data.message);

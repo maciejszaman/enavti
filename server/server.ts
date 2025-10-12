@@ -59,7 +59,7 @@ app.post("/createLobby", (req, res) => {
     id: lobbyId,
     players: [],
     createdAt: new Date(),
-    gameState: { stage: "lobby" },
+    gameState: "lobby",
   };
 
   lobbies.set(lobbyId, lobby);
@@ -109,7 +109,7 @@ io.on("connection", (socket) => {
 
     socket.join(lobbyId);
 
-    console.log(lobby.gameState.stage);
+    console.log(lobby.gameState);
 
     io.to(lobbyId).emit("lobby-update", {
       players: lobby.players,
@@ -161,13 +161,14 @@ io.on("connection", (socket) => {
 
     ///PLACEHOLDER -------- REMOVE LATER
 
-    const announcement: Shared.Announcement = {
-      type: "info",
-      message: `[${message}]`,
-    };
-    io.to(lobbyId).emit("announcement", announcement);
+    // const announcement: Shared.Announcement = {
+    //   type: "info",
+    //   message: `[${message}]`,
+    // };
+    // io.to(lobbyId).emit("announcement", announcement);
 
     console.log(`[Server] ${player.name}: ${message}`);
+    console.log(lobby.gameState);
   });
   // START GAME LOGIC
 
@@ -176,7 +177,12 @@ io.on("connection", (socket) => {
     if (!lobby) return;
     if (socket.id !== lobby.players[0]?.id) return; // Sender must be the host
 
-    lobby.gameState.stage = "roundOne";
+    lobby.gameState = "roundOne";
+
+    io.to(lobbyId).emit("lobby-update", {
+      players: lobby.players,
+      gameState: lobby.gameState,
+    });
 
     const announcement: Shared.Announcement = {
       type: "game-start",
@@ -185,6 +191,36 @@ io.on("connection", (socket) => {
     };
     io.to(lobbyId).emit("announcement", announcement);
     console.log(`[Server] Game started in lobby ${lobbyId}`);
+
+    setTimeout(() => {
+      const announcement: Shared.Announcement = {
+        type: "modal",
+        message: "shufflingPlayers",
+      };
+
+      const shuffledOrder = [...lobby.players]
+        .map((player, index) => ({ player, index }))
+        .sort(() => Math.random() - 0.5)
+        .map(({ player }) => player);
+
+      lobby.players = shuffledOrder;
+
+      io.to(lobbyId).emit("lobby-update", {
+        players: lobby.players,
+        gameState: lobby.gameState,
+      });
+
+      setTimeout(() => {
+        const announcement: Shared.Announcement = {
+          type: "closeModal",
+          message: "",
+        };
+
+        io.to(lobbyId).emit("announcement", announcement);
+      }, lobby.players.length * 1000 + 5000);
+
+      io.to(lobbyId).emit("announcement", announcement);
+    }, 3000);
   });
 });
 

@@ -29,10 +29,10 @@ export default function LobbyPage() {
   const { socket, players, gameState } = useSocket(lobbyId, router);
 
   useEffect(() => {
-    if (gameState) {
+    if (gameState !== null) {
       setIsLoading(false);
     }
-  }, []);
+  }, [gameState]);
 
   useEffect(() => {
     if (!socket) return;
@@ -107,13 +107,15 @@ export default function LobbyPage() {
               </CardDescription>
             </div>
 
-            {playerName && socket?.id === players[0]?.id && (
-              <div className="absolute top-5 right-5">
-                <Button onClick={handleStartGame} variant="outline">
-                  Start Game
-                </Button>
-              </div>
-            )}
+            {playerName &&
+              socket?.id === players[0]?.id &&
+              gameState === "lobby" && (
+                <div className="absolute top-5 right-5">
+                  <Button onClick={handleStartGame} variant="outline">
+                    Start Game
+                  </Button>
+                </div>
+              )}
 
             {!playerName ? (
               <div className="flex flex-col gap-3">
@@ -121,6 +123,7 @@ export default function LobbyPage() {
                   Enter your name to join the lobby:
                 </p>
                 <Input
+                  autoFocus
                   placeholder="Your name"
                   value={tempName}
                   onChange={(e) => setTempName(e.target.value)}
