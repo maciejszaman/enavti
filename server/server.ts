@@ -3,6 +3,8 @@ import { createServer } from "http";
 import { Server } from "socket.io";
 import cors from "cors";
 import * as Shared from "../lib/types/Shared.types";
+import { join } from "path";
+import { readFileSync } from "fs";
 
 const app = express();
 const httpServer = createServer(app);
@@ -137,7 +139,6 @@ io.on("connection", (socket) => {
           players: lobby.players,
         });
 
-        // Remove empty lobbies
         if (lobby.players.length === 0) {
           lobbies.delete(lobbyId);
           console.log(`[Server] Deleted empty lobby ${lobbyId}`);
@@ -152,6 +153,59 @@ io.on("connection", (socket) => {
     const player = lobby.players.find((p) => p.id === socket.id);
     if (!player) return;
 
+    if (
+      lobby.activeQuestion &&
+      lobby.activeQuestion.targetPlayer === socket.id
+    ) {
+      io.to(lobbyId).emit("chat-message-broadcast", {
+        playerId: player.id,
+        playerName: player.name,
+        message: message,
+        timestamp: Date.now(),
+      });
+
+      const userAnswer = message.trim().toLowerCase();
+      const correctAnswer = lobby.activeQuestion.answer.trim().toLowerCase();
+
+      if (userAnswer.includes(correctAnswer)) {
+        console.log(`[Server] ${player.name} answered correctly`);
+        io.to(lobbyId).emit("announcement", {
+          type: "info",
+          message: `${player.name} answered correctly!`,
+        } as Shared.Announcement);
+
+        if (player.score !== undefined) {
+          player.score += 1;
+        }
+      } else {
+        console.log(`[Server] ${player.name} answered incorrectly`);
+
+        if (player.lives !== undefined && player.lives > 0) {
+          player.lives -= 1;
+
+          io.to(lobbyId).emit("announcement", {
+            type: "info",
+            message: `${player.name} answered incorrectly. Lives remaining: ${player.lives}`,
+          } as Shared.Announcement);
+
+          console.log(
+            `[Server] ${player.name} lost a life. Lives: ${player.lives}`
+          );
+        }
+      }
+
+      io.to(lobbyId).emit("lobby-update", {
+        players: lobby.players,
+        gameState: lobby.gameState,
+      });
+
+      delete lobby.activeQuestion;
+
+      setTimeout(() => {
+        continueRoundOne(lobby, lobbyId);
+      }, 3000);
+    }
+
     io.to(lobbyId).emit("chat-message-broadcast", {
       playerId: playerId,
       playerName: player.name,
@@ -159,70 +213,181 @@ io.on("connection", (socket) => {
       timestamp: Date.now(),
     });
 
-    ///PLACEHOLDER -------- REMOVE LATER
-
-    // const announcement: Shared.Announcement = {
-    //   type: "info",
-    //   message: `[${message}]`,
-    // };
-    // io.to(lobbyId).emit("announcement", announcement);
-
     console.log(`[Server] ${player.name}: ${message}`);
     console.log(lobby.gameState);
   });
   // START GAME LOGIC
 
-  socket.on("start-game", ({ lobbyId }) => {
+  const wait = (ms: number) =>
+    new Promise((resolve) => setTimeout(resolve, ms));
+
+  socket.on("start-game", async ({ lobbyId }) => {
     const lobby = lobbies.get(lobbyId);
     if (!lobby) return;
-    if (socket.id !== lobby.players[0]?.id) return; // Sender must be the host
+    if (socket.id !== lobby.players[0]?.id) return;
 
     lobby.gameState = "roundOne";
+
+    lobby.players.forEach((player) => {
+      player.lives = 2;
+      player.score = 0;
+    });
+
+    io.to(lobbyId).emit("announcement", {
+      type: "game-start",
+      message: "Game starting...",
+    });
+
+    await wait(3000);
+    console.log(`[Server] Game started in lobby ${lobbyId}`);
+
+    io.to(lobbyId).emit("announcement", {
+      type: "modal",
+      message: "shufflingPlayers",
+    });
+
+    console.log("[Server] Opened modal");
+
+    await wait(1500);
 
     io.to(lobbyId).emit("lobby-update", {
       players: lobby.players,
       gameState: lobby.gameState,
     });
 
-    const announcement: Shared.Announcement = {
-      type: "game-start",
-      message: "Game started",
+    console.log("[Server] Sent lobby-update");
+
+    const shuffledOrder = [...lobby.players]
+      .map((player, index) => ({ player, index }))
+      .sort(() => Math.random() - 0.5)
+      .map(({ player }) => player);
+
+    lobby.players = shuffledOrder;
+    console.log("[Server] Shuffled the players' order");
+
+    await wait(1000);
+
+    io.to(lobbyId).emit("lobby-update", {
+      players: lobby.players,
       gameState: lobby.gameState,
-    };
-    io.to(lobbyId).emit("announcement", announcement);
-    console.log(`[Server] Game started in lobby ${lobbyId}`);
+    });
 
-    setTimeout(() => {
-      const announcement: Shared.Announcement = {
-        type: "modal",
-        message: "shufflingPlayers",
-      };
+    console.log("[Server] Sent lobby-update");
 
-      const shuffledOrder = [...lobby.players]
-        .map((player, index) => ({ player, index }))
-        .sort(() => Math.random() - 0.5)
-        .map(({ player }) => player);
+    await wait(lobby.players.length * 1000 + 3000);
 
-      lobby.players = shuffledOrder;
+    io.to(lobbyId).emit("announcement", {
+      type: "closeModal",
+      message: "",
+    });
 
-      io.to(lobbyId).emit("lobby-update", {
-        players: lobby.players,
-        gameState: lobby.gameState,
-      });
+    lobby.roundOneQuestions = prepareRoundOneQuestions(lobby.players);
+    lobby.currentQuestionIndex = 0;
 
-      setTimeout(() => {
-        const announcement: Shared.Announcement = {
-          type: "closeModal",
-          message: "",
-        };
+    await wait(2000);
 
-        io.to(lobbyId).emit("announcement", announcement);
-      }, lobby.players.length * 1000 + 5000);
+    console.log(
+      "[Server] Starting Round One with questions:",
+      lobby.roundOneQuestions
+    );
 
-      io.to(lobbyId).emit("announcement", announcement);
-    }, 3000);
+    playRoundOne(lobby, lobbyId);
   });
 });
+
+const prepareRoundOneQuestions = (players: Shared.Player[]) => {
+  const shuffleArray = <T>(array: T[]): T[] => {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+  };
+  const questionsPath = join(__dirname, "questions.json");
+  const questionsData = readFileSync(questionsPath, "utf-8");
+  const allQuestions: Shared.Question[] = JSON.parse(questionsData);
+
+  const shuffledQuestions = shuffleArray(allQuestions);
+
+  const questionsNeeded = players.length * 2;
+
+  const selectedQuestions = shuffledQuestions.slice(0, questionsNeeded);
+
+  return selectedQuestions;
+};
+
+const playRoundOne = (lobby: Shared.Lobby, lobbyId: string) => {
+  if (!lobby.roundOneQuestions || lobby.roundOneQuestions.length === 0) {
+    console.log("[Server] No questions available for Round One");
+    return;
+  }
+
+  if (lobby.currentQuestionIndex === undefined) {
+    lobby.currentQuestionIndex = 0;
+  }
+
+  askNextQuestion(lobby, lobbyId);
+};
+
+const continueRoundOne = (lobby: Shared.Lobby, lobbyId: string) => {
+  if (lobby.currentQuestionIndex === undefined) {
+    lobby.currentQuestionIndex = 0;
+  }
+
+  lobby.currentQuestionIndex += 1;
+
+  if (
+    !lobby.roundOneQuestions ||
+    lobby.currentQuestionIndex >= lobby.roundOneQuestions.length
+  ) {
+    console.log("[Server] Round One completed!");
+    io.to(lobbyId).emit("announcement", {
+      type: "info",
+      message: "Round One completed!",
+    } as Shared.Announcement);
+
+    return;
+  }
+
+  askNextQuestion(lobby, lobbyId);
+};
+
+const askNextQuestion = (lobby: Shared.Lobby, lobbyId: string) => {
+  if (
+    !lobby.roundOneQuestions ||
+    lobby.currentQuestionIndex === undefined ||
+    lobby.currentQuestionIndex >= lobby.roundOneQuestions.length
+  ) {
+    return;
+  }
+
+  const currentQuestion = lobby.roundOneQuestions[lobby.currentQuestionIndex];
+  const targetPlayerIndex = lobby.currentQuestionIndex % lobby.players.length;
+  const targetPlayer = lobby.players[targetPlayerIndex];
+
+  console.log(
+    `[Server] Asking question ${lobby.currentQuestionIndex + 1}/${
+      lobby.roundOneQuestions.length
+    } to ${targetPlayer.name}`
+  );
+
+  lobby.activeQuestion = {
+    questionId: currentQuestion.id,
+    text: currentQuestion.question,
+    answer: currentQuestion.answer,
+    targetPlayer: targetPlayer.id,
+    askedAt: new Date(),
+  };
+  console.log(`[Server] ${lobby.activeQuestion?.text}`);
+  console.log(`[Server] ${lobby.activeQuestion.answer}`);
+
+  io.to(lobbyId).emit("announcement", {
+    type: "question",
+    message: currentQuestion.question,
+    targetPlayer: targetPlayer.id,
+  } as any);
+};
 
 const PORT = process.env.PORT || 3001;
 

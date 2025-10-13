@@ -3,7 +3,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import * as Shared from "../../../lib/types/Shared.types";
 import * as Types from "./GameView.Types";
 import { useChat } from "@/hooks/useChat";
-import { Info, User } from "lucide-react";
+import { Info, MessageCircleQuestionMark, User } from "lucide-react";
+import { Progress } from "@chakra-ui/react";
 import { ModalContent } from "../Modals";
 
 export default function GameView({
@@ -13,31 +14,48 @@ export default function GameView({
   gameState,
 }: Types.GameViewProps) {
   const { getChatBubbleForPlayer } = useChat(socket);
-  const [announcement, setAnnouncement] = useState<Shared.Announcement | null>(
-    null
-  );
-  const [modal, setModal] = useState<Shared.Modal>({ open: false, type: null });
+  const [announcement, setAnnouncement] = useState<{
+    data: Shared.Announcement;
+    duration: number;
+  } | null>(null);
+  const [modal, setModal] = useState<Shared.Modal>({
+    open: false,
+    header: null,
+  });
 
   useEffect(() => {
     if (!socket) return;
 
-    const handleAnnouncement = (announcement: Shared.Announcement) => {
-      console.log(announcement);
-      if (announcement.type === "info") {
-        setAnnouncement(announcement);
-        setTimeout(() => setAnnouncement(null), 5000);
+    const handleAnnouncement = (announcementData: Shared.Announcement) => {
+      console.log(announcementData);
+      if (announcementData.type === "info") {
+        const duration = 5000;
+        setAnnouncement({ data: announcementData, duration });
+        setTimeout(() => setAnnouncement(null), duration);
       }
-      if (announcement.type === "modal") {
-        if (modal.open) return;
+      if (announcementData.type === "question") {
+        const messageWords = announcementData.message.split(" ");
+        const duration = messageWords.length * 600 + 1000;
+        console.log(messageWords);
+        console.log(duration);
+        setAnnouncement({ data: announcementData, duration });
+        setTimeout(() => setAnnouncement(null), duration);
+      }
+      if (announcementData.type === "game-start") {
+        const duration = 3000;
+        setAnnouncement({ data: announcementData, duration });
+        setTimeout(() => setAnnouncement(null), duration);
+      }
+      if (announcementData.type === "modal") {
         setModal({
           open: true,
-          type: announcement.message as Shared.ModalType,
+          header: announcementData.message as Shared.ModalType,
         });
       }
-      if (announcement.type === "closeModal") {
+      if (announcementData.type === "closeModal") {
         setModal({
           open: false,
-          type: "shufflingPlayers",
+          header: null,
         });
       }
     };
@@ -50,21 +68,27 @@ export default function GameView({
   }, [socket]);
 
   return (
-    <div className="gameWindow relative w-full h-[500px] bg-[#8572ab] rounded-lg overflow-hidden border-2 border-[#27272a]">
+    <div className="gameWindow relative w-full h-[500px] bg-[url(/background.webp)] bg-cover rounded-lg overflow-hidden border-2 border-[#27272a]">
       {/* Announcement */}
       <AnimatePresence>
         {announcement && (
           <motion.div
-            key={announcement.type}
+            key={announcement.data.type}
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -50 }}
             transition={{ duration: 0.3, type: "spring" }}
             className="absolute top-10 w-full rounded-xl flex items-center justify-center z-50 pointer-events-none"
           >
-            <div className="gameViewContainer flex gap-2">
-              <Info />
-              <span>{announcement.message}</span>
+            <div className="gameViewContainer flex flex-col gap-0 overflow-hidden">
+              <div className="flex gap-2 p-4">
+                {announcement.data.type === "question" ? (
+                  <MessageCircleQuestionMark />
+                ) : (
+                  <Info />
+                )}
+                <span>{announcement.data.message}</span>
+              </div>
             </div>
           </motion.div>
         )}
@@ -88,10 +112,15 @@ export default function GameView({
               initial={{ opacity: 0, scale: 0.8, rotateX: -15 }}
               animate={{ opacity: 1, scale: 1, rotateX: 0 }}
               exit={{ opacity: 0, scale: 0.8, rotateX: 15 }}
-              transition={{ duration: 0.4, type: "spring", bounce: 0.3 }}
+              transition={{
+                duration: 0.5,
+                type: "spring",
+                bounce: 0.3,
+                delay: 0.5,
+              }}
               className="gameViewContainer w-[400px] h-[400px] relative z-50 pointer-events-auto"
             >
-              <ModalContent type={modal.type} data={{ players }} />
+              <ModalContent header={modal.header} data={{ players }} />
             </motion.div>
           </motion.div>
         )}
@@ -117,7 +146,7 @@ export default function GameView({
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -30, scale: 0.1 }}
                     transition={{ duration: 0.2 }}
-                    className="chatBubble absolute bottom-[calc(100%+10px)] left-1/2 transform -translate-x-1/2 bg-white rounded-lg overflow-hidden z-20"
+                    className="chatBubble absolute bottom-[calc(100%+10px)] left-1/2 transform -translate-x-1/2 bg-white rounded-lg overflow-hidden"
                   >
                     <div className=" text-black font-medium">
                       {chatBubble.message}
@@ -142,17 +171,11 @@ export default function GameView({
 
                     {/* CharacterRender */}
                     <img
-                      src={
-                        player.character
-                          ? `/${player.character}`
-                          : index % 2 === 0
-                          ? "/maciej.svg"
-                          : "/kuba.svg"
-                      }
+                      src={`/svg${index + 1}.svg`}
                       alt="Player"
                       className="playerCharacterImg z-20 object-contain"
                     />
-                    <div className="h-8 w-32 absolute bottom-[15px] z-0 rounded-2xl bg-black/10"></div>
+                    <div className="h-8 w-32 absolute bottom-0 translate-y-2.5 z-0 rounded-2xl bg-black/20"></div>
                   </div>
                 </motion.div>
               </AnimatePresence>

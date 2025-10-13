@@ -3,12 +3,12 @@ import * as Shared from "../../../lib/types/Shared.types";
 import { ShufflingPlayers } from "./ShufflingPlayers";
 
 interface ModalContentProps {
-  type: Shared.ModalType | null;
+  header: Shared.ModalType | null;
   data: { players: Shared.Player[] };
 }
 
-export const ModalContent = ({ type, data }: ModalContentProps) => {
-  switch (type) {
+export const ModalContent = ({ header, data }: ModalContentProps) => {
+  switch (header) {
     case "shufflingPlayers":
       return <ShufflingPlayers data={data} />;
   }

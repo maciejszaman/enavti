@@ -13,7 +13,7 @@ export const ShufflingPlayers = ({ data }: ShufflingPlayersProps) => {
   useEffect(() => {
     setTimeout(() => {
       setIsShuffling(false);
-    }, 3000);
+    }, 1500);
   }, []);
 
   return (
@@ -22,7 +22,7 @@ export const ShufflingPlayers = ({ data }: ShufflingPlayersProps) => {
       <div className="h-[2px] bg-[#27272a]"></div>
 
       {isShuffling ? (
-        <LucideLoader className="mx-auto animate-spin" />
+        <LucideLoader className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-spin" />
       ) : (
         data.players.map((player, index) => (
           <motion.div

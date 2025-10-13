@@ -2,6 +2,15 @@ export interface Player {
   id: string;
   name: string;
   character?: "maciej.svg" | "kuba.svg";
+  lives?: number;
+  score?: number;
+}
+
+export interface Question {
+  id: number;
+  question: string;
+  answer: string;
+  multiple_choice: boolean;
 }
 
 export interface Lobby {
@@ -9,6 +18,15 @@ export interface Lobby {
   players: Player[];
   createdAt: Date;
   gameState: GameState;
+  activeQuestion?: {
+    questionId: number;
+    text: string;
+    answer: string;
+    targetPlayer: string;
+    askedAt: Date;
+  };
+  roundOneQuestions?: Question[];
+  currentQuestionIndex?: number;
 }
 
 export interface ChatMessage {
@@ -27,7 +45,7 @@ export interface Announcement {
 }
 
 export interface Modal {
-  type: ModalType | null;
+  header: ModalType | null;
   open: boolean;
 }
 
@@ -47,6 +65,7 @@ export type GameState =
 
 export type AnnouncementType =
   | "info"
+  | "question"
   | "wrong-answer"
   | "right-answer"
   | "game-start"
