@@ -16,36 +16,17 @@ export default function GameView({
   const { getChatBubbleForPlayer } = useChat(socket);
   const [announcement, setAnnouncement] = useState<{
     data: Shared.Announcement;
-    duration: number;
+    open: boolean;
   } | null>(null);
   const [modal, setModal] = useState<Shared.Modal>({
     open: false,
     header: null,
   });
-
   useEffect(() => {
     if (!socket) return;
 
     const handleAnnouncement = (announcementData: Shared.Announcement) => {
       console.log(announcementData);
-      if (announcementData.type === "info") {
-        const duration = 5000;
-        setAnnouncement({ data: announcementData, duration });
-        setTimeout(() => setAnnouncement(null), duration);
-      }
-      if (announcementData.type === "question") {
-        const messageWords = announcementData.message.split(" ");
-        const duration = messageWords.length * 600 + 1000;
-        console.log(messageWords);
-        console.log(duration);
-        setAnnouncement({ data: announcementData, duration });
-        setTimeout(() => setAnnouncement(null), duration);
-      }
-      if (announcementData.type === "game-start") {
-        const duration = 3000;
-        setAnnouncement({ data: announcementData, duration });
-        setTimeout(() => setAnnouncement(null), duration);
-      }
       if (announcementData.type === "modal") {
         setModal({
           open: true,
@@ -58,6 +39,15 @@ export default function GameView({
           header: null,
         });
       }
+      setAnnouncement({ data: announcementData, open: true });
+
+      // Use the duration from the announcement
+      const duration = announcementData.duration;
+      setTimeout(
+        () =>
+          setAnnouncement((prev) => (prev ? { ...prev, open: false } : null)),
+        duration
+      );
     };
 
     socket.on("announcement", handleAnnouncement);
@@ -71,7 +61,7 @@ export default function GameView({
     <div className="gameWindow relative w-full h-[500px] bg-[url(/background.webp)] bg-cover rounded-lg overflow-hidden border-2 border-[#27272a]">
       {/* Announcement */}
       <AnimatePresence>
-        {announcement && (
+        {announcement?.open && (
           <motion.div
             key={announcement.data.type}
             initial={{ opacity: 0, y: -50 }}
@@ -102,7 +92,7 @@ export default function GameView({
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
-            className="absolute inset-0 z-40 flex items-center justify-center pointer-events-none"
+            className="absolute inset-0 z-50 flex items-center justify-center pointer-events-none"
           >
             {/* Blurred backdrop */}
             <div className="absolute inset-0 bg-black" />
@@ -164,18 +154,51 @@ export default function GameView({
                   transition={{ type: "spring", duration: 0.5 }}
                 >
                   <div className="character gap-2 relative flex flex-col items-center">
-                    {/* Name */}
-                    <div className="gameViewContainer rounded-xl">
+                    {/* Name
+                    <div
+                      className={`gameViewContainer rounded-xl ${
+                        isCurrentPlayer ? "yourPlayerBorder" : ""
+                      } ${
+                        announcement?.data.targetPlayer === player.id
+                          ? "targetPlayerName"
+                          : "notTargetPlayerName"
+                      }
+                      }`}
+                    >
                       {player.name}
-                    </div>
-
+                    </div> */}
                     {/* CharacterRender */}
                     <img
-                      src={`/svg${index + 1}.svg`}
+                      src={`/svg${player.character?.character}v${player.character?.clothesColor}.svg`}
                       alt="Player"
                       className="playerCharacterImg z-20 object-contain"
                     />
                     <div className="h-8 w-32 absolute bottom-0 translate-y-2.5 z-0 rounded-2xl bg-black/20"></div>
+
+                    {/* STAND */}
+                    <div className="absolute bottom-0 z-30 flex flex-col items-center">
+                      {/* <div className="w-[60px] h-[40px] bg-gray-700 flex justify-center"> */}
+                      <div
+                        className={`w-[80px] h-[40px] standScreen bg-sky-700 flex flex-col ${
+                          socket?.id === player.id ? "text-amber-300" : ""
+                        } ${
+                          announcement?.data.targetPlayer === player.id
+                            ? "standScreenTarget targetPlayerName"
+                            : ""
+                        }`}
+                      >
+                        <span className="playerName">
+                          {player.name.toUpperCase()}
+                        </span>
+                        <span className="playerLives">{player.lives}</span>
+                      </div>
+                      {/* </div> */}
+                      <div className="w-[60px] font-[--font-jetbrains] h-[100px] bg-gradient-to-t from-gray-500 to-gray-800 flex justify-around">
+                        <div className="h-full w-1 bg-gradient-to-t from-emerald-300 to-amber-300"></div>
+                        <div className="h-full w-1 bg-gradient-to-t from-emerald-300 to-amber-300"></div>
+                        <div className="h-full w-1 bg-gradient-to-t from-emerald-300 to-amber-300"></div>
+                      </div>
+                    </div>
                   </div>
                 </motion.div>
               </AnimatePresence>
@@ -197,7 +220,7 @@ export default function GameView({
             <span className="text-sm p-4 text-white">{players.length}</span>
           </>
         ) : (
-          gameState
+          "Round One"
         )}
       </div>
     </div>

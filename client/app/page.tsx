@@ -51,7 +51,7 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Card.Root className="w-[320px]">
           <Card.Body className="gap-2">
-            <CardTitle className="mt-2">En av ti</CardTitle>
+            <CardTitle className="mt-2 font-bold">EN AV TI</CardTitle>
             <div className="flex flex-col gap-4 mt-4">
               <Button onClick={handleCreateLobby} disabled={isCreating}>
                 {isCreating ? "Creating..." : "Create a lobby"}

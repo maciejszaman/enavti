@@ -14,10 +14,11 @@ import { useRouter } from "next/navigation";
 import GameView from "@/components/GameView/GameView";
 import { useSocket } from "@/hooks/useSocket";
 import { LoaderCircle } from "lucide-react";
+import { Code, Separator } from "@chakra-ui/react";
+import { JoinMenu } from "@/components/JoinMenu/JoinMenu";
 
 export default function LobbyPage() {
   const [playerName, setPlayerName] = useState<string | null>(null);
-  const [tempName, setTempName] = useState("");
   const [copied, setCopied] = useState(false);
   const [chatMessage, setChatMessage] = useState("");
   const [isLoading, setIsLoading] = useState(true);
@@ -39,15 +40,6 @@ export default function LobbyPage() {
 
     socket.emit("lobby-update-req", { lobbyId });
   }, [socket, lobbyId]);
-
-  const handleSetName = () => {
-    if (!tempName.trim() || !socket) {
-      toast.error(ERROR_MSG.NAME_REQUIRED);
-      return;
-    }
-    setPlayerName(tempName.trim());
-    socket.emit("join-lobby", { lobbyId, playerName: tempName.trim() });
-  };
 
   const handleCopyLink = () => {
     const link = `${window.location.origin}/lobby/${lobbyId}`;
@@ -101,7 +93,10 @@ export default function LobbyPage() {
         <Card.Root className="w-[400px]">
           <Card.Body className="gap-4">
             <div>
-              <CardTitle className="mt-2">Lobby: {lobbyId}</CardTitle>
+              <CardTitle className="mt-2">
+                Lobby:
+                <Code size="md">{lobbyId}</Code>
+              </CardTitle>
               <CardDescription className="mt-1">
                 Share this code
               </CardDescription>
@@ -118,19 +113,12 @@ export default function LobbyPage() {
               )}
 
             {!playerName ? (
-              <div className="flex flex-col gap-3">
-                <p className="text-sm text-muted-foreground">
-                  Enter your name to join the lobby:
-                </p>
-                <Input
-                  autoFocus
-                  placeholder="Your name"
-                  value={tempName}
-                  onChange={(e) => setTempName(e.target.value)}
-                  onKeyDown={(e) => e.key === "Enter" && handleSetName()}
-                />
-                <Button onClick={handleSetName}>Join</Button>
-              </div>
+              <JoinMenu
+                socket={socket}
+                players={players}
+                lobbyId={lobbyId}
+                setPlayerName={setPlayerName}
+              />
             ) : (
               <>
                 <div className="flex gap-2">
@@ -144,6 +132,8 @@ export default function LobbyPage() {
                     Send
                   </Button>
                 </div>
+
+                <Separator />
 
                 <div className="flex flex-col gap-2 pt-2">
                   <Button onClick={handleCopyLink} variant="outline">

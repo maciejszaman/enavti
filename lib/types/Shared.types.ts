@@ -1,7 +1,7 @@
 export interface Player {
   id: string;
   name: string;
-  character?: "maciej.svg" | "kuba.svg";
+  character?: Character;
   lives?: number;
   score?: number;
 }
@@ -42,6 +42,8 @@ export interface Announcement {
   message: string | ModalType;
   gameState?: GameState;
   shuffledOrder?: Player[];
+  duration: number;
+  targetPlayer?: string;
 }
 
 export interface Modal {
@@ -72,3 +74,8 @@ export type AnnouncementType =
   | "game-end"
   | "modal"
   | "closeModal";
+
+export type Character = {
+  character: number;
+  clothesColor: number;
+};

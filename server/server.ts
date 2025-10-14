@@ -90,7 +90,7 @@ io.on("connection", (socket) => {
     }
   });
 
-  socket.on("join-lobby", ({ lobbyId, playerName }) => {
+  socket.on("join-lobby", ({ lobbyId, playerName, character }) => {
     const lobby = lobbies.get(lobbyId);
 
     if (!lobby) {
@@ -104,6 +104,10 @@ io.on("connection", (socket) => {
       lobby.players.push({
         id: socket.id,
         name: playerName,
+        character: {
+          character: character.character,
+          clothesColor: character.clothesColor,
+        },
       });
     } else {
       existingPlayer.name = playerName;
@@ -147,7 +151,7 @@ io.on("connection", (socket) => {
     });
   });
 
-  socket.on("chat-message-req", ({ lobbyId, playerId, message }) => {
+  socket.on("chat-message-req", async ({ lobbyId, playerId, message }) => {
     const lobby = lobbies.get(lobbyId);
     if (!lobby) return;
     const player = lobby.players.find((p) => p.id === socket.id);
@@ -167,11 +171,15 @@ io.on("connection", (socket) => {
       const userAnswer = message.trim().toLowerCase();
       const correctAnswer = lobby.activeQuestion.answer.trim().toLowerCase();
 
+      let announcementDuration = 0;
+
       if (userAnswer.includes(correctAnswer)) {
         console.log(`[Server] ${player.name} answered correctly`);
+        announcementDuration = 2000;
         io.to(lobbyId).emit("announcement", {
           type: "info",
-          message: `${player.name} answered correctly!`,
+          message: "Dobrze.",
+          duration: announcementDuration,
         } as Shared.Announcement);
 
         if (player.score !== undefined) {
@@ -182,10 +190,12 @@ io.on("connection", (socket) => {
 
         if (player.lives !== undefined && player.lives > 0) {
           player.lives -= 1;
+          announcementDuration = 3000;
 
           io.to(lobbyId).emit("announcement", {
             type: "info",
-            message: `${player.name} answered incorrectly. Lives remaining: ${player.lives}`,
+            message: `Nie, to "${correctAnswer}"`,
+            duration: announcementDuration,
           } as Shared.Announcement);
 
           console.log(
@@ -201,9 +211,10 @@ io.on("connection", (socket) => {
 
       delete lobby.activeQuestion;
 
-      setTimeout(() => {
-        continueRoundOne(lobby, lobbyId);
-      }, 3000);
+      await wait(announcementDuration + 1000);
+      continueRoundOne(lobby, lobbyId);
+
+      return;
     }
 
     io.to(lobbyId).emit("chat-message-broadcast", {
@@ -236,14 +247,16 @@ io.on("connection", (socket) => {
     io.to(lobbyId).emit("announcement", {
       type: "game-start",
       message: "Game starting...",
+      duration: 3000,
     });
 
-    await wait(3000);
+    await wait(4000);
     console.log(`[Server] Game started in lobby ${lobbyId}`);
 
     io.to(lobbyId).emit("announcement", {
       type: "modal",
       message: "shufflingPlayers",
+      duration: 2000,
     });
 
     console.log("[Server] Opened modal");
@@ -279,6 +292,7 @@ io.on("connection", (socket) => {
     io.to(lobbyId).emit("announcement", {
       type: "closeModal",
       message: "",
+      duration: 1000,
     });
 
     lobby.roundOneQuestions = prepareRoundOneQuestions(lobby.players);
@@ -330,7 +344,7 @@ const playRoundOne = (lobby: Shared.Lobby, lobbyId: string) => {
   askNextQuestion(lobby, lobbyId);
 };
 
-const continueRoundOne = (lobby: Shared.Lobby, lobbyId: string) => {
+const continueRoundOne = async (lobby: Shared.Lobby, lobbyId: string) => {
   if (lobby.currentQuestionIndex === undefined) {
     lobby.currentQuestionIndex = 0;
   }
@@ -342,18 +356,23 @@ const continueRoundOne = (lobby: Shared.Lobby, lobbyId: string) => {
     lobby.currentQuestionIndex >= lobby.roundOneQuestions.length
   ) {
     console.log("[Server] Round One completed!");
+    const completionDuration = 2000;
     io.to(lobbyId).emit("announcement", {
       type: "info",
       message: "Round One completed!",
+      duration: 2000,
     } as Shared.Announcement);
 
+    await wait(completionDuration + 1000);
     return;
   }
 
-  askNextQuestion(lobby, lobbyId);
+  await askNextQuestion(lobby, lobbyId);
 };
 
-const askNextQuestion = (lobby: Shared.Lobby, lobbyId: string) => {
+const wait = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
+const askNextQuestion = async (lobby: Shared.Lobby, lobbyId: string) => {
   if (
     !lobby.roundOneQuestions ||
     lobby.currentQuestionIndex === undefined ||
@@ -382,11 +401,16 @@ const askNextQuestion = (lobby: Shared.Lobby, lobbyId: string) => {
   console.log(`[Server] ${lobby.activeQuestion?.text}`);
   console.log(`[Server] ${lobby.activeQuestion.answer}`);
 
+  const duration = currentQuestion.question.split(" ").length * 600 + 1000;
+
   io.to(lobbyId).emit("announcement", {
     type: "question",
     message: currentQuestion.question,
     targetPlayer: targetPlayer.id,
+    duration: duration,
   } as any);
+
+  await wait(duration + 1000);
 };
 
 const PORT = process.env.PORT || 3001;
