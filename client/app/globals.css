@@ -1,4 +1,7 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -11,90 +14,42 @@
   }
 }
 
-@theme {
-  --font-jetbrains: var(--font-jetbrains)
-  --font-ubuntu: var(--font-ubuntu)
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-ubuntu);
 }
 
-.playerCharacterImage {
-  border: 2px solid rgba(255, 255, 255, 0.7);
-}
-
-.gameViewContainer {
+/* .gameViewContainer {
   padding-left: 12px;
   padding-right: 12px;
   padding-top: 8px;
   padding-bottom: 8px;
-
   background-color: #111111;
-
   border: 2px solid #27272a;
   border-bottom: 4px solid #27272a;
-
   border-radius: 0.75rem;
-}
+} */
 
-.chatBubble {
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+@layer components {
+  .container {
+    @apply px-3 py-2 bg-[#111111] border-2 border-[#27272a] border-b-4 rounded-xl;
+  }
 
-  min-width: 100px;
-  max-width: 200px;
-  text-align: center;
-  z-index: 999;
+  .chatBubble {
+    @apply px-3 py-2 min-w-24 max-w-48 text-center z-30 border-2 border-[#afafaf] border-b-4 bg-white rounded-lg;
+  }
 
-  border: 2px solid #afafaf;
-  border-bottom: 4px solid #afafaf;
-}
+  .divider {
+    @apply h-[2px] rounded-lg w-full bg-[#27272a];
+  }
 
-.gameWindow {
-  border: 2px solid #27272a;
-  border-bottom: 4px solid #27272a;
-}
+  .playerCharacterImg {
+    height: 300px;
+    width: auto;
+  }
 
-.playerCharacterImg {
-  height: 300px;
-  width: auto;
-}
-
-.modalContent {
-  padding: 8px;
-}
-
-.modalPlayer {
-  padding: 8px;
-}
-
-.yourPlayerBorder {
-  border: 2px solid green;
-  border-bottom: 4px solid green;
-}
-
-.targetPlayerName {
-  box-shadow: 0 0 24px 8px rgba(255, 255, 0, 0.4);
-}
-
-.standScreen {
-  border: 3px solid #27272a;
-  font-weight: bold;
-  text-align: center;
-
-  font-family: var(--font-jetbrains);
-  word-wrap: normal;
-}
-
-.standScreenTarget {
-  background-color: #59168b;
-}
-
-.playerName {
-  font-size: 0.6rem;
+  .jetbrains {
+    font-family: var(--font-jetbrains);
+  }
 }

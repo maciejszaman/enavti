@@ -1,6 +1,6 @@
 {
-  "name": "lobby-client",
-  "version": "0.1.0",
+  "name": "client",
+  "version": "0.3",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -11,9 +11,11 @@
   "dependencies": {
     "@chakra-ui/react": "^3.27.1",
     "@emotion/react": "^11.14.0",
+    "@enavti/shared-types": "workspace:*",
     "axios": "^1.12.2",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
+    "framer-motion": "^12.23.24",
     "lucide-react": "^0.545.0",
     "motion": "^12.23.24",
     "next": "15.5.4",
@@ -27,12 +29,12 @@
     "tailwindcss-animate": "1.0.7"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "4.1.14",
     "@types/node": "24.7.1",
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.1",
+    "autoprefixer": "^10.4.21",
     "postcss": "8.5.6",
-    "tailwindcss": "4.1.14",
+    "tailwindcss": "3",
     "typescript": "5.9.3"
   }
 }

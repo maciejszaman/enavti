@@ -1,5 +1,5 @@
 import { Socket } from "socket.io-client";
-import * as Shared from "../../../lib/types/Shared.types";
+import * as Shared from "@enavti/shared-types";
 import { Dispatch, SetStateAction } from "react";
 
 export interface JoinMenuProps {

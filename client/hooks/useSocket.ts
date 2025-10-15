@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { io, type Socket } from "socket.io-client";
 import toast from "react-hot-toast";
-import * as Shared from "../../lib/types/Shared.types";
+import * as Shared from "@enavti/shared-types";
 
 export function useSocket(lobbyId: string, router: any) {
   const [socket, setSocket] = useState<Socket | null>(null);
@@ -9,8 +9,6 @@ export function useSocket(lobbyId: string, router: any) {
   const [gameState, setGameState] = useState<Shared.GameState>(null);
 
   const clientUrl = process.env.NEXT_PUBLIC_CLIENT_URL || "http://localhost";
-
-  console.log(gameState);
 
   useEffect(() => {
     const newSocket = io(`${clientUrl}:3001`, {
@@ -27,9 +25,6 @@ export function useSocket(lobbyId: string, router: any) {
         }
       }
     );
-
-    // Note: gameState updates are handled by "lobby-update" event
-    // Announcements are handled by GameView component for display only
 
     newSocket.on("error", (data: { message: string }) => {
       toast.error(data.message);

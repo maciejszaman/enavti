@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import * as Shared from "../../lib/types/Shared.types";
+import * as Shared from "@enavti/shared-types";
 
 export function useChat(socket: any) {
   const [chatMessages, setChatMessages] = useState<Shared.ChatMessage[]>([]);

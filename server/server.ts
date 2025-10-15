@@ -2,7 +2,7 @@ import express from "express";
 import { createServer } from "http";
 import { Server } from "socket.io";
 import cors from "cors";
-import * as Shared from "../lib/types/Shared.types";
+import * as Shared from "@enavti/shared-types";
 import { join } from "path";
 import { readFileSync } from "fs";
 

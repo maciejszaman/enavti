@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import * as Shared from "../../../lib/types/Shared.types";
+import * as Shared from "@enavti/shared-types";
 import { motion } from "framer-motion";
 import { LucideLoader } from "lucide-react";
 
@@ -13,12 +13,12 @@ export const ShufflingPlayers = ({ data }: ShufflingPlayersProps) => {
   useEffect(() => {
     setTimeout(() => {
       setIsShuffling(false);
-    }, 1500);
+    }, 2500);
   }, []);
 
   return (
-    <div className="flex flex-col modalContent text-center">
-      <div className="text-2xl modalContent">Shuffling players</div>
+    <div className="flex flex-col p-2 text-center">
+      <div className="text-2xl p-2">Shuffling players</div>
       <div className="h-[2px] bg-[#27272a]"></div>
 
       {isShuffling ? (
@@ -32,8 +32,8 @@ export const ShufflingPlayers = ({ data }: ShufflingPlayersProps) => {
             className="grid grid-cols-2"
             transition={{ delay: index * 1 }}
           >
-            <div className="modalPlayer">{player.name}</div>
-            <div className="modalPlayer">{index + 1}</div>
+            <div className="p-2">{player.name}</div>
+            <div className="p-2">{index + 1}</div>
           </motion.div>
         ))
       )}

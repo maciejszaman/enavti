@@ -1,6 +1,6 @@
 {
-  "name": "lobby-server",
-  "version": "1.0.0",
+  "name": "server",
+  "version": "0.3",
   "private": true,
   "scripts": {
     "dev": "tsx watch server.ts",
@@ -10,7 +10,8 @@
   "dependencies": {
     "express": "^4.21.2",
     "socket.io": "^4.8.1",
-    "cors": "^2.8.5"
+    "cors": "^2.8.5",
+    "@enavti/shared-types": "workspace:*"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",

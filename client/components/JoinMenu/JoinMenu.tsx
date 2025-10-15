@@ -20,9 +20,6 @@ export const JoinMenu = ({
     clothesColor: 1,
   });
 
-  console.log(characterSelect);
-  console.log(defaultCharacter);
-
   useEffect(() => {
     setCharacterselect((prev) => ({
       ...prev,
@@ -57,22 +54,33 @@ export const JoinMenu = ({
 
   return (
     <div className="flex flex-col gap-3">
-      <p className="text-sm text-muted-foreground">
-        Enter your name to join the lobby:
-      </p>
-      <Input
-        autoFocus
-        maxLength={12}
-        placeholder="Your name"
-        value={tempName}
-        onChange={(e) => setTempName(e.target.value)}
-        onKeyDown={(e) => e.key === "Enter" && handleSetName()}
-      />
-      <Button onClick={handleSetName}>Join</Button>
-
-      <p className="text-sm text-muted-foreground">Customize your character:</p>
+      <div className="divider mt-2"></div>
+      <p className="text-sm">Enter your name to join the lobby:</p>
       <div className="flex gap-2">
-        <div className="flex flex-col gap-4 w-1/2">
+        <input
+          autoFocus
+          maxLength={12}
+          className="container border-b-2 text text-center w-full"
+          placeholder="Your name"
+          value={tempName}
+          onChange={(e) => setTempName(e.target.value)}
+          onKeyDown={(e) => e.key === "Enter" && handleSetName()}
+        />
+        <button
+          className="container font-bold bg-white text-[#111111] border-2 border-[#afafaf] border-b-4 w-1/3"
+          onClick={handleSetName}
+        >
+          Join
+        </button>
+      </div>
+
+      <div className="divider h-[2px] mt-2 mb-2"></div>
+
+      <div className="flex gap-2">
+        <div className="flex flex-col mt-4 gap-4 w-1/2">
+          <p className="text-sm text-muted-foreground text-center">
+            Customize:
+          </p>
           <Slider.Root
             width="full"
             min={1}
@@ -105,7 +113,7 @@ export const JoinMenu = ({
             </Slider.Control>
           </Slider.Root>
         </div>
-        <div className="w-1/2 border-2 gameViewContainer">
+        <div className="w-1/2 border-2 container bg-gradient-to-t from-sky-300/30">
           <img
             src={`/svg${characterSelect.character}v${characterSelect.clothesColor}.svg`}
             alt="character preview"

@@ -1,8 +1,35 @@
-﻿# EN.AV.TI v0.3
-#### online browser gameshow with friends
+﻿# EN.AV.TI v0.4
 
-<p align="center">
-  
-<img width="70%" alt="Main game screen" src="https://github.com/user-attachments/assets/188cb4da-dec3-433d-89e6-75d583542eb7" />
-<img width="25%" alt="Character selection menu" src="https://github.com/user-attachments/assets/be0b5b4f-4630-4d50-b448-d482cb35e902" />
-</p>
+### online browser gameshow with friends
+
+![alt text](/images/image.png)
+
+## To do:
+
+- [x] get rid of chakraui
+- [ ] animate all UI
+- [ ] clean up the server logic
+
+- [ ] better "Shuffling players" UI
+
+- [ ] the gameplay loop
+
+  - [ ] lobby
+  - [x] round one
+  - [ ] round two
+  - [ ] final round
+  - [ ] post-game summary
+
+- [ ] characters
+
+  - [ ] 4 different characters
+  - [ ] 4 skins for each
+  - [ ] animations
+
+- [ ] **get better questions**
+
+## Screenshots
+
+<img alt="Main game screen" src="https://github.com/user-attachments/assets/188cb4da-dec3-433d-89e6-75d583542eb7" />
+
+![alt text](/images/image-1.png)

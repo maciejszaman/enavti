@@ -2,23 +2,17 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { Card, CardDescription, CardTitle } from "@chakra-ui/react/card";
-import { Input } from "@chakra-ui/react/input";
-import { Button } from "@chakra-ui/react/button";
 import axios from "axios";
 import { ERROR_MSG } from "../../lib/constants/errorMessages";
 import toast from "react-hot-toast";
+import { Forward } from "lucide-react";
 
 const CLIENT_URL = process.env.NEXT_PUBLIC_CLIENT_URL || "http://localhost";
-console.log(process.env.NEXT_PUBLIC_CLIENT_URL);
-console.log(CLIENT_URL);
 
 export default function Home() {
   const [lobbyCode, setLobbyCode] = useState("");
   const [isCreating, setIsCreating] = useState(false);
   const router = useRouter();
-
-  const show = true;
 
   const handleCreateLobby = async () => {
     setIsCreating(true);
@@ -49,32 +43,71 @@ export default function Home() {
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Card.Root className="w-[320px]">
-          <Card.Body className="gap-2">
-            <CardTitle className="mt-2 font-bold">EN AV TI</CardTitle>
-            <div className="flex flex-col gap-4 mt-4">
-              <Button onClick={handleCreateLobby} disabled={isCreating}>
-                {isCreating ? "Creating..." : "Create a lobby"}
-              </Button>
-
-              <div className="flex gap-2">
-                <Input
-                  placeholder="Lobby code"
-                  value={lobbyCode}
-                  onChange={(e) => setLobbyCode(e.target.value)}
-                  onKeyDown={(e) => {
-                    if (e.key === "Enter") {
-                      handleJoinLobby();
-                    }
-                  }}
-                />
-                <Button variant="outline" onClick={handleJoinLobby}>
-                  Join
-                </Button>
+        <div className="text-center container w-[320px]">
+          <div className="flex h-36 justify-center w-full p-0">
+            <div className="p-1 w-[180px] relative">
+              <img
+                src="/svg1v1.svg"
+                className="absolute left-1/2 -translate-x-[100%] h-28"
+              />
+              <img
+                src="/svg2v1.svg"
+                className="absolute left-1/2 -translate-x-1/2 h-28"
+              />
+              <img
+                src="/svg3v1.svg"
+                className="absolute left-1/2 -translate-x-[50% + 30px] h-28"
+              />
+              <div
+                className="container bg-sky-700 w-[160px] py-1 px-3
+              absolute bottom-3 left-1/2 -translate-x-1/2 "
+              >
+                <p className="text-xl text-amber-300 font-bold">EN AV TI</p>
+                <p className="text-sm text-amber-400">online gameshow</p>
               </div>
             </div>
-          </Card.Body>
-        </Card.Root>
+          </div>
+          <div className="divider"></div>
+          <div className="flex items-center flex-col gap-4 mt-4">
+            <button
+              className="container font-bold bg-white text-[#111111] border-2 border-[#afafaf] border-b-4 w-full"
+              onClick={handleCreateLobby}
+              disabled={isCreating}
+            >
+              {isCreating ? "Creating..." : "Create a lobby"}
+            </button>
+
+            <div className="flex gap-2">
+              <input
+                className="container border-b-2 text jetbrains text-center"
+                placeholder="Lobby code"
+                value={lobbyCode}
+                onChange={(e) => setLobbyCode(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    handleJoinLobby();
+                  }
+                }}
+              />
+              <button
+                className="container font-semibold flex gap-2 justify-center items-center"
+                onClick={handleJoinLobby}
+              >
+                Join
+                <Forward size={16} />
+              </button>
+            </div>
+          </div>
+          <div className="divider mt-4"></div>
+          <a
+            href="www.github.com/maciejszaman"
+            className="hover:brightness-150 transition-all ease-in-out duration-200"
+          >
+            <p className="text-xs text-[#27272a] jetbrains tracking-widest pt-4 pb-2 py-10 hover:scale-125  transition-all ease-in-out duration-200">
+              MACIEJSZAMAN
+            </p>
+          </a>
+        </div>
       </main>
     </div>
   );

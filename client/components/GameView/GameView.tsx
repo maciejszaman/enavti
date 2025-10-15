@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import * as Shared from "../../../lib/types/Shared.types";
+import * as Shared from "@enavti/shared-types";
 import * as Types from "./GameView.Types";
 import { useChat } from "@/hooks/useChat";
 import { Info, MessageCircleQuestionMark, User } from "lucide-react";
@@ -26,7 +26,6 @@ export default function GameView({
     if (!socket) return;
 
     const handleAnnouncement = (announcementData: Shared.Announcement) => {
-      console.log(announcementData);
       if (announcementData.type === "modal") {
         setModal({
           open: true,
@@ -41,7 +40,6 @@ export default function GameView({
       }
       setAnnouncement({ data: announcementData, open: true });
 
-      // Use the duration from the announcement
       const duration = announcementData.duration;
       setTimeout(
         () =>
@@ -58,19 +56,19 @@ export default function GameView({
   }, [socket]);
 
   return (
-    <div className="gameWindow relative w-full h-[500px] bg-[url(/background.webp)] bg-cover rounded-lg overflow-hidden border-2 border-[#27272a]">
+    <div className="relative w-full h-[500px] bg-[url(/background.webp)] bg-cover rounded-lg overflow-hidden border-2 border-[#27272a]">
       {/* Announcement */}
       <AnimatePresence>
         {announcement?.open && (
           <motion.div
             key={announcement.data.type}
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -50 }}
+            initial={{ opacity: 0, y: -50, x: "-50%" }}
+            animate={{ opacity: 1, y: 0, x: "-50%" }}
+            exit={{ opacity: 0, y: -50, x: "-50%" }}
             transition={{ duration: 0.3, type: "spring" }}
-            className="absolute top-10 w-full rounded-xl flex items-center justify-center z-50 pointer-events-none"
+            className="container px-0 py-0 w-fit absolute top-4 left-1/2 rounded-xl flex items-center justify-center z-50 pointer-events-none"
           >
-            <div className="gameViewContainer flex flex-col gap-0 overflow-hidden">
+            <div className="flex flex-col gap-0 overflow-hidden">
               <div className="flex gap-2 p-4">
                 {announcement.data.type === "question" ? (
                   <MessageCircleQuestionMark />
@@ -108,7 +106,7 @@ export default function GameView({
                 bounce: 0.3,
                 delay: 0.5,
               }}
-              className="gameViewContainer w-[400px] h-[400px] relative z-50 pointer-events-auto"
+              className="container w-[400px] h-[400px] relative z-50 pointer-events-auto"
             >
               <ModalContent header={modal.header} data={{ players }} />
             </motion.div>
@@ -136,11 +134,9 @@ export default function GameView({
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -30, scale: 0.1 }}
                     transition={{ duration: 0.2 }}
-                    className="chatBubble absolute bottom-[calc(100%+10px)] left-1/2 transform -translate-x-1/2 bg-white rounded-lg overflow-hidden"
+                    className="chatBubble absolute bottom-[calc(100%+10px)] max-h-20 overflow-hidden"
                   >
-                    <div className=" text-black font-medium">
-                      {chatBubble.message}
-                    </div>
+                    <span className="text-black">{chatBubble.message}</span>
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -153,7 +149,7 @@ export default function GameView({
                   exit={{ scale: 0, opacity: 0 }}
                   transition={{ type: "spring", duration: 0.5 }}
                 >
-                  <div className="character gap-2 relative flex flex-col items-center">
+                  <div className="gap-2 relative flex flex-col items-center">
                     {/* Name
                     <div
                       className={`gameViewContainer rounded-xl ${
@@ -177,17 +173,16 @@ export default function GameView({
 
                     {/* STAND */}
                     <div className="absolute bottom-0 z-30 flex flex-col items-center">
-                      {/* <div className="w-[60px] h-[40px] bg-gray-700 flex justify-center"> */}
                       <div
-                        className={`w-[80px] h-[40px] standScreen bg-sky-700 flex flex-col ${
+                        className={`w-[80px] h-[40px] border-[3px] border-gray-800 font-bold text-center jetbrains whitespace-nowrap  bg-sky-700 flex flex-col ${
                           socket?.id === player.id ? "text-amber-300" : ""
                         } ${
                           announcement?.data.targetPlayer === player.id
-                            ? "standScreenTarget targetPlayerName"
+                            ? "bg-purple-800 shadow-md shadow-yellow-300"
                             : ""
                         }`}
                       >
-                        <span className="playerName">
+                        <span className="text-[0.65rem]">
                           {player.name.toUpperCase()}
                         </span>
                         <span className="playerLives">{player.lives}</span>
@@ -213,11 +208,11 @@ export default function GameView({
       </div>
 
       {/* Game state */}
-      <div className="gameViewContainer absolute top-4 left-4 bg-black/30 rounded-lg flex gap-2">
+      <div className="container w-fit absolute top-4 left-4 flex gap-2">
         {gameState === "lobby" ? (
           <>
             <User />
-            <span className="text-sm p-4 text-white">{players.length}</span>
+            <span>{players.length}</span>
           </>
         ) : (
           "Round One"

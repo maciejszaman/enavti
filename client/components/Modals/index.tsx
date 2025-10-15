@@ -1,5 +1,5 @@
 import React from "react";
-import * as Shared from "../../../lib/types/Shared.types";
+import * as Shared from "@enavti/shared-types";
 import { ShufflingPlayers } from "./ShufflingPlayers";
 
 interface ModalContentProps {

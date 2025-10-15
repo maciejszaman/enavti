@@ -1,5 +1,7 @@
 node_modules
-
-README.md
 .env
+.env.local
+dist
+build
+
 

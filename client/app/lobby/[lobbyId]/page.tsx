@@ -1,19 +1,13 @@
 "use client";
 
 import { Button } from "@chakra-ui/react/button";
-import { Card, CardDescription, CardTitle } from "@chakra-ui/react/card";
 import { Input } from "@chakra-ui/react/input";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import { io, type Socket } from "socket.io-client";
-import { ERROR_MSG } from "../../../../lib/constants/errorMessages";
-import toast from "react-hot-toast";
-import * as Shared from "../../../../lib/types/Shared.types";
 import { useRouter } from "next/navigation";
-
 import GameView from "@/components/GameView/GameView";
 import { useSocket } from "@/hooks/useSocket";
-import { LoaderCircle } from "lucide-react";
+import { Copy, Forward, LoaderCircle, Power } from "lucide-react";
 import { Code, Separator } from "@chakra-ui/react";
 import { JoinMenu } from "@/components/JoinMenu/JoinMenu";
 
@@ -90,63 +84,71 @@ export default function LobbyPage() {
           />
         )}
 
-        <Card.Root className="w-[400px]">
-          <Card.Body className="gap-4">
-            <div>
-              <CardTitle className="mt-2">
-                Lobby:
-                <Code size="md">{lobbyId}</Code>
-              </CardTitle>
-              <CardDescription className="mt-1">
-                Share this code
-              </CardDescription>
-            </div>
+        <div className="container w-[400px] gap-4">
+          <div className="text-center mb-4">
+            <span className="text-nowrap jetbrains font-bold opacity-50">
+              LOBBY {lobbyId}
+            </span>
+          </div>
 
-            {playerName &&
-              socket?.id === players[0]?.id &&
-              gameState === "lobby" && (
-                <div className="absolute top-5 right-5">
-                  <Button onClick={handleStartGame} variant="outline">
-                    Start Game
-                  </Button>
-                </div>
-              )}
-
-            {!playerName ? (
-              <JoinMenu
-                socket={socket}
-                players={players}
-                lobbyId={lobbyId}
-                setPlayerName={setPlayerName}
-              />
-            ) : (
-              <>
-                <div className="flex gap-2">
-                  <Input
-                    placeholder="Type a message..."
-                    value={chatMessage}
-                    onChange={(e) => setChatMessage(e.target.value)}
-                    onKeyDown={(e) => e.key === "Enter" && handleSendChat()}
-                  />
-                  <Button onClick={handleSendChat} variant="outline">
-                    Send
-                  </Button>
-                </div>
-
-                <Separator />
-
-                <div className="flex flex-col gap-2 pt-2">
-                  <Button onClick={handleCopyLink} variant="outline">
-                    {copied ? "Copied!" : "Copy Invite Link"}
-                  </Button>
-                  <Button onClick={handleLeaveLobby} variant="ghost">
-                    Leave Lobby
-                  </Button>
-                </div>
-              </>
+          {playerName &&
+            socket?.id === players[0]?.id &&
+            gameState === "lobby" && (
+              <div className="absolute top-5 right-5">
+                <button onClick={handleStartGame}>Start Game</button>
+              </div>
             )}
-          </Card.Body>
-        </Card.Root>
+
+          {!playerName ? (
+            <JoinMenu
+              socket={socket}
+              players={players}
+              lobbyId={lobbyId}
+              setPlayerName={setPlayerName}
+            />
+          ) : (
+            <>
+              <div className="flex gap-2">
+                <input
+                  className="container border-b-2 text text-center"
+                  placeholder="Type a message..."
+                  value={chatMessage}
+                  onChange={(e) => setChatMessage(e.target.value)}
+                  onKeyDown={(e) => e.key === "Enter" && handleSendChat()}
+                />
+                <button className="container w-fit flex items-center justify-center">
+                  <Forward />
+                </button>
+              </div>
+
+              <div className="divider mt-4 mb-4" />
+
+              <button
+                onClick={handleCopyLink}
+                className="container flex gap-2 justify-center items-center"
+              >
+                <Copy size={16} />
+                {copied ? "Copied!" : "Copy Invite Link"}
+              </button>
+              <div className="flex gap-2 mt-2">
+                <button onClick={handleLeaveLobby} className="container w-full">
+                  Leave Lobby
+                </button>
+
+                {playerName &&
+                  socket?.id === players[0]?.id &&
+                  gameState === "lobby" && (
+                    <button
+                      onClick={handleStartGame}
+                      className="container border-2 border-[#afafaf] border-b-4 bg-white text-[#111111] shadow-md shadow-white/20 w-fit whitespace-nowrap flex gap-2 justify-center items-center"
+                    >
+                      <Power size={16} /> Start Game
+                    </button>
+                  )}
+              </div>
+            </>
+          )}
+        </div>
       </main>
     </div>
   );
