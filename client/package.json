@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@chakra-ui/react": "^3.27.1",
     "@emotion/react": "^11.14.0",
     "@enavti/shared-types": "workspace:*",
     "axios": "^1.12.2",

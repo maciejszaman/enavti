@@ -9,31 +9,10 @@ interface ShufflingPlayersProps {
 
 export const ShufflingPlayers = ({ data }: ShufflingPlayersProps) => {
   const [isShuffling, setIsShuffling] = useState(true);
-  const [initialPlayerOrder, setInitialPlayerOrder] = useState<string[]>([]);
 
-  //listen for the shuffle, 100% could be done better
-
-  useEffect(() => {
-    const initialOrder = data.players.map((p) => p.id);
-    setInitialPlayerOrder(initialOrder);
-  }, []);
-
-  useEffect(() => {
-    if (initialPlayerOrder.length === 0) return;
-
-    const currentOrder = data.players.map((p) => p.id);
-    const hasShuffled = !initialPlayerOrder.every(
-      (id, index) => id === currentOrder[index]
-    );
-
-    if (hasShuffled) {
-      const timer = setTimeout(() => {
-        setIsShuffling(false);
-      }, 500);
-
-      return () => clearTimeout(timer);
-    }
-  }, [data.players, initialPlayerOrder]);
+  setTimeout(() => {
+    setIsShuffling(false);
+  }, 1000);
 
   return (
     <div className="flex flex-col p-2 text-center">

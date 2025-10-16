@@ -1,14 +1,11 @@
 "use client";
 
-import { Button } from "@chakra-ui/react/button";
-import { Input } from "@chakra-ui/react/input";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import GameView from "@/components/GameView/GameView";
 import { useSocket } from "@/hooks/useSocket";
 import { Copy, Forward, LoaderCircle, Power } from "lucide-react";
-import { Code, Separator } from "@chakra-ui/react";
 import { JoinMenu } from "@/components/JoinMenu/JoinMenu";
 import { motion, useAnimation } from "framer-motion";
 

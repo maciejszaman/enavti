@@ -8,14 +8,17 @@
 
 - [x] get rid of chakraui
 - [x] animate all UI
+
 - [ ] clean up the server logic
 
-- [ ] better "Shuffling players" UI
+- [x] better "Shuffling players" UI
 
 - [ ] the gameplay loop
 
   - [x] lobby
   - [x] round one
+    - [ ] 3 seconds to answer each question
+    - [ ] summary to show who goes to the second round
   - [ ] round two
   - [ ] final round
   - [ ] post-game summary

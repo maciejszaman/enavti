@@ -261,14 +261,7 @@ io.on("connection", (socket) => {
 
     console.log("[Server] Opened modal");
 
-    await wait(1500);
-
-    io.to(lobbyId).emit("lobby-update", {
-      players: lobby.players,
-      gameState: lobby.gameState,
-    });
-
-    console.log("[Server] Sent lobby-update");
+    await wait(1000);
 
     const shuffledOrder = [...lobby.players]
       .map((player, index) => ({ player, index }))
@@ -277,8 +270,6 @@ io.on("connection", (socket) => {
 
     lobby.players = shuffledOrder;
     console.log("[Server] Shuffled the players' order");
-
-    await wait(1000);
 
     io.to(lobbyId).emit("lobby-update", {
       players: lobby.players,

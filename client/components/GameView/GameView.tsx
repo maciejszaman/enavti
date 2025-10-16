@@ -4,7 +4,6 @@ import * as Shared from "@enavti/shared-types";
 import * as Types from "./GameView.Types";
 import { useChat } from "@/hooks/useChat";
 import { Info, MessageCircleQuestionMark, User } from "lucide-react";
-import { Progress } from "@chakra-ui/react";
 import { ModalContent } from "../Modals";
 
 export default function GameView({
@@ -31,21 +30,21 @@ export default function GameView({
           open: true,
           header: announcementData.message as Shared.ModalType,
         });
-      }
-      if (announcementData.type === "closeModal") {
+      } else if (announcementData.type === "closeModal") {
         setModal({
           open: false,
           header: null,
         });
-      }
-      setAnnouncement({ data: announcementData, open: true });
+      } else {
+        setAnnouncement({ data: announcementData, open: true });
 
-      const duration = announcementData.duration;
-      setTimeout(
-        () =>
-          setAnnouncement((prev) => (prev ? { ...prev, open: false } : null)),
-        duration
-      );
+        const duration = announcementData.duration;
+        setTimeout(
+          () =>
+            setAnnouncement((prev) => (prev ? { ...prev, open: false } : null)),
+          duration
+        );
+      }
     };
 
     socket.on("announcement", handleAnnouncement);
@@ -174,24 +173,27 @@ export default function GameView({
                     {/* STAND */}
                     <div className="absolute bottom-0 z-30 flex flex-col items-center">
                       <div
-                        className={`w-[80px] h-[40px] border-[3px] border-gray-800 font-bold text-center jetbrains whitespace-nowrap  bg-sky-700 flex flex-col ${
+                        className={`w-[80px] h-[40px] border-[3px] border-gray-800 font-bold text-center jetbrains whitespace-nowrap  flex flex-col ${
                           socket?.id === player.id ? "text-amber-300" : ""
                         } ${
                           announcement?.data.targetPlayer === player.id
-                            ? "bg-purple-800 shadow-md shadow-yellow-300"
-                            : ""
+                            ? "bg-purple-800 targetScreen"
+                            : "bg-sky-700"
                         }`}
                       >
                         <span className="text-[0.65rem]">
                           {player.name.toUpperCase()}
                         </span>
-                        <span className="playerLives">{player.lives}</span>
+                        <span className="playerLives">{index + 1}</span>
                       </div>
                       {/* </div> */}
                       <div className="w-[60px] font-[--font-jetbrains] h-[100px] bg-gradient-to-t from-gray-500 to-gray-800 flex justify-around">
-                        <div className="h-full w-1 bg-gradient-to-t from-emerald-300 to-amber-300"></div>
-                        <div className="h-full w-1 bg-gradient-to-t from-emerald-300 to-amber-300"></div>
-                        <div className="h-full w-1 bg-gradient-to-t from-emerald-300 to-amber-300"></div>
+                        {[...Array(player.lives)].map((_, index) => (
+                          <div
+                            key={index}
+                            className="h-full w-1 bg-gradient-to-t from-emerald-300 to-amber-300"
+                          ></div>
+                        ))}
                       </div>
                     </div>
                   </div>
