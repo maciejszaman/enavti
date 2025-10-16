@@ -10,6 +10,7 @@ import { useSocket } from "@/hooks/useSocket";
 import { Copy, Forward, LoaderCircle, Power } from "lucide-react";
 import { Code, Separator } from "@chakra-ui/react";
 import { JoinMenu } from "@/components/JoinMenu/JoinMenu";
+import { motion, useAnimation } from "framer-motion";
 
 export default function LobbyPage() {
   const [playerName, setPlayerName] = useState<string | null>(null);
@@ -20,6 +21,8 @@ export default function LobbyPage() {
   const params = useParams();
   const lobbyId = params.lobbyId as string;
   const router = useRouter();
+
+  const inputControls = useAnimation();
 
   const { socket, players, gameState } = useSocket(lobbyId, router);
 
@@ -34,6 +37,14 @@ export default function LobbyPage() {
 
     socket.emit("lobby-update-req", { lobbyId });
   }, [socket, lobbyId]);
+
+  const handleChatInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+    inputControls.start({
+      scale: [1, 1.025, 1],
+      transition: { duration: 0.1 },
+    });
+    setChatMessage(e.target.value);
+  };
 
   const handleCopyLink = () => {
     const link = `${window.location.origin}/lobby/${lobbyId}`;
@@ -91,14 +102,6 @@ export default function LobbyPage() {
             </span>
           </div>
 
-          {playerName &&
-            socket?.id === players[0]?.id &&
-            gameState === "lobby" && (
-              <div className="absolute top-5 right-5">
-                <button onClick={handleStartGame}>Start Game</button>
-              </div>
-            )}
-
           {!playerName ? (
             <JoinMenu
               socket={socket}
@@ -109,41 +112,84 @@ export default function LobbyPage() {
           ) : (
             <>
               <div className="flex gap-2">
-                <input
+                <motion.input
+                  animate={inputControls}
                   className="container border-b-2 text text-center"
                   placeholder="Type a message..."
                   value={chatMessage}
-                  onChange={(e) => setChatMessage(e.target.value)}
+                  autoFocus
+                  onChange={handleChatInput}
                   onKeyDown={(e) => e.key === "Enter" && handleSendChat()}
                 />
-                <button className="container w-fit flex items-center justify-center">
+                <motion.button
+                  whileTap={{
+                    scale: 0.95,
+                    transition: { duration: 0.1 },
+                  }}
+                  whileHover={{
+                    scale: 1.05,
+                    filter: "brightness(1.5)",
+                    transition: { duration: 0.1 },
+                  }}
+                  className="container w-fit flex items-center justify-center"
+                  onClick={handleSendChat}
+                >
                   <Forward />
-                </button>
+                </motion.button>
               </div>
 
               <div className="divider mt-4 mb-4" />
 
-              <button
+              <motion.button
+                whileTap={{
+                  scale: 0.95,
+                  transition: { duration: 0.1 },
+                }}
+                whileHover={{
+                  scale: 1.05,
+                  filter: "brightness(1.5)",
+                  transition: { duration: 0.1 },
+                }}
                 onClick={handleCopyLink}
                 className="container flex gap-2 justify-center items-center"
               >
                 <Copy size={16} />
                 {copied ? "Copied!" : "Copy Invite Link"}
-              </button>
+              </motion.button>
               <div className="flex gap-2 mt-2">
-                <button onClick={handleLeaveLobby} className="container w-full">
+                <motion.button
+                  whileTap={{
+                    scale: 0.95,
+                    transition: { duration: 0.1 },
+                  }}
+                  whileHover={{
+                    scale: 1.05,
+                    filter: "brightness(1.5)",
+                    transition: { duration: 0.1 },
+                  }}
+                  onClick={handleLeaveLobby}
+                  className="container w-full"
+                >
                   Leave Lobby
-                </button>
+                </motion.button>
 
                 {playerName &&
                   socket?.id === players[0]?.id &&
                   gameState === "lobby" && (
-                    <button
+                    <motion.button
+                      whileTap={{
+                        scale: 0.9,
+                        transition: { duration: 0.1 },
+                      }}
+                      whileHover={{
+                        scale: 1.1,
+                        transition: { duration: 0.1 },
+                      }}
                       onClick={handleStartGame}
                       className="container border-2 border-[#afafaf] border-b-4 bg-white text-[#111111] shadow-md shadow-white/20 w-fit whitespace-nowrap flex gap-2 justify-center items-center"
                     >
                       <Power size={16} /> Start Game
-                    </button>
+                    </motion.button>
                   )}
               </div>
             </>

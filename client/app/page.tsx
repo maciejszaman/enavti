@@ -6,6 +6,7 @@ import axios from "axios";
 import { ERROR_MSG } from "../../lib/constants/errorMessages";
 import toast from "react-hot-toast";
 import { Forward } from "lucide-react";
+import { motion, useAnimation } from "framer-motion";
 
 const CLIENT_URL = process.env.NEXT_PUBLIC_CLIENT_URL || "http://localhost";
 
@@ -13,6 +14,16 @@ export default function Home() {
   const [lobbyCode, setLobbyCode] = useState("");
   const [isCreating, setIsCreating] = useState(false);
   const router = useRouter();
+
+  const controls = useAnimation();
+
+  const handleLobbyInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+    controls.start({
+      scale: [1, 1.05, 1],
+      transition: { duration: 0.1 },
+    });
+    setLobbyCode(e.target.value);
+  };
 
   const handleCreateLobby = async () => {
     setIsCreating(true);
@@ -69,33 +80,52 @@ export default function Home() {
           </div>
           <div className="divider"></div>
           <div className="flex items-center flex-col gap-4 mt-4">
-            <button
+            <motion.button
+              whileTap={{
+                scale: 0.95,
+                transition: { duration: 0.1 },
+              }}
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 0.1 },
+              }}
               className="container font-bold bg-white text-[#111111] border-2 border-[#afafaf] border-b-4 w-full"
               onClick={handleCreateLobby}
               disabled={isCreating}
             >
               {isCreating ? "Creating..." : "Create a lobby"}
-            </button>
+            </motion.button>
 
             <div className="flex gap-2">
-              <input
+              <motion.input
+                animate={controls}
                 className="container border-b-2 text jetbrains text-center"
                 placeholder="Lobby code"
                 value={lobbyCode}
-                onChange={(e) => setLobbyCode(e.target.value)}
+                maxLength={6}
+                onChange={handleLobbyInput}
                 onKeyDown={(e) => {
                   if (e.key === "Enter") {
                     handleJoinLobby();
                   }
                 }}
               />
-              <button
+              <motion.button
+                whileTap={{
+                  scale: 0.95,
+                  transition: { duration: 0.1 },
+                }}
+                whileHover={{
+                  scale: 1.05,
+                  filter: "brightness(1.5)",
+                  transition: { duration: 0.1 },
+                }}
                 className="container font-semibold flex gap-2 justify-center items-center"
                 onClick={handleJoinLobby}
               >
                 Join
                 <Forward size={16} />
-              </button>
+              </motion.button>
             </div>
           </div>
           <div className="divider mt-4"></div>

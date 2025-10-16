@@ -7,14 +7,14 @@
 ## To do:
 
 - [x] get rid of chakraui
-- [ ] animate all UI
+- [x] animate all UI
 - [ ] clean up the server logic
 
 - [ ] better "Shuffling players" UI
 
 - [ ] the gameplay loop
 
-  - [ ] lobby
+  - [x] lobby
   - [x] round one
   - [ ] round two
   - [ ] final round
