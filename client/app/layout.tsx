@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono, Josefin_Sans, Ubuntu } from "next/font/google";
-import { Provider } from "@/components/ui/provider";
 import { Toaster } from "react-hot-toast";
 import "./globals.css";
 
@@ -28,20 +27,18 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${jetbrains.variable} ${ubuntu.variable} antialiased`}>
-        <Provider>
-          <Toaster
-            position="top-right"
-            toastOptions={{
-              duration: 4000,
-              style: {
-                background: "#111111",
-                color: "#fafafa",
-                border: "1px solid #27272a",
-              },
-            }}
-          />
-          {children}
-        </Provider>
+        <Toaster
+          position="top-right"
+          toastOptions={{
+            duration: 4000,
+            style: {
+              background: "#111111",
+              color: "#fafafa",
+              border: "1px solid #27272a",
+            },
+          }}
+        />
+        {children}
       </body>
     </html>
   );

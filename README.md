@@ -12,12 +12,14 @@
 - [ ] clean up the server logic
 
 - [x] better "Shuffling players" UI
+- [x] timer for answering questions
+- [ ] sounds
 
 - [ ] the gameplay loop
 
   - [x] lobby
   - [x] round one
-    - [ ] 3 seconds to answer each question
+    - [x] 3 seconds to answer each question
     - [ ] summary to show who goes to the second round
   - [ ] round two
   - [ ] final round

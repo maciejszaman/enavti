@@ -16,8 +16,8 @@ export const ShufflingPlayers = ({ data }: ShufflingPlayersProps) => {
 
   return (
     <div className="flex flex-col p-2 text-center">
-      <div className="text-2xl p-2">Shuffling players</div>
-      <div className="h-[2px] bg-[#27272a]"></div>
+      <div className="text-2xl p-2">Players</div>
+      <div className="h-[2px] bg-[#27272a] mb-2"></div>
 
       {isShuffling ? (
         <motion.div
@@ -35,10 +35,10 @@ export const ShufflingPlayers = ({ data }: ShufflingPlayersProps) => {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               className="grid grid-cols-2 border-b border-[#27272a] last:border-0"
-              transition={{ delay: index * 1, duration: 1 }}
+              transition={{ delay: index * 1, duration: 1, type: "spring" }}
             >
               <div className="p-2 text-left">{player.name}</div>
-              <div className="p-2 text-right">{index + 1}</div>
+              <div className="p-2 text-amber-300 text-right">{index + 1}.</div>
             </motion.div>
           ))}
         </div>

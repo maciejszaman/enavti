@@ -6,6 +6,21 @@ import { useChat } from "@/hooks/useChat";
 import { Info, MessageCircleQuestionMark, User } from "lucide-react";
 import { ModalContent } from "../Modals";
 
+const getBackgroundImage = (gameState: Shared.GameState): string => {
+  switch (gameState) {
+    case "lobby":
+      return "/bg-green.webp";
+    case "roundOne":
+      return "/bg-blue.webp";
+    case "roundTwo":
+      return "/bg-purple.webp";
+    case "roundThree":
+      return "/bg-orange.webp";
+    default:
+      return "/bg-blue.webp";
+  }
+};
+
 export default function GameView({
   players,
   currentPlayerId,
@@ -13,6 +28,10 @@ export default function GameView({
   gameState,
 }: Types.GameViewProps) {
   const { getChatBubbleForPlayer } = useChat(socket);
+  const backgroundImage = useMemo(
+    () => getBackgroundImage(gameState),
+    [gameState]
+  );
   const [announcement, setAnnouncement] = useState<{
     data: Shared.Announcement;
     open: boolean;
@@ -21,6 +40,35 @@ export default function GameView({
     open: false,
     header: null,
   });
+  const [timer, setTimer] = useState<{
+    timeRemaining: number;
+    totalTime: number;
+    targetPlayer: string;
+  } | null>(null);
+
+  const announcementTimeoutRef = React.useRef<NodeJS.Timeout | null>(null);
+
+  useEffect(() => {
+    const currentPlayer = players.find((p) => p.id === currentPlayerId);
+
+    if (!currentPlayer) {
+      document.title = "ENAVTI";
+      return;
+    }
+
+    switch (gameState) {
+      case "lobby":
+        document.title = `${currentPlayer.name} - ${players.length}/10`;
+        break;
+      case "roundOne":
+      case "roundTwo":
+      case "roundThree":
+        break;
+      default:
+        document.title = "ENAVTI";
+    }
+  }, [gameState, players, currentPlayerId]);
+
   useEffect(() => {
     if (!socket) return;
 
@@ -36,26 +84,77 @@ export default function GameView({
           header: null,
         });
       } else {
+        if (announcementTimeoutRef.current) {
+          clearTimeout(announcementTimeoutRef.current);
+        }
+
         setAnnouncement({ data: announcementData, open: true });
 
         const duration = announcementData.duration;
-        setTimeout(
-          () =>
-            setAnnouncement((prev) => (prev ? { ...prev, open: false } : null)),
-          duration
-        );
+        announcementTimeoutRef.current = setTimeout(() => {
+          setAnnouncement((prev) => (prev ? { ...prev, open: false } : null));
+          announcementTimeoutRef.current = null;
+        }, duration);
       }
     };
 
+    const handleTimerUpdate = (timerData: Shared.TimerUpdate) => {
+      setTimer(timerData);
+    };
+
+    const handleTimerStop = () => {
+      setTimer(null);
+    };
+
     socket.on("announcement", handleAnnouncement);
+    socket.on("timer-update", handleTimerUpdate);
+    socket.on("timer-stop", handleTimerStop);
 
     return () => {
       socket.off("announcement");
+      socket.off("timer-update");
+      socket.off("timer-stop");
+      if (announcementTimeoutRef.current) {
+        clearTimeout(announcementTimeoutRef.current);
+      }
     };
   }, [socket]);
 
   return (
-    <div className="relative w-full h-[500px] bg-[url(/background.webp)] bg-cover rounded-lg overflow-hidden border-2 border-[#27272a]">
+    <div
+      className="relative w-full h-[500px] bg-cover rounded-lg overflow-hidden border-2 border-[#27272a]"
+      style={{ backgroundImage: `url(${backgroundImage})` }}
+    >
+      {/* Timer Bar*/}
+      <AnimatePresence>
+        {timer &&
+          timer.targetPlayer === currentPlayerId &&
+          timer.totalTime > 0 && (
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.2 }}
+              className="absolute top-0 left-0 right-0 h-2 z-50 pointer-events-none"
+            >
+              <div className="relative w-full h-full bg-white/10">
+                <motion.div
+                  className="h-full transition-all duration-100 ease-linear"
+                  style={{
+                    width: `${(timer.timeRemaining / timer.totalTime) * 100}%`,
+                    backgroundColor:
+                      timer.timeRemaining > 1000
+                        ? "#ffffff"
+                        : timer.timeRemaining > 250
+                        ? "#f59e0b"
+                        : "#ef4444",
+                  }}
+                />
+              </div>
+            </motion.div>
+          )}
+      </AnimatePresence>
+
       {/* Announcement */}
       <AnimatePresence>
         {announcement?.open && (
@@ -173,7 +272,7 @@ export default function GameView({
                     {/* STAND */}
                     <div className="absolute bottom-0 z-30 flex flex-col items-center">
                       <div
-                        className={`w-[80px] h-[40px] border-[3px] border-gray-800 font-bold text-center jetbrains whitespace-nowrap  flex flex-col ${
+                        className={`w-[80px] h-[60px] border-[3px] border-gray-800 font-bold text-center jetbrains whitespace-nowrap  flex flex-col justify-around ${
                           socket?.id === player.id ? "text-amber-300" : ""
                         } ${
                           announcement?.data.targetPlayer === player.id
@@ -181,13 +280,18 @@ export default function GameView({
                             : "bg-sky-700"
                         }`}
                       >
+                        <div className="lives flex justify-center gap-2">
+                          {[...Array(player.lives)].map((_, index) => (
+                            <div key={index} className="h-2 w-2 bg-amber-300" />
+                          ))}
+                        </div>
                         <span className="text-[0.65rem]">
                           {player.name.toUpperCase()}
                         </span>
-                        <span className="playerLives">{index + 1}</span>
+                        <span className="text-xl leading-5">{index + 1}</span>
                       </div>
                       {/* </div> */}
-                      <div className="w-[60px] font-[--font-jetbrains] h-[100px] bg-gradient-to-t from-gray-500 to-gray-800 flex justify-around">
+                      <div className="w-[60px] font-[--font-jetbrains] h-[80px] bg-gradient-to-t from-gray-500 to-gray-800 flex justify-around">
                         {[...Array(player.lives)].map((_, index) => (
                           <div
                             key={index}

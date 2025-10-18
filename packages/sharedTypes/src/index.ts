@@ -24,6 +24,7 @@ export interface Lobby {
     answer: string;
     targetPlayer: string;
     askedAt: Date;
+    timeoutId?: NodeJS.Timeout;
   };
   roundOneQuestions?: Question[];
   currentQuestionIndex?: number;
@@ -49,6 +50,12 @@ export interface Announcement {
 export interface Modal {
   header: ModalType | null;
   open: boolean;
+}
+
+export interface TimerUpdate {
+  timeRemaining: number;
+  totalTime: number;
+  targetPlayer: string;
 }
 
 export type ModalType =

@@ -104,6 +104,7 @@ io.on("connection", (socket) => {
       lobby.players.push({
         id: socket.id,
         name: playerName,
+        lives: 3,
         character: {
           character: character.character,
           clothesColor: character.clothesColor,
@@ -161,6 +162,18 @@ io.on("connection", (socket) => {
       lobby.activeQuestion &&
       lobby.activeQuestion.targetPlayer === socket.id
     ) {
+      if (lobby.activeQuestion.timeoutId) {
+        clearInterval(lobby.activeQuestion.timeoutId);
+        lobby.activeQuestion.timeoutId = undefined;
+      }
+
+      io.to(lobbyId).emit("timer-stop");
+      io.to(lobbyId).emit("timer-update", {
+        timeRemaining: 0,
+        totalTime: 0,
+        targetPlayer: "",
+      } as Shared.TimerUpdate);
+
       io.to(lobbyId).emit("chat-message-broadcast", {
         playerId: player.id,
         playerName: player.name,
@@ -240,7 +253,7 @@ io.on("connection", (socket) => {
     lobby.gameState = "roundOne";
 
     lobby.players.forEach((player) => {
-      player.lives = 2;
+      player.lives = 3;
       player.score = 0;
     });
 
@@ -348,6 +361,14 @@ const continueRoundOne = async (lobby: Shared.Lobby, lobbyId: string) => {
   ) {
     console.log("[Server] Round One completed!");
     const completionDuration = 2000;
+
+    io.to(lobbyId).emit("timer-stop");
+    io.to(lobbyId).emit("timer-update", {
+      timeRemaining: 0,
+      totalTime: 0,
+      targetPlayer: "",
+    } as Shared.TimerUpdate);
+
     io.to(lobbyId).emit("announcement", {
       type: "info",
       message: "Round One completed!",
@@ -357,6 +378,13 @@ const continueRoundOne = async (lobby: Shared.Lobby, lobbyId: string) => {
     await wait(completionDuration + 1000);
     return;
   }
+
+  io.to(lobbyId).emit("timer-stop");
+  io.to(lobbyId).emit("timer-update", {
+    timeRemaining: 0,
+    totalTime: 0,
+    targetPlayer: "",
+  } as Shared.TimerUpdate);
 
   await askNextQuestion(lobby, lobbyId);
 };
@@ -392,7 +420,7 @@ const askNextQuestion = async (lobby: Shared.Lobby, lobbyId: string) => {
   console.log(`[Server] ${lobby.activeQuestion?.text}`);
   console.log(`[Server] ${lobby.activeQuestion.answer}`);
 
-  const duration = currentQuestion.question.split(" ").length * 600 + 1000;
+  const duration = currentQuestion.question.split(" ").length * 500 + 1000;
 
   io.to(lobbyId).emit("announcement", {
     type: "question",
@@ -401,7 +429,93 @@ const askNextQuestion = async (lobby: Shared.Lobby, lobbyId: string) => {
     duration: duration,
   } as any);
 
-  await wait(duration + 1000);
+  await wait(duration);
+
+  if (
+    !lobby.activeQuestion ||
+    lobby.activeQuestion.questionId !== currentQuestion.id
+  ) {
+    console.log(
+      `[Server] Question was already answered during announcement, skipping timer`
+    );
+    return;
+  }
+
+  startAnswerTimer(lobby, lobbyId, targetPlayer);
+};
+
+const startAnswerTimer = (
+  lobby: Shared.Lobby,
+  lobbyId: string,
+  targetPlayer: Shared.Player
+) => {
+  const ANSWER_TIME = 3000;
+  const TICK_INTERVAL = 100;
+  let timeRemaining = ANSWER_TIME;
+
+  if (lobby.activeQuestion?.timeoutId) {
+    clearTimeout(lobby.activeQuestion.timeoutId);
+  }
+
+  const timerInterval = setInterval(() => {
+    timeRemaining -= TICK_INTERVAL;
+
+    if (timeRemaining <= 0) {
+      clearInterval(timerInterval);
+      handleTimeout(lobby, lobbyId, targetPlayer);
+      return;
+    }
+
+    io.to(lobbyId).emit("timer-update", {
+      timeRemaining,
+      totalTime: ANSWER_TIME,
+      targetPlayer: targetPlayer.id,
+    } as Shared.TimerUpdate);
+  }, TICK_INTERVAL);
+
+  if (lobby.activeQuestion) {
+    lobby.activeQuestion.timeoutId = timerInterval as any;
+  }
+};
+
+const handleTimeout = async (
+  lobby: Shared.Lobby,
+  lobbyId: string,
+  targetPlayer: Shared.Player
+) => {
+  if (!lobby.activeQuestion) return;
+
+  console.log(`[Server] ${targetPlayer.name} ran out of time`);
+
+  io.to(lobbyId).emit("timer-stop");
+  io.to(lobbyId).emit("timer-update", {
+    timeRemaining: 0,
+    totalTime: 0,
+    targetPlayer: "",
+  } as Shared.TimerUpdate);
+
+  if (targetPlayer.lives !== undefined && targetPlayer.lives > 0) {
+    targetPlayer.lives -= 1;
+    const announcementDuration = 3000;
+
+    io.to(lobbyId).emit("announcement", {
+      type: "info",
+      message: `To "${lobby.activeQuestion.answer}"`,
+      duration: announcementDuration,
+    } as Shared.Announcement);
+
+    console.log(`[Server] ${targetPlayer.name} lost a life.`);
+  }
+
+  io.to(lobbyId).emit("lobby-update", {
+    players: lobby.players,
+    gameState: lobby.gameState,
+  });
+
+  delete lobby.activeQuestion;
+
+  await wait(3000 + 1000);
+  continueRoundOne(lobby, lobbyId);
 };
 
 const PORT = process.env.PORT || 3001;
