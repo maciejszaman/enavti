@@ -324,7 +324,8 @@ const prepareRoundOneQuestions = (players: Shared.Player[]) => {
   };
   const questionsPath = join(__dirname, "questions.json");
   const questionsData = readFileSync(questionsPath, "utf-8");
-  const allQuestions: Shared.Question[] = JSON.parse(questionsData);
+  const questionsJson = JSON.parse(questionsData);
+  const allQuestions: Shared.Question[] = questionsJson.round1;
 
   const shuffledQuestions = shuffleArray(allQuestions);
 
@@ -454,7 +455,7 @@ const startAnswerTimer = (
   let timeRemaining = ANSWER_TIME;
 
   if (lobby.activeQuestion?.timeoutId) {
-    clearTimeout(lobby.activeQuestion.timeoutId);
+    clearInterval(lobby.activeQuestion.timeoutId);
   }
 
   const timerInterval = setInterval(() => {
@@ -474,7 +475,7 @@ const startAnswerTimer = (
   }, TICK_INTERVAL);
 
   if (lobby.activeQuestion) {
-    lobby.activeQuestion.timeoutId = timerInterval as any;
+    lobby.activeQuestion.timeoutId = timerInterval;
   }
 };
 

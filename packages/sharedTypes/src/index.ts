@@ -8,9 +8,10 @@ export interface Player {
 
 export interface Question {
   id: number;
+  category?: string;
   question: string;
   answer: string;
-  multiple_choice: boolean;
+  source?: string;
 }
 
 export interface Lobby {
@@ -24,7 +25,7 @@ export interface Lobby {
     answer: string;
     targetPlayer: string;
     askedAt: Date;
-    timeoutId?: NodeJS.Timeout;
+    timeoutId?: ReturnType<typeof setInterval>;
   };
   roundOneQuestions?: Question[];
   currentQuestionIndex?: number;
