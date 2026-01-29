@@ -30,7 +30,7 @@ export default function GameView({
   const { getChatBubbleForPlayer } = useChat(socket);
   const backgroundImage = useMemo(
     () => getBackgroundImage(gameState),
-    [gameState]
+    [gameState],
   );
   const [announcement, setAnnouncement] = useState<{
     data: Shared.Announcement;
@@ -146,8 +146,8 @@ export default function GameView({
                       timer.timeRemaining > 1000
                         ? "#ffffff"
                         : timer.timeRemaining > 250
-                        ? "#f59e0b"
-                        : "#ef4444",
+                          ? "#f59e0b"
+                          : "#ef4444",
                   }}
                 />
               </div>
@@ -314,16 +314,14 @@ export default function GameView({
       </div>
 
       {/* Game state */}
-      <div className="container w-fit absolute top-4 left-4 flex gap-2">
-        {gameState === "lobby" ? (
+      {gameState === "lobby" ? (
+        <div className="container w-fit absolute top-4 left-4 flex gap-2">
           <>
             <User />
             <span>{players.length}</span>
           </>
-        ) : (
-          "Round One"
-        )}
-      </div>
+        </div>
+      ) : null}
     </div>
   );
 }

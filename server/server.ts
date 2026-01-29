@@ -158,7 +158,9 @@ io.on("connection", (socket) => {
     const player = lobby.players.find((p) => p.id === socket.id);
     if (!player) return;
 
+    // ROUND ONE LOGIC
     if (
+      lobby.gameState === "roundOne" &&
       lobby.activeQuestion &&
       lobby.activeQuestion.targetPlayer === socket.id
     ) {
@@ -230,6 +232,181 @@ io.on("connection", (socket) => {
       return;
     }
 
+    // ROUND TWO LOGIC
+    if (lobby.gameState === "roundTwo") {
+      // HANDLE ANSWER FROM TARGET
+      if (
+        lobby.activeQuestion &&
+        lobby.activeQuestion.targetPlayer === socket.id
+      ) {
+        if (lobby.activeQuestion.timeoutId) {
+          clearInterval(lobby.activeQuestion.timeoutId);
+          lobby.activeQuestion.timeoutId = undefined;
+        }
+
+        io.to(lobbyId).emit("timer-stop");
+        io.to(lobbyId).emit("timer-update", {
+          timeRemaining: 0,
+          totalTime: 0,
+          targetPlayer: "",
+        } as Shared.TimerUpdate);
+
+        io.to(lobbyId).emit("chat-message-broadcast", {
+          playerId: player.id,
+          playerName: player.name,
+          message: message,
+          timestamp: Date.now(),
+        });
+
+        const userAnswer = message.trim().toLowerCase();
+        const correctAnswer = lobby.activeQuestion.answer.trim().toLowerCase();
+
+        let announcementDuration = 0;
+
+        if (userAnswer.includes(correctAnswer)) {
+          console.log(`[Server] ${player.name} answered correctly in Round Two`);
+          announcementDuration = 2000;
+          io.to(lobbyId).emit("announcement", {
+            type: "info",
+            message: "Dobrze.",
+            duration: announcementDuration,
+          } as Shared.Announcement);
+
+          if (player.score !== undefined) {
+            player.score += 1;
+          }
+
+          // player chooses next player
+          lobby.roundTwoState = {
+            currentPlayerIndex: lobby.players.indexOf(player),
+            waitingForPlayerChoice: true,
+            currentChooser: player.id,
+            lastChooser: player.id,
+          };
+
+          console.log(
+            `[Server] ${player.name} is choosing the next player to answer`
+          );
+
+          io.to(lobbyId).emit("lobby-update", {
+            players: lobby.players,
+            gameState: lobby.gameState,
+          });
+
+          delete lobby.activeQuestion;
+
+          await wait(announcementDuration + 1000);
+
+          io.to(lobbyId).emit("announcement", {
+            type: "info",
+            message: `${player.name}, wybierz następnego gracza (1-${lobby.players.length})`,
+            duration: 15000,
+          } as Shared.Announcement);
+        } else {
+          console.log(`[Server] ${player.name} answered incorrectly in Round Two`);
+
+          if (player.lives !== undefined && player.lives > 0) {
+            player.lives -= 1;
+            announcementDuration = 3000;
+
+            io.to(lobbyId).emit("announcement", {
+              type: "info",
+              message: `Nie, to "${correctAnswer}"`,
+              duration: announcementDuration,
+            } as Shared.Announcement);
+
+            console.log(
+              `[Server] ${player.name} lost a life. Lives: ${player.lives}`
+            );
+          }
+
+          io.to(lobbyId).emit("lobby-update", {
+            players: lobby.players,
+            gameState: lobby.gameState,
+          });
+
+          delete lobby.activeQuestion;
+
+          await wait(announcementDuration + 1000);
+          
+          // CHECK IF CHOSEN
+          if (lobby.roundTwoState?.lastChooser && lobby.roundTwoState.lastChooser !== player.id) {
+            // CHOOSER - CHOOSE AGAIN
+            const chooserPlayer = lobby.players.find(p => p.id === lobby.roundTwoState?.lastChooser);
+            
+            if (chooserPlayer) {
+              lobby.roundTwoState.waitingForPlayerChoice = true;
+              lobby.roundTwoState.currentChooser = chooserPlayer.id;
+              
+              console.log(
+                `[Server] ${chooserPlayer.name} gets to choose again after ${player.name} failed`
+              );
+
+              io.to(lobbyId).emit("announcement", {
+                type: "info",
+                message: `${chooserPlayer.name}, wybierz następnego gracza (1-${lobby.players.length})`,
+                duration: 15000,
+              } as Shared.Announcement);
+            } else {
+              // TEMPORARY
+              continueRoundTwo(lobby, lobbyId, false);
+            }
+          } else {
+            // SHOULDNT HAPPEN
+            continueRoundTwo(lobby, lobbyId, false);
+          }
+        }
+
+        return;
+      }
+
+      // Handle player selection from the chooser
+      if (
+        lobby.roundTwoState?.waitingForPlayerChoice &&
+        lobby.roundTwoState.currentChooser === socket.id
+      ) {
+        const choiceNumber = parseInt(message.trim());
+
+        if (
+          isNaN(choiceNumber) ||
+          choiceNumber < 1 ||
+          choiceNumber > lobby.players.length
+        ) {
+          io.to(socket.id).emit("announcement", {
+            type: "info",
+            message: `Wybierz numer od 1 do ${lobby.players.length}`,
+            duration: 2000,
+          } as Shared.Announcement);
+          return;
+        }
+
+        io.to(lobbyId).emit("chat-message-broadcast", {
+          playerId: player.id,
+          playerName: player.name,
+          message: message,
+          timestamp: Date.now(),
+        });
+
+        const selectedPlayerIndex = choiceNumber - 1;
+        lobby.roundTwoState.nextPlayerIndex = selectedPlayerIndex;
+        lobby.roundTwoState.waitingForPlayerChoice = false;
+
+        const selectedPlayer = lobby.players[selectedPlayerIndex];
+        io.to(lobbyId).emit("announcement", {
+          type: "info",
+          message: `${selectedPlayer.name} został wybrany!`,
+          duration: 2000,
+        } as Shared.Announcement);
+
+        await wait(3000);
+
+        continueRoundTwo(lobby, lobbyId, true);
+
+        return;
+      }
+    }
+
+    // Regular chat message
     io.to(lobbyId).emit("chat-message-broadcast", {
       playerId: playerId,
       playerName: player.name,
@@ -240,8 +417,8 @@ io.on("connection", (socket) => {
     console.log(`[Server] ${player.name}: ${message}`);
     console.log(lobby.gameState);
   });
-  // START GAME LOGIC
 
+  // START GAME LOGIC
   const wait = (ms: number) =>
     new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -336,6 +513,23 @@ const prepareRoundOneQuestions = (players: Shared.Player[]) => {
   return selectedQuestions;
 };
 
+const prepareRoundTwoQuestions = () => {
+  const shuffleArray = <T>(array: T[]): T[] => {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+  };
+  const questionsPath = join(__dirname, "questions.json");
+  const questionsData = readFileSync(questionsPath, "utf-8");
+  const questionsJson = JSON.parse(questionsData);
+  const allQuestions: Shared.Question[] = questionsJson.round2 || questionsJson.round1;
+
+  return shuffleArray(allQuestions);
+};
+
 const playRoundOne = (lobby: Shared.Lobby, lobbyId: string) => {
   if (!lobby.roundOneQuestions || lobby.roundOneQuestions.length === 0) {
     console.log("[Server] No questions available for Round One");
@@ -373,10 +567,13 @@ const continueRoundOne = async (lobby: Shared.Lobby, lobbyId: string) => {
     io.to(lobbyId).emit("announcement", {
       type: "info",
       message: "Round One completed!",
-      duration: 2000,
+      duration: completionDuration,
     } as Shared.Announcement);
 
     await wait(completionDuration + 1000);
+
+    // Start Round Two
+    startRoundTwo(lobby, lobbyId);
     return;
   }
 
@@ -516,7 +713,201 @@ const handleTimeout = async (
   delete lobby.activeQuestion;
 
   await wait(3000 + 1000);
-  continueRoundOne(lobby, lobbyId);
+
+  if (lobby.gameState === "roundOne") {
+    continueRoundOne(lobby, lobbyId);
+  } else if (lobby.gameState === "roundTwo") {
+    // Check if player was chosen by someone else
+    if (lobby.roundTwoState?.lastChooser && lobby.roundTwoState.lastChooser !== targetPlayer.id) {
+      // The chooser gets to pick again
+      const chooserPlayer = lobby.players.find(p => p.id === lobby.roundTwoState?.lastChooser);
+      
+      if (chooserPlayer) {
+        lobby.roundTwoState.waitingForPlayerChoice = true;
+        lobby.roundTwoState.currentChooser = chooserPlayer.id;
+        
+        console.log(
+          `[Server] ${chooserPlayer.name} gets to choose again after ${targetPlayer.name} timed out`
+        );
+
+        io.to(lobbyId).emit("announcement", {
+          type: "info",
+          message: `${chooserPlayer.name}, wybierz następnego gracza (1-${lobby.players.length})`,
+          duration: 15000,
+        } as Shared.Announcement);
+      } else {
+        continueRoundTwo(lobby, lobbyId, false);
+      }
+    } else {
+      continueRoundTwo(lobby, lobbyId, false);
+    }
+  }
+};
+
+// ROUND TWO
+const startRoundTwo = async (lobby: Shared.Lobby, lobbyId: string) => {
+  console.log("[Server] Starting Round Two");
+
+  lobby.gameState = "roundTwo";
+  lobby.roundTwoQuestions = prepareRoundTwoQuestions();
+  lobby.currentQuestionIndex = 0;
+
+  io.to(lobbyId).emit("announcement", {
+    type: "info",
+    message: "Druga runda!",
+    duration: 3000,
+  } as Shared.Announcement);
+
+  io.to(lobbyId).emit("lobby-update", {
+    players: lobby.players,
+    gameState: lobby.gameState,
+  });
+
+  await wait(4000);
+
+  playRoundTwo(lobby, lobbyId);
+};
+
+const playRoundTwo = (lobby: Shared.Lobby, lobbyId: string) => {
+  if (!lobby.roundTwoQuestions || lobby.roundTwoQuestions.length === 0) {
+    console.log("[Server] No questions available for Round Two");
+    return;
+  }
+
+  // Start with player 1 (index 0)
+  lobby.roundTwoState = {
+    currentPlayerIndex: 0,
+    waitingForPlayerChoice: false,
+  };
+
+  askRoundTwoQuestion(lobby, lobbyId, 0);
+};
+
+const continueRoundTwo = async (
+  lobby: Shared.Lobby,
+  lobbyId: string,
+  playerChoseNext: boolean
+) => {
+  // Check if round should end
+
+  //CONFIGURABLE No. OF PLAYERS TO END 
+  const activePlayers = lobby.players.filter((p) => p.lives && p.lives > 0);
+  const minPlayersToEnd = lobby.players.length < 5 ? 2 : 3;
+
+  if (activePlayers.length <= minPlayersToEnd) {
+    console.log("[Server] Round Two completed!");
+    
+    io.to(lobbyId).emit("announcement", {
+      type: "info",
+      message: "Koniec rundy drugiej",
+      duration: 3000,
+    } as Shared.Announcement);
+
+    lobby.gameState = "ended";
+    
+    io.to(lobbyId).emit("lobby-update", {
+      players: lobby.players,
+      gameState: lobby.gameState,
+    });
+
+    return;
+  }
+
+  let nextPlayerIndex: number;
+
+  if (playerChoseNext && lobby.roundTwoState?.nextPlayerIndex !== undefined) {
+    // Player chose the next player
+    nextPlayerIndex = lobby.roundTwoState.nextPlayerIndex;
+  } else {
+    // Move to next player in sequence
+    if (!lobby.roundTwoState) {
+      lobby.roundTwoState = { currentPlayerIndex: 0, waitingForPlayerChoice: false };
+    }
+    
+    nextPlayerIndex = (lobby.roundTwoState.currentPlayerIndex + 1) % lobby.players.length;
+    
+    // Skip players with no lives
+    let attempts = 0;
+    while (
+      (!lobby.players[nextPlayerIndex] || (lobby.players[nextPlayerIndex].lives ?? 0) <= 0) &&
+      attempts < lobby.players.length
+    ) {
+      nextPlayerIndex = (nextPlayerIndex + 1) % lobby.players.length;
+      attempts++;
+    }
+    
+    // Clear lastChooser when moving sequentially
+    if (lobby.roundTwoState) {
+      lobby.roundTwoState.lastChooser = undefined;
+    }
+  }
+
+  lobby.roundTwoState.currentPlayerIndex = nextPlayerIndex;
+  lobby.roundTwoState.nextPlayerIndex = undefined;
+
+  await wait(1000);
+  askRoundTwoQuestion(lobby, lobbyId, nextPlayerIndex);
+};
+
+const askRoundTwoQuestion = async (
+  lobby: Shared.Lobby,
+  lobbyId: string,
+  playerIndex: number
+) => {
+  if (!lobby.roundTwoQuestions || lobby.roundTwoQuestions.length === 0) {
+    console.log("[Server] No more questions for Round Two");
+    return;
+  }
+
+  // Get a random question
+  const randomIndex = Math.floor(Math.random() * lobby.roundTwoQuestions.length);
+  const currentQuestion = lobby.roundTwoQuestions[randomIndex];
+  
+  const targetPlayer = lobby.players[playerIndex];
+
+  if (!targetPlayer || !targetPlayer.lives || targetPlayer.lives <= 0) {
+    console.log("[Server] Target player has no lives, moving to next");
+    // continueRoundTwo(lobby, lobbyId, false);
+    return;
+  }
+
+  console.log(
+    `[Server] Round Two: Asking question to ${targetPlayer.name}`
+  );
+
+  lobby.activeQuestion = {
+    questionId: currentQuestion.id,
+    text: currentQuestion.question,
+    answer: currentQuestion.answer,
+    targetPlayer: targetPlayer.id,
+    askedAt: new Date(),
+  };
+
+  console.log(`[Server] ${lobby.activeQuestion?.text}`);
+  console.log(`[Server] ${lobby.activeQuestion.answer}`);
+
+  const duration = currentQuestion.question.split(" ").length * 500 + 1000;
+
+  io.to(lobbyId).emit("announcement", {
+    type: "question",
+    message: currentQuestion.question,
+    targetPlayer: targetPlayer.id,
+    duration: duration,
+  } as any);
+
+  await wait(duration);
+
+  if (
+    !lobby.activeQuestion ||
+    lobby.activeQuestion.questionId !== currentQuestion.id
+  ) {
+    console.log(
+      `[Server] Question was already answered during announcement, skipping timer`
+    );
+    return;
+  }
+
+  startAnswerTimer(lobby, lobbyId, targetPlayer);
 };
 
 const PORT = process.env.PORT || 3001;

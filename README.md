@@ -1,4 +1,4 @@
-﻿# EN.AV.TI v0.4
+﻿# EN.AV.TI v0.5
 
 ### online browser gameshow with friends
 
@@ -16,7 +16,6 @@
 - [ ] sounds
 
 - [ ] the gameplay loop
-
   - [x] lobby
   - [x] round one
     - [x] 3 seconds to answer each question
@@ -26,7 +25,6 @@
   - [ ] post-game summary
 
 - [ ] characters
-
   - [ ] 4 different characters
   - [ ] 4 skins for each
   - [ ] animations

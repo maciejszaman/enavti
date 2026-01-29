@@ -28,6 +28,16 @@ export interface Lobby {
     timeoutId?: ReturnType<typeof setInterval>;
   };
   roundOneQuestions?: Question[];
+  roundTwoQuestions?: Question[];
+  roundTwoState?:{
+    currentPlayerIndex: number;
+    waitingForPlayerChoice: boolean
+    currentChooser?: string | null;
+    nextPlayerIndex?: number;
+    lastChooser?: string;
+  }
+
+  roundThreeQuestions?: Question[];
   currentQuestionIndex?: number;
 }
 
