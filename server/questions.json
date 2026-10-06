@@ -1539,6 +1539,2351 @@
       "question": "Kto jest autorem powieści Oliver Twist?",
       "answer": "Karol Dickens",
       "source": "Seria 99 odcinek 19 26.05.2017"
+    },
+    {
+      "id": 1022,
+      "category": "Informatyka",
+      "question": "Jak nazywa się urządzenie wskazujące, którym poruszamy kursor po ekranie?",
+      "answer": "mysz",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1023,
+      "category": "Informatyka",
+      "question": "Jakim skrótem oznacza się pamięć o dostępie swobodnym w komputerze?",
+      "answer": "RAM",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1024,
+      "category": "Informatyka",
+      "question": "Ile bitów ma jeden bajt?",
+      "answer": "8",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1025,
+      "category": "Informatyka",
+      "question": "Jak nazywa się program służący do przeglądania stron internetowych?",
+      "answer": "przeglądarka",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1026,
+      "category": "Informatyka",
+      "question": "Czy klawiatura jest urządzeniem wejściowym?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1027,
+      "category": "Informatyka",
+      "question": "Jak nazywa się złośliwy program, który powiela się, dołączając do innych plików?",
+      "answer": "wirus",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1028,
+      "category": "Informatyka",
+      "question": "Który klawisz zatwierdza polecenie i przenosi kursor do nowej linii?",
+      "answer": "Enter",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1029,
+      "category": "Informatyka",
+      "question": "Jak potocznie nazywa się znak @ w adresie e-mail?",
+      "answer": "małpa",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1030,
+      "category": "Informatyka",
+      "question": "Czy drukarka jest urządzeniem wyjściowym?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1031,
+      "category": "Informatyka",
+      "question": "Jak potocznie nazywa się przenośną pamięć USB?",
+      "answer": "pendrive",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1032,
+      "category": "Informatyka",
+      "question": "Która firma produkuje system operacyjny Windows?",
+      "answer": "Microsoft",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1033,
+      "category": "Informatyka",
+      "question": "Jak nazywa się podzespół komputera nazywany jego „mózgiem”?",
+      "answer": "procesor",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1034,
+      "category": "Informatyka",
+      "question": "Jak nazywa się tajny ciąg znaków chroniący dostęp do konta?",
+      "answer": "hasło",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1035,
+      "category": "Informatyka",
+      "question": "Ilu cyfr używa system dwójkowy?",
+      "answer": "2",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1036,
+      "category": "Informatyka",
+      "question": "Jak nazywa się mały obrazek wyrażający emocje w wiadomościach, np. uśmiechnięta buźka?",
+      "answer": "emotikon",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1037,
+      "category": "Informatyka",
+      "question": "Czy Linux jest systemem operacyjnym?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1038,
+      "category": "Informatyka",
+      "question": "Do czego służy skrót klawiszowy Ctrl+C – do kopiowania czy do wklejania?",
+      "answer": "kopiowanie",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1039,
+      "category": "Informatyka",
+      "question": "Jak nazywa się bezprzewodowa sieć lokalna, z którą łączymy telefon w domu?",
+      "answer": "Wi-Fi",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1040,
+      "category": "Informatyka",
+      "question": "Jak nazywa się najpopularniejsza wyszukiwarka internetowa świata?",
+      "answer": "Google",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1041,
+      "category": "Informatyka",
+      "question": "Jakie rozszerzenie mają zwykle dokumenty programu Word – .docx czy .xlsx?",
+      "answer": "docx",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1042,
+      "category": "Informatyka",
+      "question": "Jak po angielsku nazywa się kopia zapasowa danych?",
+      "answer": "backup",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1043,
+      "category": "Informatyka",
+      "question": "Jak nazywa się program do tworzenia arkuszy kalkulacyjnych firmy Microsoft?",
+      "answer": "Excel",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1044,
+      "category": "Informatyka",
+      "question": "Jak nazywa się edytor tekstu firmy Microsoft?",
+      "answer": "Word",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1045,
+      "category": "Informatyka",
+      "question": "Jak nazywa się system operacyjny w telefonach iPhone?",
+      "answer": "iOS",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1046,
+      "category": "Informatyka",
+      "question": "Jak nazywa się system operacyjny Google dla smartfonów?",
+      "answer": "Android",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1047,
+      "category": "Informatyka",
+      "question": "Który klawisz usuwa znak znajdujący się przed kursorem?",
+      "answer": "Backspace",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1048,
+      "category": "Informatyka",
+      "question": "Czy pliki zapisane „w chmurze” są przechowywane na serwerach w internecie?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1049,
+      "category": "Informatyka",
+      "question": "Jakie urządzenie łączy domowe komputery i telefony z internetem?",
+      "answer": "router",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1050,
+      "category": "Informatyka",
+      "question": "Do czego służy skrót klawiszowy Ctrl+V – do kopiowania czy do wklejania?",
+      "answer": "wklejanie",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1051,
+      "category": "Informatyka",
+      "question": "Jak nazywa się serwis z filmami wideo, należący do Google?",
+      "answer": "YouTube",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1052,
+      "category": "Informatyka",
+      "question": "Jak nazywa się zdjęcie, które robimy sami sobie telefonem?",
+      "answer": "selfie",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1053,
+      "category": "Informatyka",
+      "question": "Jak nazywa się krótka wiadomość tekstowa wysyłana z telefonu komórkowego?",
+      "answer": "SMS",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1054,
+      "category": "Informatyka",
+      "question": "Jak nazywa się urządzenie do przenoszenia papierowych dokumentów na komputer?",
+      "answer": "skaner",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1055,
+      "category": "Geografia",
+      "question": "Które miasto jest stolicą Francji?",
+      "answer": "Paryż",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1056,
+      "category": "Geografia",
+      "question": "Która rzeka jest najdłuższa w Polsce?",
+      "answer": "Wisła",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1057,
+      "category": "Geografia",
+      "question": "Na którym kontynencie leży Egipt?",
+      "answer": "Afryka",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1058,
+      "category": "Geografia",
+      "question": "Które państwo ma największą powierzchnię na świecie?",
+      "answer": "Rosja",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1059,
+      "category": "Geografia",
+      "question": "Jak nazywa się najwyższy szczyt Polski?",
+      "answer": "Rysy",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1060,
+      "category": "Geografia",
+      "question": "Które miasto jest stolicą Włoch?",
+      "answer": "Rzym",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1061,
+      "category": "Geografia",
+      "question": "Nad którym morzem leży Polska?",
+      "answer": "Bałtyk",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1062,
+      "category": "Geografia",
+      "question": "Które miasto jest stolicą Niemiec?",
+      "answer": "Berlin",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1063,
+      "category": "Geografia",
+      "question": "Ile kontynentów wyróżnia się najczęściej?",
+      "answer": "7",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1064,
+      "category": "Geografia",
+      "question": "Który kontynent jest najmniejszy?",
+      "answer": "Australia",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1065,
+      "category": "Geografia",
+      "question": "Które miasto jest stolicą Hiszpanii?",
+      "answer": "Madryt",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1066,
+      "category": "Geografia",
+      "question": "Z iloma państwami graniczy Polska?",
+      "answer": "7",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1067,
+      "category": "Geografia",
+      "question": "Czy Czechy graniczą z Polską?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1068,
+      "category": "Geografia",
+      "question": "Które miasto jest stolicą Czech?",
+      "answer": "Praga",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1069,
+      "category": "Geografia",
+      "question": "Jak nazywa się największa gorąca pustynia na świecie?",
+      "answer": "Sahara",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1070,
+      "category": "Geografia",
+      "question": "W którym państwie znajduje się wieża Eiffla?",
+      "answer": "Francja",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1071,
+      "category": "Geografia",
+      "question": "Które miasto tworzy Trójmiasto razem z Gdynią i Sopotem?",
+      "answer": "Gdańsk",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1072,
+      "category": "Geografia",
+      "question": "Która rzeka przepływa przez Wrocław?",
+      "answer": "Odra",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1073,
+      "category": "Geografia",
+      "question": "W którym państwie leży Rio de Janeiro?",
+      "answer": "Brazylia",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1074,
+      "category": "Geografia",
+      "question": "Które miasto jest stolicą Japonii?",
+      "answer": "Tokio",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1075,
+      "category": "Geografia",
+      "question": "Czy Islandia jest wyspą?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1076,
+      "category": "Geografia",
+      "question": "Które miasto jest stolicą Ukrainy?",
+      "answer": "Kijów",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1077,
+      "category": "Geografia",
+      "question": "Jak nazywa się największa wyspa świata?",
+      "answer": "Grenlandia",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1078,
+      "category": "Geografia",
+      "question": "W którym polskim mieście znajduje się Wawel?",
+      "answer": "Kraków",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1079,
+      "category": "Geografia",
+      "question": "W którym paśmie górskim leży Śnieżka?",
+      "answer": "Karkonosze",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1080,
+      "category": "Geografia",
+      "question": "Które państwo ma kształt buta?",
+      "answer": "Włochy",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1081,
+      "category": "Geografia",
+      "question": "Które miasto jest stolicą Portugalii?",
+      "answer": "Lizbona",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1082,
+      "category": "Geografia",
+      "question": "Które miasto jest stolicą Grecji?",
+      "answer": "Ateny",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1083,
+      "category": "Geografia",
+      "question": "Które miasto jest stolicą Austrii?",
+      "answer": "Wiedeń",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1084,
+      "category": "Geografia",
+      "question": "Które miasto jest stolicą Węgier?",
+      "answer": "Budapeszt",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1085,
+      "category": "Geografia",
+      "question": "Które miasto jest stolicą Rosji?",
+      "answer": "Moskwa",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1086,
+      "category": "Geografia",
+      "question": "Które miasto jest stolicą Szwecji?",
+      "answer": "Sztokholm",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1087,
+      "category": "Geografia",
+      "question": "Które miasto jest stolicą Finlandii?",
+      "answer": "Helsinki",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1088,
+      "category": "Geografia",
+      "question": "Które miasto jest stolicą Litwy?",
+      "answer": "Wilno",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1089,
+      "category": "Geografia",
+      "question": "Które miasto jest stolicą Słowacji?",
+      "answer": "Bratysława",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1090,
+      "category": "Geografia",
+      "question": "Które miasto jest stolicą Belgii?",
+      "answer": "Bruksela",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1091,
+      "category": "Geografia",
+      "question": "Które miasto jest stolicą Chin?",
+      "answer": "Pekin",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1092,
+      "category": "Geografia",
+      "question": "Które miasto jest stolicą Kanady?",
+      "answer": "Ottawa",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1093,
+      "category": "Geografia",
+      "question": "Na którym kontynencie leżą Indie?",
+      "answer": "Azja",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1094,
+      "category": "Geografia",
+      "question": "Jak nazywa się największe jezioro w Polsce?",
+      "answer": "Śniardwy",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1095,
+      "category": "Geografia",
+      "question": "Nad jaką rzeką leży Paryż?",
+      "answer": "Sekwana",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1096,
+      "category": "Geografia",
+      "question": "Nad jaką rzeką leży Rzym?",
+      "answer": "Tyber",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1097,
+      "category": "Geografia",
+      "question": "Na której półkuli leży Polska – północnej czy południowej?",
+      "answer": "północnej",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1098,
+      "category": "Geografia",
+      "question": "Jak nazywa się najwyższa góra świata?",
+      "answer": "Mount Everest",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1099,
+      "category": "Geografia",
+      "question": "Które polskie miasto ma najwięcej mieszkańców?",
+      "answer": "Warszawa",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1100,
+      "category": "Geografia",
+      "question": "W którym państwie znajduje się Statua Wolności?",
+      "answer": "USA",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1101,
+      "category": "Geografia",
+      "question": "W którym państwie leży Barcelona?",
+      "answer": "Hiszpania",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1102,
+      "category": "Geografia",
+      "question": "W którym państwie leży Wenecja?",
+      "answer": "Włochy",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1103,
+      "category": "Geografia",
+      "question": "Na którym półwyspie leżą Hiszpania i Portugalia?",
+      "answer": "Iberyjskim",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1104,
+      "category": "Geografia",
+      "question": "Które państwo słynie z tulipanów i wiatraków?",
+      "answer": "Holandia",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1105,
+      "category": "Geografia",
+      "question": "Czy Polska ma dostęp do morza?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1106,
+      "category": "Geografia",
+      "question": "Jak nazywa się półwysep na polskim wybrzeżu zakończony miejscowością Hel?",
+      "answer": "Helski",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1107,
+      "category": "Geografia",
+      "question": "Które państwo jest obecnie najludniejsze na świecie?",
+      "answer": "Indie",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1108,
+      "category": "Geografia",
+      "question": "Jak nazywa się lodowy kontynent wokół bieguna południowego?",
+      "answer": "Antarktyda",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1109,
+      "category": "Biologia",
+      "question": "Ile nóg ma pająk?",
+      "answer": "8",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1110,
+      "category": "Biologia",
+      "question": "Ile nóg ma owad?",
+      "answer": "6",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1111,
+      "category": "Biologia",
+      "question": "Który narząd pompuje krew w organizmie?",
+      "answer": "serce",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1112,
+      "category": "Biologia",
+      "question": "Czy wieloryb jest ssakiem?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1113,
+      "category": "Biologia",
+      "question": "Jak nazywa się zielony barwnik roślin?",
+      "answer": "chlorofil",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1114,
+      "category": "Biologia",
+      "question": "Ile zębów ma dorosły człowiek razem z zębami mądrości?",
+      "answer": "32",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1115,
+      "category": "Biologia",
+      "question": "Jaki gaz rośliny wydzielają podczas fotosyntezy?",
+      "answer": "tlen",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1116,
+      "category": "Biologia",
+      "question": "Jak nazywa się największy narząd człowieka?",
+      "answer": "skóra",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1117,
+      "category": "Biologia",
+      "question": "Czy pingwin potrafi latać?",
+      "answer": "nie",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1118,
+      "category": "Biologia",
+      "question": "Jak nazywa się młoda żaba żyjąca w wodzie, z ogonem?",
+      "answer": "kijanka",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1119,
+      "category": "Biologia",
+      "question": "Ile przedsionków ma serce człowieka?",
+      "answer": "2",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1120,
+      "category": "Biologia",
+      "question": "Które zwierzę jest najszybsze na lądzie?",
+      "answer": "gepard",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1121,
+      "category": "Biologia",
+      "question": "Jak nazywa się kostna osłona mózgu?",
+      "answer": "czaszka",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1122,
+      "category": "Biologia",
+      "question": "Czy delfin oddycha skrzelami?",
+      "answer": "nie",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1123,
+      "category": "Biologia",
+      "question": "Jak nazywa się samiec kury?",
+      "answer": "kogut",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1124,
+      "category": "Biologia",
+      "question": "Jak nazywa się larwa motyla?",
+      "answer": "gąsienica",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1125,
+      "category": "Biologia",
+      "question": "Które zwierzę jest największe na świecie – płetwal błękitny czy słoń afrykański?",
+      "answer": "płetwal",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1126,
+      "category": "Biologia",
+      "question": "Który zmysł zapewnia nam nos?",
+      "answer": "węch",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1127,
+      "category": "Biologia",
+      "question": "Czy grzyby są roślinami?",
+      "answer": "nie",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1128,
+      "category": "Biologia",
+      "question": "Jak nazywa się zwierzę, które je wyłącznie rośliny?",
+      "answer": "roślinożerca",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1129,
+      "category": "Biologia",
+      "question": "Ile skrzydeł ma mucha?",
+      "answer": "2",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1130,
+      "category": "Biologia",
+      "question": "Które zwierzę ma najdłuższą szyję?",
+      "answer": "żyrafa",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1131,
+      "category": "Biologia",
+      "question": "Jak nazywa się samica konia?",
+      "answer": "klacz",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1132,
+      "category": "Biologia",
+      "question": "Jak nazywa się młode krowy?",
+      "answer": "cielę",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1133,
+      "category": "Biologia",
+      "question": "Jak nazywa się młode psa?",
+      "answer": "szczenię",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1134,
+      "category": "Biologia",
+      "question": "Czy nietoperz jest ssakiem?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1135,
+      "category": "Biologia",
+      "question": "Który ptak jest symbolem mądrości?",
+      "answer": "sowa",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1136,
+      "category": "Biologia",
+      "question": "Jak nazywa się „domek” dla pszczół hodowany przez pszczelarza?",
+      "answer": "ul",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1137,
+      "category": "Biologia",
+      "question": "Jaki owad produkuje miód?",
+      "answer": "pszczoła",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1138,
+      "category": "Biologia",
+      "question": "Które zwierzę nazywa się „królem zwierząt”?",
+      "answer": "lew",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1139,
+      "category": "Biologia",
+      "question": "Z którego drzewa pochodzą żołędzie?",
+      "answer": "dąb",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1140,
+      "category": "Biologia",
+      "question": "Na którym drzewie rosną szyszki – na sośnie czy na brzozie?",
+      "answer": "sosna",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1141,
+      "category": "Biologia",
+      "question": "Jak nazywa się czerwony płyn krążący w naczyniach krwionośnych?",
+      "answer": "krew",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1142,
+      "category": "Biologia",
+      "question": "Ile płuc ma człowiek?",
+      "answer": "2",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1143,
+      "category": "Biologia",
+      "question": "Który zmysł zapewniają nam uszy?",
+      "answer": "słuch",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1144,
+      "category": "Biologia",
+      "question": "Czy rekin jest rybą?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1145,
+      "category": "Biologia",
+      "question": "Czy żółw jest gadem?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1146,
+      "category": "Biologia",
+      "question": "Jak nazywa się zwierzę, które je mięso?",
+      "answer": "mięsożerca",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1147,
+      "category": "Biologia",
+      "question": "Jak nazywa się sen zimowy niektórych zwierząt?",
+      "answer": "hibernacja",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1148,
+      "category": "Biologia",
+      "question": "Które zwierzę ma garb i żyje na pustyni?",
+      "answer": "wielbłąd",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1149,
+      "category": "Biologia",
+      "question": "Które zwierzę jest symbolem organizacji WWF?",
+      "answer": "panda",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1150,
+      "category": "Biologia",
+      "question": "Jak nazywa się dorosły samiec jelenia?",
+      "answer": "byk",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1151,
+      "category": "Wiedza ogólna",
+      "question": "Ile dni ma rok przestępny?",
+      "answer": "366",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1152,
+      "category": "Wiedza ogólna",
+      "question": "Ile minut ma godzina?",
+      "answer": "60",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1153,
+      "category": "Wiedza ogólna",
+      "question": "Ile kolorów ma tęcza?",
+      "answer": "7",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1154,
+      "category": "Wiedza ogólna",
+      "question": "Jakiego koloru jest dolny pas na fladze Polski?",
+      "answer": "czerwony",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1155,
+      "category": "Wiedza ogólna",
+      "question": "Ile godzin ma doba?",
+      "answer": "24",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1156,
+      "category": "Wiedza ogólna",
+      "question": "Ile pełnych tygodni ma rok?",
+      "answer": "52",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1157,
+      "category": "Wiedza ogólna",
+      "question": "Który miesiąc roku jest najkrótszy?",
+      "answer": "luty",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1158,
+      "category": "Wiedza ogólna",
+      "question": "Ilu zawodników jednej drużyny gra na boisku w piłce nożnej?",
+      "answer": "11",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1159,
+      "category": "Wiedza ogólna",
+      "question": "Który ptak jest symbolem pokoju – gołąb czy orzeł?",
+      "answer": "gołąb",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1160,
+      "category": "Wiedza ogólna",
+      "question": "Ile pól ma szachownica?",
+      "answer": "64",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1161,
+      "category": "Wiedza ogólna",
+      "question": "Ile oczek jest na ściance kostki do gry przeciwległej do jedynki?",
+      "answer": "6",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1162,
+      "category": "Wiedza ogólna",
+      "question": "Jakiego koloru jest światło sygnalizatora oznaczające „stój”?",
+      "answer": "czerwony",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1163,
+      "category": "Wiedza ogólna",
+      "question": "Który dzień tygodnia następuje po środzie?",
+      "answer": "czwartek",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1164,
+      "category": "Wiedza ogólna",
+      "question": "Ile lat ma stulecie?",
+      "answer": "100",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1165,
+      "category": "Wiedza ogólna",
+      "question": "W którym miesiącu obchodzimy Boże Narodzenie?",
+      "answer": "grudzień",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1166,
+      "category": "Wiedza ogólna",
+      "question": "Jaki jest numer alarmowy obowiązujący w całej Unii Europejskiej?",
+      "answer": "112",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1167,
+      "category": "Wiedza ogólna",
+      "question": "Jak nazywa się waluta Polski?",
+      "answer": "złoty",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1168,
+      "category": "Wiedza ogólna",
+      "question": "W którym miesiącu zaczyna się astronomiczna wiosna?",
+      "answer": "marzec",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1169,
+      "category": "Wiedza ogólna",
+      "question": "Ile strun ma klasyczna gitara?",
+      "answer": "6",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1170,
+      "category": "Wiedza ogólna",
+      "question": "Ile pionków ma każdy gracz na początku partii szachów?",
+      "answer": "8",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1171,
+      "category": "Wiedza ogólna",
+      "question": "Czy 11 listopada jest w Polsce dniem wolnym od pracy?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1172,
+      "category": "Wiedza ogólna",
+      "question": "Ile miesięcy w roku ma 31 dni?",
+      "answer": "7",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1173,
+      "category": "Wiedza ogólna",
+      "question": "Który miesiąc jest dziewiątym miesiącem roku?",
+      "answer": "wrzesień",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1174,
+      "category": "Wiedza ogólna",
+      "question": "Ile sztuk to tuzin?",
+      "answer": "12",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1175,
+      "category": "Wiedza ogólna",
+      "question": "Ile lat ma tysiąclecie?",
+      "answer": "1000",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1176,
+      "category": "Wiedza ogólna",
+      "question": "Jak nazywa się 25. rocznica ślubu – srebrne czy złote gody?",
+      "answer": "srebrne",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1177,
+      "category": "Wiedza ogólna",
+      "question": "Jakie gody obchodzi się w 50. rocznicę ślubu?",
+      "answer": "złote",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1178,
+      "category": "Wiedza ogólna",
+      "question": "Ile kart ma standardowa talia do brydża?",
+      "answer": "52",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1179,
+      "category": "Wiedza ogólna",
+      "question": "Jak nazywa się kierunek świata przeciwny do północy?",
+      "answer": "południe",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1180,
+      "category": "Wiedza ogólna",
+      "question": "Po której stronie nieba wschodzi Słońce?",
+      "answer": "wschód",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1181,
+      "category": "Wiedza ogólna",
+      "question": "Jaki ptak widnieje w godle Polski?",
+      "answer": "orzeł",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1182,
+      "category": "Wiedza ogólna",
+      "question": "Czy Wigilia jest dniem przed Bożym Narodzeniem?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1183,
+      "category": "Wiedza ogólna",
+      "question": "Jakiego koloru jest szmaragd?",
+      "answer": "zielony",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1184,
+      "category": "Wiedza ogólna",
+      "question": "Jak nazywa się wysokie drożdżowe ciasto pieczone na Wielkanoc?",
+      "answer": "babka",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1185,
+      "category": "Wiedza ogólna",
+      "question": "Jak nazywa się czerwona zupa wigilijna z buraków?",
+      "answer": "barszcz",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1186,
+      "category": "Wiedza ogólna",
+      "question": "Jak nazywa się włoski placek z sosem pomidorowym i serem pieczony w piecu?",
+      "answer": "pizza",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1187,
+      "category": "Wiedza ogólna",
+      "question": "Z którego kraju pochodzi sushi?",
+      "answer": "Japonia",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1188,
+      "category": "Wiedza ogólna",
+      "question": "Które przesilenie oznacza najdłuższy dzień w roku – letnie czy zimowe?",
+      "answer": "letnie",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1189,
+      "category": "Wiedza ogólna",
+      "question": "Jaki znak zodiaku mają osoby urodzone na początku stycznia?",
+      "answer": "Koziorożec",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1190,
+      "category": "Wiedza ogólna",
+      "question": "Ile wynosi rzymska liczba X?",
+      "answer": "10",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1191,
+      "category": "Wiedza ogólna",
+      "question": "Którą literą zapisuje się liczbę 50 w systemie rzymskim?",
+      "answer": "L",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1192,
+      "category": "Wiedza ogólna",
+      "question": "Ile wynosi rzymska liczba C?",
+      "answer": "100",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1193,
+      "category": "Historia",
+      "question": "W którym roku wybuchła II wojna światowa?",
+      "answer": "1939",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1194,
+      "category": "Historia",
+      "question": "Jak nazywał się pierwszy historyczny władca Polski?",
+      "answer": "Mieszko I",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1195,
+      "category": "Historia",
+      "question": "W którym roku Polska przyjęła chrzest?",
+      "answer": "966",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1196,
+      "category": "Historia",
+      "question": "W którym roku Polska wstąpiła do Unii Europejskiej?",
+      "answer": "2004",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1197,
+      "category": "Historia",
+      "question": "Kto w 1492 roku dopłynął do Ameryki?",
+      "answer": "Kolumb",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1198,
+      "category": "Historia",
+      "question": "W którym roku zakończyła się II wojna światowa?",
+      "answer": "1945",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1199,
+      "category": "Historia",
+      "question": "Jak nazywał się pierwszy koronowany król Polski?",
+      "answer": "Bolesław Chrobry",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1200,
+      "category": "Historia",
+      "question": "W którym roku Polska odzyskała niepodległość?",
+      "answer": "1918",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1201,
+      "category": "Historia",
+      "question": "W którym państwie znajdują się piramidy w Gizie?",
+      "answer": "Egipt",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1202,
+      "category": "Historia",
+      "question": "Czy Napoleon Bonaparte był cesarzem Francuzów?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1203,
+      "category": "Historia",
+      "question": "Jak nazywał się niezależny związek zawodowy założony w Polsce w 1980 roku?",
+      "answer": "Solidarność",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1204,
+      "category": "Historia",
+      "question": "Kto jako pierwszy człowiek stanął na Księżycu?",
+      "answer": "Armstrong",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1205,
+      "category": "Historia",
+      "question": "W którym roku upadł mur berliński?",
+      "answer": "1989",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1206,
+      "category": "Historia",
+      "question": "O którym astronomie mówi się, że „wstrzymał Słońce, ruszył Ziemię”?",
+      "answer": "Kopernik",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1207,
+      "category": "Historia",
+      "question": "W którym roku uchwalono Konstytucję 3 Maja?",
+      "answer": "1791",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1208,
+      "category": "Historia",
+      "question": "Jak nazywa się powstanie z 1944 roku w stolicy Polski – warszawskie czy styczniowe?",
+      "answer": "warszawskie",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1209,
+      "category": "Historia",
+      "question": "Które państwo zbudowało Wielki Mur?",
+      "answer": "Chiny",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1210,
+      "category": "Historia",
+      "question": "Kto był pierwszym prezydentem Stanów Zjednoczonych?",
+      "answer": "Waszyngton",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1211,
+      "category": "Historia",
+      "question": "W którym roku wybuchła I wojna światowa?",
+      "answer": "1914",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1212,
+      "category": "Historia",
+      "question": "Jak miał na imię rybak, który według legendy założył Warszawę razem z Sawą?",
+      "answer": "Wars",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1213,
+      "category": "Historia",
+      "question": "W którym mieście znajduje się Koloseum?",
+      "answer": "Rzym",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1214,
+      "category": "Historia",
+      "question": "Które państwo zrzuciło bombę atomową na Hiroszimę?",
+      "answer": "USA",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1215,
+      "category": "Historia",
+      "question": "Jak nazywali się wojownicy ze Skandynawii najeżdżający wczesnośredniowieczną Europę?",
+      "answer": "wikingowie",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1216,
+      "category": "Historia",
+      "question": "Jak nazywał się statek, który zatonął w 1912 roku po zderzeniu z górą lodową?",
+      "answer": "Titanic",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1217,
+      "category": "Historia",
+      "question": "Kto był przywódcą III Rzeszy?",
+      "answer": "Hitler",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1218,
+      "category": "Historia",
+      "question": "W którym starożytnym kraju leżały Ateny i Sparta?",
+      "answer": "Grecja",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1219,
+      "category": "Historia",
+      "question": "Czy wojna stuletnia trwała dłużej niż 100 lat?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1220,
+      "category": "Historia",
+      "question": "Kto był pierwszym człowiekiem w kosmosie?",
+      "answer": "Gagarin",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1221,
+      "category": "Historia",
+      "question": "Jak nazywa się pierwszy polski kosmonauta, który poleciał w kosmos w 1978 roku?",
+      "answer": "Hermaszewski",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1222,
+      "category": "Historia",
+      "question": "W którym roku Polska wstąpiła do NATO?",
+      "answer": "1999",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1223,
+      "category": "Fizyka",
+      "question": "W jakiej temperaturze w stopniach Celsjusza zamarza woda?",
+      "answer": "0",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1224,
+      "category": "Fizyka",
+      "question": "W jakiej temperaturze w stopniach Celsjusza wrze woda przy normalnym ciśnieniu?",
+      "answer": "100",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1225,
+      "category": "Chemia",
+      "question": "Jaki jest wzór chemiczny wody?",
+      "answer": "H2O",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1226,
+      "category": "Chemia",
+      "question": "Jaki symbol chemiczny ma tlen?",
+      "answer": "O",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1227,
+      "category": "Astronomia",
+      "question": "Która planeta jest najbliżej Słońca?",
+      "answer": "Merkury",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1228,
+      "category": "Astronomia",
+      "question": "Która planeta Układu Słonecznego jest największa?",
+      "answer": "Jowisz",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1229,
+      "category": "Astronomia",
+      "question": "Jak nazywa się naturalny satelita Ziemi?",
+      "answer": "Księżyc",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1230,
+      "category": "Astronomia",
+      "question": "Którą planetę nazywa się Czerwoną Planetą?",
+      "answer": "Mars",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1231,
+      "category": "Astronomia",
+      "question": "Czy Słońce jest gwiazdą?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1232,
+      "category": "Fizyka",
+      "question": "Jaka jest podstawowa jednostka długości w układzie SI?",
+      "answer": "metr",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1233,
+      "category": "Fizyka",
+      "question": "Czy dźwięk rozchodzi się w próżni?",
+      "answer": "nie",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1234,
+      "category": "Chemia",
+      "question": "Jaki symbol chemiczny ma złoto?",
+      "answer": "Au",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1235,
+      "category": "Fizyka",
+      "question": "Jak nazywa się siła, która przyciąga przedmioty do Ziemi?",
+      "answer": "grawitacja",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1236,
+      "category": "Astronomia",
+      "question": "Ile planet ma Układ Słoneczny?",
+      "answer": "8",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1237,
+      "category": "Astronomia",
+      "question": "Która planeta ma najbardziej widoczne pierścienie?",
+      "answer": "Saturn",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1238,
+      "category": "Fizyka",
+      "question": "Jakim przyrządem mierzymy temperaturę?",
+      "answer": "termometr",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1239,
+      "category": "Chemia",
+      "question": "W jakim stanie skupienia jest lód?",
+      "answer": "stałym",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1240,
+      "category": "Fizyka",
+      "question": "Jak nazywa się przyrząd wskazujący kierunek północny?",
+      "answer": "kompas",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1241,
+      "category": "Fizyka",
+      "question": "Czy lód pływa po wodzie?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1242,
+      "category": "Chemia",
+      "question": "Jaki symbol chemiczny ma żelazo?",
+      "answer": "Fe",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1243,
+      "category": "Chemia",
+      "question": "Jaki gaz jest niezbędny ludziom do oddychania?",
+      "answer": "tlen",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1244,
+      "category": "Chemia",
+      "question": "Co powstaje po rozpuszczeniu soli w wodzie – roztwór czy stop?",
+      "answer": "roztwór",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1245,
+      "category": "Astronomia",
+      "question": "Jak nazywa się galaktyka, w której znajduje się Układ Słoneczny?",
+      "answer": "Droga Mleczna",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1246,
+      "category": "Astronomia",
+      "question": "Jak nazywa się zjawisko, gdy Księżyc zasłania Słońce?",
+      "answer": "zaćmienie",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1247,
+      "category": "Astronomia",
+      "question": "Ile dni w przybliżeniu trwa obieg Ziemi wokół Słońca?",
+      "answer": "365",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1248,
+      "category": "Astronomia",
+      "question": "Czy Pluton jest obecnie uznawany za planetę?",
+      "answer": "nie",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1249,
+      "category": "Fizyka",
+      "question": "Jaka jest podstawowa jednostka masy w układzie SI?",
+      "answer": "kilogram",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1250,
+      "category": "Fizyka",
+      "question": "Jaka jest podstawowa jednostka czasu w układzie SI?",
+      "answer": "sekunda",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1251,
+      "category": "Fizyka",
+      "question": "Czy magnes przyciąga drewno?",
+      "answer": "nie",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1252,
+      "category": "Fizyka",
+      "question": "Jak nazywa się odbity dźwięk, który słyszymy np. w górach?",
+      "answer": "echo",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1253,
+      "category": "Fizyka",
+      "question": "Jakim przyrządem mierzy się ciśnienie atmosferyczne?",
+      "answer": "barometr",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1254,
+      "category": "Matematyka",
+      "question": "Ile wynosi 7 razy 8?",
+      "answer": "56",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1255,
+      "category": "Matematyka",
+      "question": "Ile boków ma sześciokąt?",
+      "answer": "6",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1256,
+      "category": "Matematyka",
+      "question": "Ile stopni ma kąt prosty?",
+      "answer": "90",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1257,
+      "category": "Matematyka",
+      "question": "Czy liczba 17 jest liczbą pierwszą?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1258,
+      "category": "Matematyka",
+      "question": "Ile wynosi pierwiastek kwadratowy ze 100?",
+      "answer": "10",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1259,
+      "category": "Matematyka",
+      "question": "Jak nazywa się wynik dodawania?",
+      "answer": "suma",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1260,
+      "category": "Matematyka",
+      "question": "Ile wierzchołków ma sześcian?",
+      "answer": "8",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1261,
+      "category": "Matematyka",
+      "question": "Ile wynosi połowa z 50?",
+      "answer": "25",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1262,
+      "category": "Matematyka",
+      "question": "Jak nazywa się trójkąt, który ma wszystkie boki równe?",
+      "answer": "równoboczny",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1263,
+      "category": "Matematyka",
+      "question": "Ile stopni wynosi suma kątów w trójkącie?",
+      "answer": "180",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1264,
+      "category": "Matematyka",
+      "question": "Ile centymetrów ma metr?",
+      "answer": "100",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1265,
+      "category": "Matematyka",
+      "question": "Czy zero jest liczbą parzystą?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1266,
+      "category": "Matematyka",
+      "question": "Ile wynosi 12 razy 12?",
+      "answer": "144",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1267,
+      "category": "Matematyka",
+      "question": "Ile boków ma pięciokąt?",
+      "answer": "5",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1268,
+      "category": "Matematyka",
+      "question": "Ile procent to jedna czwarta?",
+      "answer": "25",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1269,
+      "category": "Matematyka",
+      "question": "Jak nazywa się wynik mnożenia?",
+      "answer": "iloczyn",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1270,
+      "category": "Matematyka",
+      "question": "Jak nazywa się wynik dzielenia?",
+      "answer": "iloraz",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1271,
+      "category": "Matematyka",
+      "question": "Ile ścian ma sześcian?",
+      "answer": "6",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1272,
+      "category": "Matematyka",
+      "question": "Ile wynosi 2 do potęgi trzeciej?",
+      "answer": "8",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1273,
+      "category": "Matematyka",
+      "question": "Ile minut ma półtorej godziny?",
+      "answer": "90",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1274,
+      "category": "Matematyka",
+      "question": "Jak nazywa się linia, której wszystkie punkty są jednakowo oddalone od środka?",
+      "answer": "okrąg",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1275,
+      "category": "Matematyka",
+      "question": "Czy liczba 21 jest podzielna przez 7?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1276,
+      "category": "Psychologia",
+      "question": "Jak nazywa się lekarz specjalizujący się w leczeniu zaburzeń psychicznych?",
+      "answer": "psychiatra",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1277,
+      "category": "Psychologia",
+      "question": "Czy psycholog może w Polsce przepisywać leki na receptę?",
+      "answer": "nie",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1278,
+      "category": "Psychologia",
+      "question": "Jak nazywa się silny, nieuzasadniony lęk przed konkretną rzeczą lub sytuacją?",
+      "answer": "fobia",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1279,
+      "category": "Psychologia",
+      "question": "Jak nazywa się osoba zamknięta w sobie, czerpiąca energię z samotności – introwertyk czy ekstrawertyk?",
+      "answer": "introwertyk",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1280,
+      "category": "Psychologia",
+      "question": "Jak nazywa się zdolność wczuwania się w uczucia innych ludzi?",
+      "answer": "empatia",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1281,
+      "category": "Psychologia",
+      "question": "Czy długotrwały stres może szkodzić zdrowiu fizycznemu?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1282,
+      "category": "Psychologia",
+      "question": "Jak nazywa się nauka o psychice i zachowaniu człowieka?",
+      "answer": "psychologia",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1283,
+      "category": "Psychologia",
+      "question": "Jak nazywa się osoba towarzyska, czerpiąca energię z kontaktów z ludźmi?",
+      "answer": "ekstrawertyk",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1284,
+      "category": "Psychologia",
+      "question": "Kto jest uważany za twórcę psychoanalizy?",
+      "answer": "Freud",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1285,
+      "category": "Psychologia",
+      "question": "Czy śmiech może zmniejszać napięcie i stres?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1286,
+      "category": "Psychologia",
+      "question": "Jak nazywa się pamięć przechowująca informacje przez kilka sekund – krótkotrwała czy długotrwała?",
+      "answer": "krótkotrwała",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1287,
+      "category": "Sport",
+      "question": "Co ile lat odbywają się letnie igrzyska olimpijskie?",
+      "answer": "4",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1288,
+      "category": "Sport",
+      "question": "Ile kół jest w symbolu olimpijskim?",
+      "answer": "5",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1289,
+      "category": "Sport",
+      "question": "Jak nazywa się zawodnik, który broni bramki?",
+      "answer": "bramkarz",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1290,
+      "category": "Sport",
+      "question": "Ilu zawodników jednej drużyny gra na boisku w siatkówce?",
+      "answer": "6",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1291,
+      "category": "Sport",
+      "question": "W którym sporcie używa się rakietki i lotki?",
+      "answer": "badminton",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1292,
+      "category": "Sport",
+      "question": "Jak nazywa się zjeżdżanie po śniegu na jednej desce?",
+      "answer": "snowboard",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1293,
+      "category": "Sport",
+      "question": "Ile setów trzeba wygrać, aby zwyciężyć mecz siatkówki?",
+      "answer": "3",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1294,
+      "category": "Sport",
+      "question": "Jak nazywa się Robert, najsłynniejszy polski piłkarz-napastnik XXI wieku?",
+      "answer": "Lewandowski",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1295,
+      "category": "Sport",
+      "question": "Ile w przybliżeniu kilometrów ma bieg maratoński?",
+      "answer": "42",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1296,
+      "category": "Sport",
+      "question": "W którym sporcie używa się kija i krążka na lodzie?",
+      "answer": "hokej",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1297,
+      "category": "Sport",
+      "question": "Ile punktów daje w koszykówce rzut zza linii oddalonej o 6,75 m od kosza?",
+      "answer": "3",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1298,
+      "category": "Sport",
+      "question": "W którym kraju odbywały się starożytne igrzyska olimpijskie?",
+      "answer": "Grecja",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1299,
+      "category": "Sport",
+      "question": "Jaką dyscyplinę uprawiał Adam Małysz?",
+      "answer": "skoki narciarskie",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1300,
+      "category": "Sport",
+      "question": "Ile rund trwa zawodowa walka bokserska o mistrzostwo świata?",
+      "answer": "12",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1301,
+      "category": "Sport",
+      "question": "Jak nazywa się Iga, polska tenisistka, zwyciężczyni turnieju Roland Garros?",
+      "answer": "Świątek",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1302,
+      "category": "Literatura",
+      "question": "Kto napisał „Pana Tadeusza”?",
+      "answer": "Mickiewicz",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1303,
+      "category": "Literatura",
+      "question": "Kto napisał wiersz „Lokomotywa”?",
+      "answer": "Tuwim",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1304,
+      "category": "Literatura",
+      "question": "Jak nazywa się chłopiec, który nie chciał dorosnąć, z książki Jamesa Barriego?",
+      "answer": "Piotruś Pan",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1305,
+      "category": "Literatura",
+      "question": "Kto zjadł babcię w baśni o Czerwonym Kapturku?",
+      "answer": "wilk",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1306,
+      "category": "Literatura",
+      "question": "Jak nazywał się drewniany pajacyk, któremu rósł nos, gdy kłamał?",
+      "answer": "Pinokio",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1307,
+      "category": "Literatura",
+      "question": "Kto napisał powieść „W pustyni i w puszczy”?",
+      "answer": "Sienkiewicz",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1308,
+      "category": "Literatura",
+      "question": "Jak nazywał się szewczyk, który według legendy pokonał Smoka Wawelskiego?",
+      "answer": "Skuba",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1309,
+      "category": "Literatura",
+      "question": "Kto napisał baśń „Brzydkie kaczątko”?",
+      "answer": "Andersen",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1310,
+      "category": "Literatura",
+      "question": "Kto napisał „Akademię pana Kleksa”?",
+      "answer": "Brzechwa",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1311,
+      "category": "Literatura",
+      "question": "Jak miał na imię najlepszy przyjaciel Harry'ego Pottera o nazwisku Weasley?",
+      "answer": "Ron",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1312,
+      "category": "Literatura",
+      "question": "Kto napisał „Romea i Julię”?",
+      "answer": "Szekspir",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1313,
+      "category": "Literatura",
+      "question": "Jak nazywa się cykl utworów Jana Kochanowskiego napisany po śmierci córki Urszulki?",
+      "answer": "Treny",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1314,
+      "category": "Literatura",
+      "question": "Kto napisał powieść „Krzyżacy”?",
+      "answer": "Sienkiewicz",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1315,
+      "category": "Język polski",
+      "question": "Ile liter ma polski alfabet?",
+      "answer": "32",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1316,
+      "category": "Język polski",
+      "question": "Jak nazywa się wyraz o przeciwnym znaczeniu?",
+      "answer": "antonim",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1317,
+      "category": "Język polski",
+      "question": "Jak nazywa się wyraz o podobnym znaczeniu?",
+      "answer": "synonim",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1318,
+      "category": "Język polski",
+      "question": "Czy słowo „który” piszemy przez „ó”?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1319,
+      "category": "Język polski",
+      "question": "Jak nazywa się część mowy oznaczająca czynność?",
+      "answer": "czasownik",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1320,
+      "category": "Język polski",
+      "question": "Jak nazywa się znak interpunkcyjny kończący zdanie pytające?",
+      "answer": "pytajnik",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1321,
+      "category": "Język polski",
+      "question": "Ile przypadków ma język polski?",
+      "answer": "7",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1322,
+      "category": "Język polski",
+      "question": "Jak nazywa się pierwszy przypadek w języku polskim?",
+      "answer": "mianownik",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1323,
+      "category": "Język polski",
+      "question": "Czy słowo „rzeka” piszemy przez „rz”?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1324,
+      "category": "Język polski",
+      "question": "Jak nazywa się część mowy oznaczająca cechę, np. „piękny”?",
+      "answer": "przymiotnik",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1325,
+      "category": "Język polski",
+      "question": "Jak nazywa się część mowy nazywająca osoby, rzeczy i zjawiska?",
+      "answer": "rzeczownik",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1326,
+      "category": "Muzyka",
+      "question": "Ile klawiszy ma standardowy fortepian?",
+      "answer": "88",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1327,
+      "category": "Muzyka",
+      "question": "Imię którego polskiego kompozytora nosi warszawskie lotnisko?",
+      "answer": "Chopin",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1328,
+      "category": "Sztuka",
+      "question": "Kto namalował „Mona Lisę”?",
+      "answer": "Leonardo da Vinci",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1329,
+      "category": "Muzyka",
+      "question": "Ile linii ma pięciolinia?",
+      "answer": "5",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1330,
+      "category": "Sztuka",
+      "question": "Jaki kolor powstaje ze zmieszania żółtego z niebieskim?",
+      "answer": "zielony",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1331,
+      "category": "Muzyka",
+      "question": "Jak nazywa się zespół czterech muzyków – kwartet czy kwintet?",
+      "answer": "kwartet",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1332,
+      "category": "Muzyka",
+      "question": "Z którego miasta pochodził zespół The Beatles?",
+      "answer": "Liverpool",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1333,
+      "category": "Film",
+      "question": "Jak ma na imię myszka z kreskówek Disneya, sympatia Mikiego?",
+      "answer": "Minnie",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1334,
+      "category": "Film",
+      "question": "W którym mieście wręcza się Oscary – w Los Angeles czy w Nowym Jorku?",
+      "answer": "Los Angeles",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1335,
+      "category": "Muzyka",
+      "question": "Na jakim instrumencie grał Fryderyk Chopin?",
+      "answer": "fortepian",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1336,
+      "category": "Muzyka",
+      "question": "Ile dźwięków ma gama durowa w obrębie oktawy, bez powtórzenia pierwszego?",
+      "answer": "7",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1337,
+      "category": "Sztuka",
+      "question": "Jak nazywa się obraz przedstawiający samego malarza?",
+      "answer": "autoportret",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1338,
+      "category": "Sztuka",
+      "question": "Kto namalował „Słoneczniki”?",
+      "answer": "van Gogh",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1339,
+      "category": "Ekologia",
+      "question": "Do pojemnika jakiego koloru wyrzucamy w Polsce szkło?",
+      "answer": "zielony",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1340,
+      "category": "Ekologia",
+      "question": "Do pojemnika jakiego koloru wyrzucamy papier?",
+      "answer": "niebieski",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1341,
+      "category": "Ekologia",
+      "question": "Do pojemnika jakiego koloru wyrzucamy plastik i metal?",
+      "answer": "żółty",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1342,
+      "category": "Medycyna",
+      "question": "Jak nazywa się lekarz zajmujący się zębami?",
+      "answer": "stomatolog",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1343,
+      "category": "Medycyna",
+      "question": "Ile stopni Celsjusza wynosi w przybliżeniu prawidłowa temperatura ciała człowieka?",
+      "answer": "36,6",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1344,
+      "category": "Medycyna",
+      "question": "Czy antybiotyki działają na wirusy?",
+      "answer": "nie",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1345,
+      "category": "Medycyna",
+      "question": "Która witamina powstaje w skórze pod wpływem słońca?",
+      "answer": "D",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1346,
+      "category": "Medycyna",
+      "question": "Jak nazywa się lekarz zajmujący się chorobami oczu?",
+      "answer": "okulista",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1347,
+      "category": "Medycyna",
+      "question": "Ile w przybliżeniu litrów krwi ma dorosły człowiek – 5 czy 10?",
+      "answer": "5",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1348,
+      "category": "Medycyna",
+      "question": "Czy cukrzyca jest związana z poziomem cukru we krwi?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1349,
+      "category": "Ekonomia",
+      "question": "Jak nazywa się waluta używana w Niemczech?",
+      "answer": "euro",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1350,
+      "category": "Ekonomia",
+      "question": "Jak nazywa się waluta Stanów Zjednoczonych?",
+      "answer": "dolar",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1351,
+      "category": "Ekonomia",
+      "question": "Jak nazywa się waluta Wielkiej Brytanii?",
+      "answer": "funt",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1352,
+      "category": "Ekonomia",
+      "question": "Jak nazywa się trzyliterowy podatek od towarów i usług doliczany do cen?",
+      "answer": "VAT",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1353,
+      "category": "Ekonomia",
+      "question": "Jak nazywa się ogólny wzrost cen w gospodarce?",
+      "answer": "inflacja",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1354,
+      "category": "Technika",
+      "question": "Jak nazywa się statek powietrzny z wirnikiem nad kabiną?",
+      "answer": "śmigłowiec",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1355,
+      "category": "Technika",
+      "question": "Jak nazywa się pojazd szynowy ciągnięty przez lokomotywę?",
+      "answer": "pociąg",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1356,
+      "category": "Technika",
+      "question": "Co napędza samochód elektryczny – benzyna czy prąd?",
+      "answer": "prąd",
+      "source": "Nowe pytania"
     }
   ],
   "round2": [
@@ -4873,6 +7218,2351 @@
       "question": "Który Polak - operator filmowy dwukrotnie zdobył Oscara?",
       "answer": "Janusz Kamiński",
       "source": "Seria 99 odcinek 19 26.05.2017"
+    },
+    {
+      "id": 1357,
+      "category": "Informatyka",
+      "question": "Jak nazywa się język znaczników używany do tworzenia stron internetowych?",
+      "answer": "HTML",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1358,
+      "category": "Informatyka",
+      "question": "Co oznacza skrót CPU – procesor czy kartę graficzną?",
+      "answer": "procesor",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1359,
+      "category": "Informatyka",
+      "question": "Jak nazywa się wyłudzanie danych za pomocą fałszywych wiadomości i stron?",
+      "answer": "phishing",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1360,
+      "category": "Informatyka",
+      "question": "Ile bajtów ma kilobajt liczony w systemie dwójkowym?",
+      "answer": "1024",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1361,
+      "category": "Informatyka",
+      "question": "Jak nazywa się szyfrowana wersja protokołu HTTP, oznaczana w przeglądarce kłódką?",
+      "answer": "HTTPS",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1362,
+      "category": "Informatyka",
+      "question": "Kto założył firmę Microsoft razem z Paulem Allenem?",
+      "answer": "Gates",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1363,
+      "category": "Informatyka",
+      "question": "Kto był współzałożycielem firmy Apple razem ze Steve'em Wozniakiem?",
+      "answer": "Jobs",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1364,
+      "category": "Informatyka",
+      "question": "Jak nazywa się język programowania, którego logo przedstawia filiżankę kawy?",
+      "answer": "Java",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1365,
+      "category": "Informatyka",
+      "question": "Jak nazywa się język programowania nazwany na cześć grupy komików Monty Python?",
+      "answer": "Python",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1366,
+      "category": "Informatyka",
+      "question": "Jak nazywa się internetowa encyklopedia tworzona przez użytkowników?",
+      "answer": "Wikipedia",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1367,
+      "category": "Informatyka",
+      "question": "Jak nazywa się szybki dysk bez ruchomych części – SSD czy HDD?",
+      "answer": "SSD",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1368,
+      "category": "Informatyka",
+      "question": "Jak po angielsku nazywa się zapora sieciowa?",
+      "answer": "firewall",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1369,
+      "category": "Informatyka",
+      "question": "Czy adres IP identyfikuje urządzenie w sieci?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1370,
+      "category": "Informatyka",
+      "question": "Jak nazywa się system zamieniający nazwy domen na adresy IP – skrót trzyliterowy?",
+      "answer": "DNS",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1371,
+      "category": "Informatyka",
+      "question": "Jak potocznie nazywa się błąd w programie komputerowym?",
+      "answer": "bug",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1372,
+      "category": "Informatyka",
+      "question": "Jak nazywa się złośliwe oprogramowanie szyfrujące dane i żądające okupu?",
+      "answer": "ransomware",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1373,
+      "category": "Informatyka",
+      "question": "Ile wynosi w systemie dziesiętnym liczba dwójkowa 1010?",
+      "answer": "10",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1374,
+      "category": "Informatyka",
+      "question": "Jak nazywa się procesor karty graficznej – GPU czy CPU?",
+      "answer": "GPU",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1375,
+      "category": "Informatyka",
+      "question": "Jakim skrótem oznacza się logowanie dwuetapowe?",
+      "answer": "2FA",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1376,
+      "category": "Informatyka",
+      "question": "Jak nazywa się otwarty system operacyjny stworzony przez Linusa Torvaldsa?",
+      "answer": "Linux",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1377,
+      "category": "Informatyka",
+      "question": "Jaki skrót klawiszowy w Windows cofa ostatnią czynność?",
+      "answer": "Ctrl+Z",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1378,
+      "category": "Informatyka",
+      "question": "Czy plik z rozszerzeniem .jpg jest plikiem graficznym?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1379,
+      "category": "Informatyka",
+      "question": "Jak nazywa się najmniejsza jednostka informacji, przyjmująca wartość 0 lub 1?",
+      "answer": "bit",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1380,
+      "category": "Informatyka",
+      "question": "Jak nazywa się język zapytań do relacyjnych baz danych?",
+      "answer": "SQL",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1381,
+      "category": "Informatyka",
+      "question": "Jak nazywa się program tłumaczący cały kod źródłowy na kod maszynowy przed uruchomieniem?",
+      "answer": "kompilator",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1382,
+      "category": "Informatyka",
+      "question": "Jakim angielskim skrótem oznacza się sztuczną inteligencję?",
+      "answer": "AI",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1383,
+      "category": "Informatyka",
+      "question": "Który serwis społecznościowy założył Mark Zuckerberg?",
+      "answer": "Facebook",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1384,
+      "category": "Informatyka",
+      "question": "Jak nazywa się szybka pamięć podręczna procesora?",
+      "answer": "cache",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1385,
+      "category": "Psychologia",
+      "question": "Jak nazywa się lęk przed pająkami?",
+      "answer": "arachnofobia",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1386,
+      "category": "Psychologia",
+      "question": "Jak nazywa się lęk przed zamkniętymi przestrzeniami?",
+      "answer": "klaustrofobia",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1387,
+      "category": "Psychologia",
+      "question": "Jak nazywa się lęk wysokości?",
+      "answer": "akrofobia",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1388,
+      "category": "Psychologia",
+      "question": "Który rosyjski fizjolog badał odruchy warunkowe na psach?",
+      "answer": "Pawłow",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1389,
+      "category": "Psychologia",
+      "question": "Jak nazywa się mechanizm obronny polegający na przypisywaniu innym własnych uczuć?",
+      "answer": "projekcja",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1390,
+      "category": "Psychologia",
+      "question": "Jak nazywa się efekt poprawy samopoczucia po podaniu substancji obojętnej?",
+      "answer": "placebo",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1391,
+      "category": "Psychologia",
+      "question": "Czyjego nazwiska jest słynna piramida potrzeb – Maslowa czy Freuda?",
+      "answer": "Maslowa",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1392,
+      "category": "Psychologia",
+      "question": "Czy choroba afektywna dwubiegunowa obejmuje epizody manii?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1393,
+      "category": "Psychologia",
+      "question": "Jak nazywa się syndrom, w którym ofiara porwania odczuwa sympatię do porywacza?",
+      "answer": "sztokholmski",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1394,
+      "category": "Psychologia",
+      "question": "Jak po angielsku nazywa się wypalenie zawodowe?",
+      "answer": "burnout",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1395,
+      "category": "Psychologia",
+      "question": "Kto stworzył pojęcie nieświadomości zbiorowej i archetypów?",
+      "answer": "Jung",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1396,
+      "category": "Psychologia",
+      "question": "Jak nazywa się efekt, przez który w tłumie ludzie rzadziej pomagają ofierze – efekt widza czy efekt motyla?",
+      "answer": "widza",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1397,
+      "category": "Psychologia",
+      "question": "Jak nazywa się napięcie wynikające z posiadania sprzecznych przekonań – dysonans czy konsonans?",
+      "answer": "dysonans",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1398,
+      "category": "Psychologia",
+      "question": "Jak nazywa się wrażenie, że daną sytuację już kiedyś przeżyliśmy?",
+      "answer": "déjà vu",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1399,
+      "category": "Psychologia",
+      "question": "Jakim skrótem oznacza się fazę snu z szybkimi ruchami gałek ocznych?",
+      "answer": "REM",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1400,
+      "category": "Psychologia",
+      "question": "Jak nazywa się test psychologiczny oparty na interpretacji plam atramentowych – test…?",
+      "answer": "Rorschacha",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1401,
+      "category": "Psychologia",
+      "question": "Jakim skrótem oznacza się iloraz inteligencji?",
+      "answer": "IQ",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1402,
+      "category": "Psychologia",
+      "question": "Jaka jest średnia wartość ilorazu inteligencji w populacji?",
+      "answer": "100",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1403,
+      "category": "Historia",
+      "question": "W którym roku odbyła się bitwa pod Wiedniem z udziałem Jana III Sobieskiego?",
+      "answer": "1683",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1404,
+      "category": "Historia",
+      "question": "Który król Polski założył Akademię Krakowską w 1364 roku?",
+      "answer": "Kazimierz Wielki",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1405,
+      "category": "Historia",
+      "question": "W którym roku wybuchła rewolucja francuska?",
+      "answer": "1789",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1406,
+      "category": "Historia",
+      "question": "Jak nazywał się ostatni król Polski?",
+      "answer": "Poniatowski",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1407,
+      "category": "Historia",
+      "question": "W którym roku zawarto unię lubelską?",
+      "answer": "1569",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1408,
+      "category": "Historia",
+      "question": "Jak nazywał się pierwszy cesarz rzymski?",
+      "answer": "August",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1409,
+      "category": "Historia",
+      "question": "Jak nazywa się dynastia, która rządziła Polską przed Jagiellonami?",
+      "answer": "Piastowie",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1410,
+      "category": "Historia",
+      "question": "W którym roku wybuchło powstanie styczniowe?",
+      "answer": "1863",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1411,
+      "category": "Historia",
+      "question": "W którym roku wybuchło powstanie listopadowe?",
+      "answer": "1830",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1412,
+      "category": "Historia",
+      "question": "Jak nazywał się przywódca ZSRR w czasie II wojny światowej?",
+      "answer": "Stalin",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1413,
+      "category": "Historia",
+      "question": "Kto był premierem Wielkiej Brytanii przez większość II wojny światowej?",
+      "answer": "Churchill",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1414,
+      "category": "Historia",
+      "question": "W którym roku wprowadzono w Polsce stan wojenny?",
+      "answer": "1981",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1415,
+      "category": "Historia",
+      "question": "Kto był pierwszym prezydentem Polski wybranym w wyborach powszechnych po 1989 roku?",
+      "answer": "Wałęsa",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1416,
+      "category": "Historia",
+      "question": "Jak nazywał się faraon, którego nienaruszony grobowiec odkryto w 1922 roku?",
+      "answer": "Tutanchamon",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1417,
+      "category": "Historia",
+      "question": "Przeciwko któremu zakonowi walczyły Polska i Litwa pod Grunwaldem?",
+      "answer": "krzyżackiemu",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1418,
+      "category": "Historia",
+      "question": "W którym roku doszło do katastrofy w elektrowni w Czarnobylu?",
+      "answer": "1986",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1419,
+      "category": "Historia",
+      "question": "W którym roku rozpadł się Związek Radziecki?",
+      "answer": "1991",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1420,
+      "category": "Historia",
+      "question": "Jak nazywał się macedoński wódz, który podbił imperium perskie?",
+      "answer": "Aleksander Wielki",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1421,
+      "category": "Historia",
+      "question": "Jak nazywał się marszałek, Naczelnik Państwa po odzyskaniu niepodległości?",
+      "answer": "Piłsudski",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1422,
+      "category": "Historia",
+      "question": "W którym roku odbyły się w Polsce częściowo wolne wybory parlamentarne?",
+      "answer": "1989",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1423,
+      "category": "Historia",
+      "question": "Jak nazywał się statek, którym w 1620 roku pielgrzymi przypłynęli do Ameryki?",
+      "answer": "Mayflower",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1424,
+      "category": "Historia",
+      "question": "W którym roku zamordowano prezydenta Johna F. Kennedy'ego?",
+      "answer": "1963",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1425,
+      "category": "Historia",
+      "question": "Jak nazywa się epoka odrodzenia kultury antycznej w Europie w XV–XVI wieku?",
+      "answer": "renesans",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1426,
+      "category": "Historia",
+      "question": "Która królowa Polski przekazała swoje klejnoty na odnowienie Akademii Krakowskiej?",
+      "answer": "Jadwiga",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1427,
+      "category": "Historia",
+      "question": "Jak nazywa się bitwa z 1920 roku zwana „Cudem nad Wisłą”?",
+      "answer": "warszawska",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1428,
+      "category": "Historia",
+      "question": "W którym roku Niemcy zaatakowały ZSRR?",
+      "answer": "1941",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1429,
+      "category": "Historia",
+      "question": "Jak potocznie nazywa się dzień lądowania aliantów w Normandii, 6 czerwca 1944?",
+      "answer": "D-Day",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1430,
+      "category": "Historia",
+      "question": "Jak nazywał się wódz Hunów w V wieku?",
+      "answer": "Attyla",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1431,
+      "category": "Historia",
+      "question": "Jak nazywał się kartagiński wódz, który przeprowadził słonie przez Alpy?",
+      "answer": "Hannibal",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1432,
+      "category": "Historia",
+      "question": "Który rzymski cesarz według legendy śpiewał, gdy płonął Rzym?",
+      "answer": "Neron",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1433,
+      "category": "Historia",
+      "question": "Kto razem z Fryderykiem Engelsem napisał „Manifest komunistyczny”?",
+      "answer": "Marks",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1434,
+      "category": "Historia",
+      "question": "Jak nazywała się pierwsza kobieta na stanowisku premiera Wielkiej Brytanii?",
+      "answer": "Thatcher",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1435,
+      "category": "Historia",
+      "question": "Jak nazywał się dramatopisarz, który został prezydentem Czechosłowacji w 1989 roku?",
+      "answer": "Havel",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1436,
+      "category": "Geografia",
+      "question": "Które miasto jest stolicą Australii?",
+      "answer": "Canberra",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1437,
+      "category": "Geografia",
+      "question": "Które miasto jest stolicą Turcji?",
+      "answer": "Ankara",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1438,
+      "category": "Geografia",
+      "question": "Które miasto jest stolicą Brazylii?",
+      "answer": "Brasília",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1439,
+      "category": "Geografia",
+      "question": "Które miasto jest stolicą Szwajcarii?",
+      "answer": "Berno",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1440,
+      "category": "Geografia",
+      "question": "Które miasto jest stolicą Argentyny?",
+      "answer": "Buenos Aires",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1441,
+      "category": "Geografia",
+      "question": "Które miasto jest stolicą Kenii?",
+      "answer": "Nairobi",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1442,
+      "category": "Geografia",
+      "question": "Które miasto jest stolicą Korei Południowej?",
+      "answer": "Seul",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1443,
+      "category": "Geografia",
+      "question": "Które miasto jest stolicą Indii?",
+      "answer": "Nowe Delhi",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1444,
+      "category": "Geografia",
+      "question": "Która rzeka jest najdłuższa w Europie?",
+      "answer": "Wołga",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1445,
+      "category": "Geografia",
+      "question": "Jak nazywa się najwyższy szczyt Afryki?",
+      "answer": "Kilimandżaro",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1446,
+      "category": "Geografia",
+      "question": "Jak nazywa się najwyższy szczyt Alp?",
+      "answer": "Mont Blanc",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1447,
+      "category": "Geografia",
+      "question": "Które jezioro jest najgłębsze na świecie?",
+      "answer": "Bajkał",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1448,
+      "category": "Geografia",
+      "question": "Jak nazywa się cieśnina oddzielająca Europę od Afryki?",
+      "answer": "Gibraltarska",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1449,
+      "category": "Geografia",
+      "question": "Jak nazywa się kanał łączący Ocean Atlantycki z Oceanem Spokojnym?",
+      "answer": "Panamski",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1450,
+      "category": "Geografia",
+      "question": "Ile województw ma Polska?",
+      "answer": "16",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1451,
+      "category": "Geografia",
+      "question": "Które państwo jest najmniejsze na świecie?",
+      "answer": "Watykan",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1452,
+      "category": "Geografia",
+      "question": "Nad jaką rzeką leży Budapeszt?",
+      "answer": "Dunaj",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1453,
+      "category": "Geografia",
+      "question": "W którym państwie leży Machu Picchu?",
+      "answer": "Peru",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1454,
+      "category": "Geografia",
+      "question": "W którym państwie leży Timbuktu?",
+      "answer": "Mali",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1455,
+      "category": "Geografia",
+      "question": "Jak nazywa się najwyższy szczyt Tatr?",
+      "answer": "Gerlach",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1456,
+      "category": "Geografia",
+      "question": "Jak nazywa się słone jezioro na granicy Izraela i Jordanii?",
+      "answer": "Martwe",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1457,
+      "category": "Geografia",
+      "question": "Jak nazywa się chilijska pustynia, jedna z najsuchszych na świecie?",
+      "answer": "Atakama",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1458,
+      "category": "Geografia",
+      "question": "Czy Rosja ma więcej niż 10 stref czasowych?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1459,
+      "category": "Geografia",
+      "question": "W którym państwie leży Transylwania?",
+      "answer": "Rumunia",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1460,
+      "category": "Geografia",
+      "question": "Które miasto jest stolicą województwa podlaskiego?",
+      "answer": "Białystok",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1461,
+      "category": "Geografia",
+      "question": "Które miasto jest stolicą województwa świętokrzyskiego?",
+      "answer": "Kielce",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1462,
+      "category": "Geografia",
+      "question": "Która rzeka razem z Nysą Łużycką wyznacza granicę Polski z Niemcami?",
+      "answer": "Odra",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1463,
+      "category": "Geografia",
+      "question": "Czy Turcja leży na dwóch kontynentach?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1464,
+      "category": "Geografia",
+      "question": "Jak nazywa się słynny wodospad na granicy USA i Kanady?",
+      "answer": "Niagara",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1465,
+      "category": "Geografia",
+      "question": "Jak nazywa się największa wyspa na Morzu Śródziemnym?",
+      "answer": "Sycylia",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1466,
+      "category": "Geografia",
+      "question": "W którym państwie znajduje się Petra – miasto wykute w skale?",
+      "answer": "Jordania",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1467,
+      "category": "Geografia",
+      "question": "Jaki jest język urzędowy Brazylii?",
+      "answer": "portugalski",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1468,
+      "category": "Geografia",
+      "question": "Które państwo ma najwięcej jezior na świecie?",
+      "answer": "Kanada",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1469,
+      "category": "Geografia",
+      "question": "Które państwo bałtyckie ma stolicę w Rydze?",
+      "answer": "Łotwa",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1470,
+      "category": "Geografia",
+      "question": "Które państwo bałtyckie ma stolicę w Tallinnie?",
+      "answer": "Estonia",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1471,
+      "category": "Geografia",
+      "question": "Jak nazywa się najwyższy szczyt Ameryki Południowej?",
+      "answer": "Aconcagua",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1472,
+      "category": "Geografia",
+      "question": "Jak nazywa się największe miasto Szwajcarii?",
+      "answer": "Zurych",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1473,
+      "category": "Geografia",
+      "question": "W którym państwie leży Mumbaj?",
+      "answer": "Indie",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1474,
+      "category": "Biologia",
+      "question": "Ile par chromosomów ma człowiek?",
+      "answer": "23",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1475,
+      "category": "Biologia",
+      "question": "Ile kości ma szkielet dorosłego człowieka?",
+      "answer": "206",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1476,
+      "category": "Biologia",
+      "question": "Ile serc ma ośmiornica?",
+      "answer": "3",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1477,
+      "category": "Biologia",
+      "question": "Jak nazywa się organellum komórki nazywane jej „elektrownią”?",
+      "answer": "mitochondrium",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1478,
+      "category": "Biologia",
+      "question": "Jak nazywa się najdłuższa kość w ciele człowieka?",
+      "answer": "udowa",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1479,
+      "category": "Biologia",
+      "question": "Który narząd wytwarza insulinę?",
+      "answer": "trzustka",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1480,
+      "category": "Biologia",
+      "question": "Jak nazywa się proces, w którym rośliny wytwarzają glukozę przy udziale światła?",
+      "answer": "fotosynteza",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1481,
+      "category": "Biologia",
+      "question": "Jaka grupa krwi należy do uniwersalnego dawcy?",
+      "answer": "0 Rh-",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1482,
+      "category": "Biologia",
+      "question": "Kto sformułował teorię ewolucji przez dobór naturalny?",
+      "answer": "Darwin",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1483,
+      "category": "Biologia",
+      "question": "Jak nazywał się zakonnik nazywany ojcem genetyki, który badał groch?",
+      "answer": "Mendel",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1484,
+      "category": "Biologia",
+      "question": "Czy koala jest torbaczem?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1485,
+      "category": "Biologia",
+      "question": "Jak nazywa się najmniejsza kość w ciele człowieka?",
+      "answer": "strzemiączko",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1486,
+      "category": "Biologia",
+      "question": "Z ilu komór składa się żołądek krowy?",
+      "answer": "4",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1487,
+      "category": "Biologia",
+      "question": "Jak fachowo nazywają się białe krwinki?",
+      "answer": "leukocyty",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1488,
+      "category": "Biologia",
+      "question": "Jak fachowo nazywają się czerwone krwinki?",
+      "answer": "erytrocyty",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1489,
+      "category": "Biologia",
+      "question": "Który ptak jest największy na świecie?",
+      "answer": "struś",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1490,
+      "category": "Biologia",
+      "question": "Czy pomidor jest z botanicznego punktu widzenia owocem?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1491,
+      "category": "Biologia",
+      "question": "Jak nazywa się przemiana gąsienicy w motyla?",
+      "answer": "metamorfoza",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1492,
+      "category": "Biologia",
+      "question": "Jaki ssak jako jedyny potrafi aktywnie latać?",
+      "answer": "nietoperz",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1493,
+      "category": "Biologia",
+      "question": "Jak nazywa się czerwony barwnik krwi przenoszący tlen?",
+      "answer": "hemoglobina",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1494,
+      "category": "Biologia",
+      "question": "Jak nazywa się nauka o grzybach?",
+      "answer": "mykologia",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1495,
+      "category": "Biologia",
+      "question": "Jak nazywa się nauka o ptakach?",
+      "answer": "ornitologia",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1496,
+      "category": "Biologia",
+      "question": "Czy żubr żyje w Puszczy Białowieskiej?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1497,
+      "category": "Biologia",
+      "question": "Do jakiej gromady należy salamandra – płazów czy gadów?",
+      "answer": "płazów",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1498,
+      "category": "Biologia",
+      "question": "Jak nazywa się nauka o owadach?",
+      "answer": "entomologia",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1499,
+      "category": "Biologia",
+      "question": "Jak nazywa się nauka o roślinach?",
+      "answer": "botanika",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1500,
+      "category": "Biologia",
+      "question": "Ile odnóży, razem ze szczypcami, ma krab?",
+      "answer": "10",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1501,
+      "category": "Biologia",
+      "question": "Jaka roślina jest głównym pokarmem pandy wielkiej?",
+      "answer": "bambus",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1502,
+      "category": "Biologia",
+      "question": "Jak nazywa się mieszaniec konia i osła?",
+      "answer": "muł",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1503,
+      "category": "Chemia",
+      "question": "Jaki symbol chemiczny ma sód?",
+      "answer": "Na",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1504,
+      "category": "Chemia",
+      "question": "Jaki symbol chemiczny ma srebro?",
+      "answer": "Ag",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1505,
+      "category": "Chemia",
+      "question": "Jaki symbol chemiczny ma potas?",
+      "answer": "K",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1506,
+      "category": "Chemia",
+      "question": "Kto stworzył układ okresowy pierwiastków?",
+      "answer": "Mendelejew",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1507,
+      "category": "Chemia",
+      "question": "Jaki jest wzór chemiczny soli kuchennej?",
+      "answer": "NaCl",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1508,
+      "category": "Chemia",
+      "question": "Jaki jest wzór chemiczny dwutlenku węgla?",
+      "answer": "CO2",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1509,
+      "category": "Chemia",
+      "question": "Który pierwiastek jest najlżejszy?",
+      "answer": "wodór",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1510,
+      "category": "Chemia",
+      "question": "Który metal jest cieczą w temperaturze pokojowej?",
+      "answer": "rtęć",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1511,
+      "category": "Chemia",
+      "question": "Jakie pH ma czysta woda?",
+      "answer": "7",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1512,
+      "category": "Chemia",
+      "question": "Czy kwasy mają pH mniejsze niż 7?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1513,
+      "category": "Chemia",
+      "question": "Jak nazywa się gaz szlachetny świecący na czerwono w reklamach świetlnych?",
+      "answer": "neon",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1514,
+      "category": "Chemia",
+      "question": "Który pierwiastek Maria Skłodowska-Curie nazwała na cześć Polski?",
+      "answer": "polon",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1515,
+      "category": "Chemia",
+      "question": "Z jakiego pierwiastka zbudowany jest diament?",
+      "answer": "węgiel",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1516,
+      "category": "Chemia",
+      "question": "Jaki gaz stanowi około 78% atmosfery ziemskiej?",
+      "answer": "azot",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1517,
+      "category": "Chemia",
+      "question": "Jak nazywa się najmniejsza część pierwiastka zachowująca jego właściwości?",
+      "answer": "atom",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1518,
+      "category": "Chemia",
+      "question": "Jaki symbol chemiczny ma miedź?",
+      "answer": "Cu",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1519,
+      "category": "Chemia",
+      "question": "Jaki symbol chemiczny ma ołów?",
+      "answer": "Pb",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1520,
+      "category": "Fizyka",
+      "question": "Jak nazywa się jednostka siły w układzie SI?",
+      "answer": "niuton",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1521,
+      "category": "Fizyka",
+      "question": "Jak nazywa się jednostka mocy w układzie SI?",
+      "answer": "wat",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1522,
+      "category": "Fizyka",
+      "question": "Jak nazywa się jednostka oporu elektrycznego?",
+      "answer": "om",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1523,
+      "category": "Fizyka",
+      "question": "Jak nazywa się jednostka napięcia elektrycznego?",
+      "answer": "wolt",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1524,
+      "category": "Fizyka",
+      "question": "Kto sformułował trzy zasady dynamiki?",
+      "answer": "Newton",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1525,
+      "category": "Fizyka",
+      "question": "Kto jest twórcą teorii względności?",
+      "answer": "Einstein",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1526,
+      "category": "Fizyka",
+      "question": "Ile w przybliżeniu kilometrów na sekundę wynosi prędkość światła?",
+      "answer": "300 000",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1527,
+      "category": "Fizyka",
+      "question": "Czy światło porusza się szybciej niż dźwięk?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1528,
+      "category": "Fizyka",
+      "question": "Ile stopni Celsjusza wynosi w przybliżeniu zero bezwzględne?",
+      "answer": "-273",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1529,
+      "category": "Fizyka",
+      "question": "Jak nazywa się skala temperatury, w której zero oznacza zero bezwzględne?",
+      "answer": "Kelvina",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1530,
+      "category": "Fizyka",
+      "question": "Jak nazywa się rozszczepienie światła białego na barwy w pryzmacie?",
+      "answer": "dyspersja",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1531,
+      "category": "Fizyka",
+      "question": "Który kolor światła widzialnego ma największą długość fali?",
+      "answer": "czerwony",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1532,
+      "category": "Fizyka",
+      "question": "Jak nazywa się maszyna zamieniająca energię mechaniczną na elektryczną?",
+      "answer": "prądnica",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1533,
+      "category": "Fizyka",
+      "question": "Ile w przybliżeniu wynosi przyspieszenie ziemskie w m/s²?",
+      "answer": "9,81",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1534,
+      "category": "Fizyka",
+      "question": "Jak nazywa się efekt pozornej zmiany wysokości dźwięku poruszającej się karetki – efekt…?",
+      "answer": "Dopplera",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1535,
+      "category": "Astronomia",
+      "question": "Która planeta Układu Słonecznego jest najgorętsza?",
+      "answer": "Wenus",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1536,
+      "category": "Astronomia",
+      "question": "Jak nazywa się największy księżyc Saturna?",
+      "answer": "Tytan",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1537,
+      "category": "Astronomia",
+      "question": "Ile mniej więcej leci światło ze Słońca do Ziemi – 8 minut czy 8 godzin?",
+      "answer": "8 minut",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1538,
+      "category": "Astronomia",
+      "question": "Jak nazywa się gwiazda położona najbliżej Słońca?",
+      "answer": "Proxima Centauri",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1539,
+      "category": "Astronomia",
+      "question": "Jak nazywa się teleskop kosmiczny wyniesiony na orbitę w 1990 roku?",
+      "answer": "Hubble",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1540,
+      "category": "Astronomia",
+      "question": "Jak nazywa się obiekt, z którego nie może uciec nawet światło?",
+      "answer": "czarna dziura",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1541,
+      "category": "Astronomia",
+      "question": "Która planeta obraca się „leżąc na boku”?",
+      "answer": "Uran",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1542,
+      "category": "Astronomia",
+      "question": "Jak nazywał się pierwszy sztuczny satelita Ziemi?",
+      "answer": "Sputnik",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1543,
+      "category": "Astronomia",
+      "question": "Jak nazywał się program NASA, w ramach którego ludzie wylądowali na Księżycu?",
+      "answer": "Apollo",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1544,
+      "category": "Astronomia",
+      "question": "W którym gwiazdozbiorze znajduje się Wielki Wóz?",
+      "answer": "Wielka Niedźwiedzica",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1545,
+      "category": "Astronomia",
+      "question": "Który z księżyców krąży wokół Marsa – Fobos czy Io?",
+      "answer": "Fobos",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1546,
+      "category": "Matematyka",
+      "question": "Ile wynosi liczba pi w przybliżeniu do dwóch miejsc po przecinku?",
+      "answer": "3,14",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1547,
+      "category": "Matematyka",
+      "question": "Czyjego twierdzenia dotyczy wzór a² + b² = c²?",
+      "answer": "Pitagorasa",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1548,
+      "category": "Matematyka",
+      "question": "Ile wynosi 15% z 200?",
+      "answer": "30",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1549,
+      "category": "Matematyka",
+      "question": "Jaka jest najmniejsza liczba pierwsza?",
+      "answer": "2",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1550,
+      "category": "Matematyka",
+      "question": "Ile wynosi 4! (cztery silnia)?",
+      "answer": "24",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1551,
+      "category": "Matematyka",
+      "question": "Ile przekątnych ma kwadrat?",
+      "answer": "2",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1552,
+      "category": "Matematyka",
+      "question": "Jak nazywa się wielokąt o ośmiu bokach?",
+      "answer": "ośmiokąt",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1553,
+      "category": "Matematyka",
+      "question": "Ile wynosi pierwiastek sześcienny z 27?",
+      "answer": "3",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1554,
+      "category": "Matematyka",
+      "question": "Czy liczba 1 jest liczbą pierwszą?",
+      "answer": "nie",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1555,
+      "category": "Matematyka",
+      "question": "Ile stopni wynosi suma kątów wewnętrznych czworokąta?",
+      "answer": "360",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1556,
+      "category": "Matematyka",
+      "question": "Jak nazywa się prosta mająca z okręgiem dokładnie jeden punkt wspólny?",
+      "answer": "styczna",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1557,
+      "category": "Matematyka",
+      "question": "Ile wynosi 10 do potęgi zerowej?",
+      "answer": "1",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1558,
+      "category": "Matematyka",
+      "question": "Ile wynosi 13 do kwadratu?",
+      "answer": "169",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1559,
+      "category": "Matematyka",
+      "question": "Ile wynosi 7 do kwadratu?",
+      "answer": "49",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1560,
+      "category": "Matematyka",
+      "question": "Jak nazywa się najdłuższy bok trójkąta prostokątnego?",
+      "answer": "przeciwprostokątna",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1561,
+      "category": "Ekonomia",
+      "question": "Jak nazywa się waluta Japonii?",
+      "answer": "jen",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1562,
+      "category": "Ekonomia",
+      "question": "Jak nazywa się waluta Szwajcarii?",
+      "answer": "frank",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1563,
+      "category": "Ekonomia",
+      "question": "Jak nazywa się waluta Chin?",
+      "answer": "juan",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1564,
+      "category": "Ekonomia",
+      "question": "Jak nazywa się ogólny spadek poziomu cen?",
+      "answer": "deflacja",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1565,
+      "category": "Ekonomia",
+      "question": "W którym mieście ma siedzibę polska Giełda Papierów Wartościowych?",
+      "answer": "Warszawa",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1566,
+      "category": "Ekonomia",
+      "question": "Jak nazywa się papier wartościowy oznaczający udział w spółce akcyjnej?",
+      "answer": "akcja",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1567,
+      "category": "Ekonomia",
+      "question": "Jak nazywa się okresowy spadek aktywności gospodarczej?",
+      "answer": "recesja",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1568,
+      "category": "Ekonomia",
+      "question": "Jak nazywa się sytuacja, gdy jedna firma kontroluje cały rynek danego towaru?",
+      "answer": "monopol",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1569,
+      "category": "Ekonomia",
+      "question": "Jak nazywa się pierwsza kryptowaluta, stworzona w 2009 roku?",
+      "answer": "Bitcoin",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1570,
+      "category": "Ekonomia",
+      "question": "Jakim skrótem oznacza się bank centralny Polski?",
+      "answer": "NBP",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1571,
+      "category": "Medycyna",
+      "question": "Kto opracował szczepionkę przeciwko wściekliźnie?",
+      "answer": "Pasteur",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1572,
+      "category": "Medycyna",
+      "question": "Jak nazywa się lekarz zajmujący się chorobami serca?",
+      "answer": "kardiolog",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1573,
+      "category": "Medycyna",
+      "question": "Jak nazywa się lekarz zajmujący się chorobami skóry?",
+      "answer": "dermatolog",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1574,
+      "category": "Medycyna",
+      "question": "Jakim skrótem oznacza się zdjęcie rentgenowskie?",
+      "answer": "RTG",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1575,
+      "category": "Medycyna",
+      "question": "Jak nazywa się choroba wywołana niedoborem witaminy C?",
+      "answer": "szkorbut",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1576,
+      "category": "Medycyna",
+      "question": "Który narząd oczyszcza krew i wytwarza mocz?",
+      "answer": "nerka",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1577,
+      "category": "Medycyna",
+      "question": "Niedobór którego pierwiastka jest najczęstszą przyczyną anemii?",
+      "answer": "żelaza",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1578,
+      "category": "Medycyna",
+      "question": "Czy krew tętnicza jest bogata w tlen?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1579,
+      "category": "Medycyna",
+      "question": "Jak nazywa się preparat uodparniający na chorobę zakaźną?",
+      "answer": "szczepionka",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1580,
+      "category": "Medycyna",
+      "question": "Który hormon obniża poziom cukru we krwi?",
+      "answer": "insulina",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1581,
+      "category": "Medycyna",
+      "question": "Ile kręgów ma odcinek szyjny kręgosłupa człowieka?",
+      "answer": "7",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1582,
+      "category": "Medycyna",
+      "question": "Jak nazywa się lekarz zajmujący się układem nerwowym?",
+      "answer": "neurolog",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1583,
+      "category": "Sport",
+      "question": "W którym mieście odbyły się letnie igrzyska olimpijskie w 2024 roku?",
+      "answer": "Paryż",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1584,
+      "category": "Sport",
+      "question": "Ilu zawodników jednej drużyny gra na boisku w koszykówce?",
+      "answer": "5",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1585,
+      "category": "Sport",
+      "question": "Ile minut trwa mecz piłki nożnej bez doliczonego czasu?",
+      "answer": "90",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1586,
+      "category": "Sport",
+      "question": "W której grze używa się określenia „szach-mat”?",
+      "answer": "szachy",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1587,
+      "category": "Sport",
+      "question": "Jak nazywa się Kamil, polski skoczek narciarski, trzykrotny mistrz olimpijski?",
+      "answer": "Stoch",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1588,
+      "category": "Sport",
+      "question": "W którym państwie odbyły się Mistrzostwa Świata w piłce nożnej w 2022 roku?",
+      "answer": "Katar",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1589,
+      "category": "Sport",
+      "question": "Ile pól ma plansza do warcabów polskich?",
+      "answer": "100",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1590,
+      "category": "Sport",
+      "question": "Jak nazywa się wielkoszlemowy turniej tenisowy rozgrywany na kortach ziemnych w Paryżu?",
+      "answer": "Roland Garros",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1591,
+      "category": "Sport",
+      "question": "Ile kręgli ustawia się w grze w bowling?",
+      "answer": "10",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1592,
+      "category": "Sport",
+      "question": "W którym sporcie używa się terminu „birdie”?",
+      "answer": "golf",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1593,
+      "category": "Sport",
+      "question": "Ile punktów daje przyłożenie w rugby union?",
+      "answer": "5",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1594,
+      "category": "Sport",
+      "question": "Jak nazywa się Robert, polski chodziarz, czterokrotny mistrz olimpijski?",
+      "answer": "Korzeniowski",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1595,
+      "category": "Sport",
+      "question": "W którym państwie wymyślono koszykówkę?",
+      "answer": "USA",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1596,
+      "category": "Sport",
+      "question": "Jak nazywa się efektowne wrzucenie piłki do kosza z góry, z wyskoku?",
+      "answer": "wsad",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1597,
+      "category": "Sport",
+      "question": "W którym roku Polska była współgospodarzem piłkarskich mistrzostw Europy?",
+      "answer": "2012",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1598,
+      "category": "Sport",
+      "question": "Jak nazywa się japońska sztuka walki, której nazwa znaczy „łagodna droga”?",
+      "answer": "judo",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1599,
+      "category": "Sport",
+      "question": "Ile metrów ma okrążenie standardowej bieżni lekkoatletycznej?",
+      "answer": "400",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1600,
+      "category": "Literatura",
+      "question": "Kto napisał „Lalkę”?",
+      "answer": "Prus",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1601,
+      "category": "Literatura",
+      "question": "Kto napisał „Chłopów”?",
+      "answer": "Reymont",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1602,
+      "category": "Literatura",
+      "question": "Kto napisał „Ferdydurke”?",
+      "answer": "Gombrowicz",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1603,
+      "category": "Literatura",
+      "question": "Kto napisał dramat „Wesele”?",
+      "answer": "Wyspiański",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1604,
+      "category": "Literatura",
+      "question": "Kto napisał „Przedwiośnie”?",
+      "answer": "Żeromski",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1605,
+      "category": "Literatura",
+      "question": "Kto napisał „Kordiana”?",
+      "answer": "Słowacki",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1606,
+      "category": "Literatura",
+      "question": "Kto napisał „Don Kichota”?",
+      "answer": "Cervantes",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1607,
+      "category": "Literatura",
+      "question": "Kto napisał „Zbrodnię i karę”?",
+      "answer": "Dostojewski",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1608,
+      "category": "Literatura",
+      "question": "Kto napisał powieść „Rok 1984”?",
+      "answer": "Orwell",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1609,
+      "category": "Literatura",
+      "question": "Kto napisał „Małego Księcia”?",
+      "answer": "Saint-Exupéry",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1610,
+      "category": "Literatura",
+      "question": "Kto jest autorem sagi o wiedźminie?",
+      "answer": "Sapkowski",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1611,
+      "category": "Literatura",
+      "question": "Jak ma na imię wiedźmin z Rivii?",
+      "answer": "Geralt",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1612,
+      "category": "Literatura",
+      "question": "Kto napisał „Władcę Pierścieni”?",
+      "answer": "Tolkien",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1613,
+      "category": "Literatura",
+      "question": "Kto napisał „Mistrza i Małgorzatę”?",
+      "answer": "Bułhakow",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1614,
+      "category": "Literatura",
+      "question": "Kto napisał „Proces”?",
+      "answer": "Kafka",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1615,
+      "category": "Literatura",
+      "question": "Jak nazywa się pierwsza część „Boskiej komedii” Dantego?",
+      "answer": "Piekło",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1616,
+      "category": "Literatura",
+      "question": "Jak nazywała się kraina maleńkich ludzi w „Podróżach Guliwera”?",
+      "answer": "Liliput",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1617,
+      "category": "Literatura",
+      "question": "Która polska poetka otrzymała Literacką Nagrodę Nobla w 1996 roku?",
+      "answer": "Szymborska",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1618,
+      "category": "Literatura",
+      "question": "Która polska pisarka otrzymała Literacką Nagrodę Nobla za rok 2018?",
+      "answer": "Tokarczuk",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1619,
+      "category": "Literatura",
+      "question": "Kto napisał powieść „Nad Niemnem”?",
+      "answer": "Orzeszkowa",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1620,
+      "category": "Literatura",
+      "question": "Kto napisał „Sklepy cynamonowe”?",
+      "answer": "Schulz",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1621,
+      "category": "Język polski",
+      "question": "Jak nazywa się przypadek odpowiadający na pytania „kogo? czego?”?",
+      "answer": "dopełniacz",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1622,
+      "category": "Język polski",
+      "question": "Jak nazywa się przypadek odpowiadający na pytania „z kim? z czym?”?",
+      "answer": "narzędnik",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1623,
+      "category": "Język polski",
+      "question": "Jak nazywa się przypadek używany przy zwracaniu się do kogoś?",
+      "answer": "wołacz",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1624,
+      "category": "Język polski",
+      "question": "Jak nazywa się wyraz o kilku różnych znaczeniach przy tym samym brzmieniu, np. „zamek”?",
+      "answer": "homonim",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1625,
+      "category": "Język polski",
+      "question": "Jak nazywa się środek stylistyczny nadający przedmiotom cechy ludzkie?",
+      "answer": "uosobienie",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1626,
+      "category": "Język polski",
+      "question": "Jak nazywa się wyraz czytany tak samo od przodu i od tyłu, np. „kajak”?",
+      "answer": "palindrom",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1627,
+      "category": "Język polski",
+      "question": "Czy partykułę „nie” z czasownikami piszemy zazwyczaj osobno?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1628,
+      "category": "Język polski",
+      "question": "Jak nazywa się wyraz naśladujący dźwięk, np. „kukuryku”?",
+      "answer": "onomatopeja",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1629,
+      "category": "Język polski",
+      "question": "Jak nazywa się środek stylistyczny polegający na wyolbrzymieniu?",
+      "answer": "hiperbola",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1630,
+      "category": "Język polski",
+      "question": "Jak nazywa się część zdania wskazująca wykonawcę czynności?",
+      "answer": "podmiot",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1631,
+      "category": "Sztuka",
+      "question": "Kto namalował „Bitwę pod Grunwaldem”?",
+      "answer": "Matejko",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1632,
+      "category": "Sztuka",
+      "question": "Kto namalował „Krzyk”?",
+      "answer": "Munch",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1633,
+      "category": "Sztuka",
+      "question": "W którym mieście można oglądać „Damę z gronostajem” Leonarda da Vinci?",
+      "answer": "Kraków",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1634,
+      "category": "Sztuka",
+      "question": "Kto wyrzeźbił posąg Dawida stojący we Florencji?",
+      "answer": "Michał Anioł",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1635,
+      "category": "Sztuka",
+      "question": "Który hiszpański malarz, współtwórca kubizmu, namalował „Guernikę”?",
+      "answer": "Picasso",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1636,
+      "category": "Sztuka",
+      "question": "Kto namalował „Trwałość pamięci” z miękkimi zegarami?",
+      "answer": "Dalí",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1637,
+      "category": "Sztuka",
+      "question": "W którym muzeum wisi „Mona Lisa”?",
+      "answer": "Luwr",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1638,
+      "category": "Sztuka",
+      "question": "Jaki kierunek w malarstwie wziął nazwę od obrazu Moneta „Impresja, wschód słońca”?",
+      "answer": "impresjonizm",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1639,
+      "category": "Muzyka",
+      "question": "Kto skomponował „Eine kleine Nachtmusik”?",
+      "answer": "Mozart",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1640,
+      "category": "Muzyka",
+      "question": "Który kompozytor stracił słuch, a mimo to napisał IX symfonię?",
+      "answer": "Beethoven",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1641,
+      "category": "Muzyka",
+      "question": "Ile strun mają skrzypce?",
+      "answer": "4",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1642,
+      "category": "Muzyka",
+      "question": "Jak nazywa się najwyższy głos żeński?",
+      "answer": "sopran",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1643,
+      "category": "Muzyka",
+      "question": "Jak nazywa się najniższy głos męski?",
+      "answer": "bas",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1644,
+      "category": "Muzyka",
+      "question": "Kto skomponował operę „Halka”?",
+      "answer": "Moniuszko",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1645,
+      "category": "Muzyka",
+      "question": "Jak nazywał się wokalista zespołu Queen?",
+      "answer": "Mercury",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1646,
+      "category": "Muzyka",
+      "question": "Jak nazywa się polski taniec narodowy, którego nazwa pochodzi od Mazowsza?",
+      "answer": "mazurek",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1647,
+      "category": "Muzyka",
+      "question": "Jak nazywa się pałeczka dyrygenta?",
+      "answer": "batuta",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1648,
+      "category": "Film",
+      "question": "Kto wyreżyserował „Listę Schindlera”?",
+      "answer": "Spielberg",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1649,
+      "category": "Film",
+      "question": "Kto wyreżyserował „Ojca chrzestnego”?",
+      "answer": "Coppola",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1650,
+      "category": "Film",
+      "question": "Jak nazywa się główna nagroda festiwalu w Cannes – Złota Palma czy Złoty Lew?",
+      "answer": "Złota Palma",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1651,
+      "category": "Film",
+      "question": "Kto wyreżyserował film „Pianista” z 2002 roku?",
+      "answer": "Polański",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1652,
+      "category": "Film",
+      "question": "W którym mieście odbywa się Festiwal Polskich Filmów Fabularnych?",
+      "answer": "Gdynia",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1653,
+      "category": "Film",
+      "question": "Jak w polskiej wersji nazywa się kowboj-zabawka z filmu „Toy Story”?",
+      "answer": "Chudy",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1654,
+      "category": "Prawo",
+      "question": "Ilu posłów zasiada w polskim Sejmie?",
+      "answer": "460",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1655,
+      "category": "Prawo",
+      "question": "Na ile lat wybierany jest prezydent Polski?",
+      "answer": "5",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1656,
+      "category": "Prawo",
+      "question": "Na ile lat wybierany jest Sejm?",
+      "answer": "4",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1657,
+      "category": "Prawo",
+      "question": "Od ilu lat przysługuje w Polsce prawo głosowania w wyborach?",
+      "answer": "18",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1658,
+      "category": "Prawo",
+      "question": "Ile lat trzeba ukończyć, aby kandydować na prezydenta Polski?",
+      "answer": "35",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1659,
+      "category": "Prawo",
+      "question": "Jak nazywa się najwyższy akt prawny w Polsce?",
+      "answer": "konstytucja",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1660,
+      "category": "Prawo",
+      "question": "Jakim skrótem oznacza się Trybunał Konstytucyjny?",
+      "answer": "TK",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1661,
+      "category": "Prawo",
+      "question": "Czy Polska jest republiką?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1662,
+      "category": "Prawo",
+      "question": "Czy Parlament Europejski liczy więcej niż 500 posłów?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1663,
+      "category": "Prawo",
+      "question": "W którym mieście znajduje się główna siedziba ONZ?",
+      "answer": "Nowy Jork",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1664,
+      "category": "Ekologia",
+      "question": "Jak nazywa się zjawisko ogrzewania Ziemi przez gazy zatrzymujące ciepło w atmosferze?",
+      "answer": "efekt cieplarniany",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1665,
+      "category": "Ekologia",
+      "question": "Jak nazywa się warstwa atmosfery chroniąca przed promieniowaniem UV?",
+      "answer": "ozonowa",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1666,
+      "category": "Ekologia",
+      "question": "Czy energia wiatru jest energią odnawialną?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1667,
+      "category": "Ekologia",
+      "question": "Jak nazywa się ponowne przetwarzanie odpadów?",
+      "answer": "recykling",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1668,
+      "category": "Ekologia",
+      "question": "Czy węgiel kamienny jest odnawialnym źródłem energii?",
+      "answer": "nie",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1669,
+      "category": "Technika",
+      "question": "Kto w 1876 roku opatentował telefon?",
+      "answer": "Bell",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1670,
+      "category": "Technika",
+      "question": "Kto wynalazł w Europie druk z ruchomą czcionką?",
+      "answer": "Gutenberg",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1671,
+      "category": "Technika",
+      "question": "Jak nazywali się bracia, którzy w 1903 roku odbyli pierwszy lot samolotem z silnikiem?",
+      "answer": "Wright",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1672,
+      "category": "Technika",
+      "question": "Kto wynalazł dynamit?",
+      "answer": "Nobel",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1673,
+      "category": "Technika",
+      "question": "Jak nazywa się silnik, w którym paliwo zapala się od sprężenia – silnik Diesla czy Otta?",
+      "answer": "Diesla",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1674,
+      "category": "Technika",
+      "question": "Jaką markę samochodów elektrycznych kieruje Elon Musk?",
+      "answer": "Tesla",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1675,
+      "category": "Technika",
+      "question": "Jakim skrótem oznacza się satelitarny system nawigacji?",
+      "answer": "GPS",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1676,
+      "category": "Wiedza ogólna",
+      "question": "Jak długo trwa pontyfikat papieża?",
+      "answer": "dożywotnio",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1677,
+      "category": "Wiedza ogólna",
+      "question": "Jaki kamień szlachetny ma niebieską barwę – szafir czy rubin?",
+      "answer": "szafir",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1678,
+      "category": "Wiedza ogólna",
+      "question": "Ile wynosi rzymska liczba M?",
+      "answer": "1000",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1679,
+      "category": "Wiedza ogólna",
+      "question": "Jak zapisać liczbę 9 cyframi rzymskimi?",
+      "answer": "IX",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1680,
+      "category": "Wiedza ogólna",
+      "question": "Jaki znak zodiaku przypada na koniec lipca i większą część sierpnia?",
+      "answer": "Lew",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1681,
+      "category": "Wiedza ogólna",
+      "question": "Jak nazywa się japońska sztuka składania papieru?",
+      "answer": "origami",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1682,
+      "category": "Wiedza ogólna",
+      "question": "Jak nazywa się japońska sztuka hodowli miniaturowych drzewek?",
+      "answer": "bonsai",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1683,
+      "category": "Wiedza ogólna",
+      "question": "Czyjego nazwiska jest alfabet dla niewidomych?",
+      "answer": "Braille'a",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1684,
+      "category": "Wiedza ogólna",
+      "question": "Czyjego nazwiska jest alfabet złożony z kropek i kresek?",
+      "answer": "Morse'a",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1685,
+      "category": "Wiedza ogólna",
+      "question": "Ile karatów ma czyste złoto?",
+      "answer": "24",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1686,
+      "category": "Wiedza ogólna",
+      "question": "Jak nazywa się dzień, w którym dzień i noc trwają tyle samo?",
+      "answer": "równonoc",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1687,
+      "category": "Wiedza ogólna",
+      "question": "Jak nazywa się hiszpańskie danie z ryżu, szafranu i owoców morza?",
+      "answer": "paella",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1688,
+      "category": "Wiedza ogólna",
+      "question": "Z którego kraju pochodzi gulasz jako danie narodowe?",
+      "answer": "Węgry",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1689,
+      "category": "Wiedza ogólna",
+      "question": "Jak nazywa się włoski deser z biszkoptów, kawy i serka mascarpone?",
+      "answer": "tiramisu",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1690,
+      "category": "Wiedza ogólna",
+      "question": "Jak nazywa się francuski rogalik z ciasta francuskiego?",
+      "answer": "croissant",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1691,
+      "category": "Wiedza ogólna",
+      "question": "Ile dni ma luty w roku przestępnym?",
+      "answer": "29",
+      "source": "Nowe pytania"
     }
   ],
   "round3": [
@@ -7143,6 +11833,2316 @@
       "question": "Co budował w Egipcie inżynier Tarkowski, ojciec Stasia z powieści W pustyni i w puszczy?",
       "answer": "Kanał Sueski",
       "source": "Seria 99 odcinek 19 26.05.2017"
+    },
+    {
+      "id": 1692,
+      "category": "Informatyka",
+      "question": "Jak nazywała się XIX-wieczna matematyczka uznawana za pierwszą programistkę w historii?",
+      "answer": "Lovelace",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1693,
+      "category": "Informatyka",
+      "question": "Czyjego nazwiska jest test sprawdzający, czy maszyna potrafi udawać człowieka w rozmowie?",
+      "answer": "Turinga",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1694,
+      "category": "Informatyka",
+      "question": "Jak nazywał się polski kryptolog, który w 1932 roku złamał szyfr Enigmy?",
+      "answer": "Rejewski",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1695,
+      "category": "Informatyka",
+      "question": "Z ilu bitów składa się adres IPv4?",
+      "answer": "32",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1696,
+      "category": "Informatyka",
+      "question": "Z ilu bitów składa się adres IPv6?",
+      "answer": "128",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1697,
+      "category": "Informatyka",
+      "question": "Jak nazywa się system liczbowy o podstawie 16?",
+      "answer": "szesnastkowy",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1698,
+      "category": "Informatyka",
+      "question": "Jak nazywa się standard kodowania znaków obejmujący niemal wszystkie pisma świata?",
+      "answer": "Unicode",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1699,
+      "category": "Informatyka",
+      "question": "Jaki jest domyślny numer portu protokołu HTTP?",
+      "answer": "80",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1700,
+      "category": "Informatyka",
+      "question": "Jaki jest domyślny numer portu protokołu HTTPS?",
+      "answer": "443",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1701,
+      "category": "Informatyka",
+      "question": "Jak nazywa się struktura danych działająca według zasady LIFO?",
+      "answer": "stos",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1702,
+      "category": "Informatyka",
+      "question": "Jak nazywa się struktura danych działająca według zasady FIFO?",
+      "answer": "kolejka",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1703,
+      "category": "Informatyka",
+      "question": "Kto jest twórcą World Wide Web?",
+      "answer": "Berners-Lee",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1704,
+      "category": "Informatyka",
+      "question": "W którym ośrodku badawczym powstała sieć WWW?",
+      "answer": "CERN",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1705,
+      "category": "Informatyka",
+      "question": "Jak nazywał się amerykański komputer elektronowy ogólnego przeznaczenia ukończony w 1945/46 roku?",
+      "answer": "ENIAC",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1706,
+      "category": "Informatyka",
+      "question": "Czyjego nazwiska jest prawo o podwajaniu się liczby tranzystorów w układach co około dwa lata?",
+      "answer": "Moore'a",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1707,
+      "category": "Informatyka",
+      "question": "Jak nazywa się algorytm sortowania opracowany przez Tony'ego Hoare'a?",
+      "answer": "quicksort",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1708,
+      "category": "Informatyka",
+      "question": "Jak nazywa się rozproszony system kontroli wersji stworzony przez Linusa Torvaldsa?",
+      "answer": "Git",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1709,
+      "category": "Informatyka",
+      "question": "Jak nazywa się atak polegający na wstrzyknięciu złośliwego zapytania do bazy danych?",
+      "answer": "SQL injection",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1710,
+      "category": "Informatyka",
+      "question": "Ile wynosi w systemie dziesiętnym liczba szesnastkowa FF?",
+      "answer": "255",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1711,
+      "category": "Informatyka",
+      "question": "Jak nazywa się algorytm szyfrowania z kluczem publicznym, nazwany od pierwszych liter nazwisk twórców?",
+      "answer": "RSA",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1712,
+      "category": "Informatyka",
+      "question": "Jak nazywał się pierwszy polski komputer, uruchomiony w 1958 roku?",
+      "answer": "XYZ",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1713,
+      "category": "Informatyka",
+      "question": "Jak nazywa się siedmiowarstwowy model komunikacji sieciowej?",
+      "answer": "OSI",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1714,
+      "category": "Informatyka",
+      "question": "Czy problem „P vs NP” został już rozwiązany?",
+      "answer": "nie",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1715,
+      "category": "Informatyka",
+      "question": "Jak nazywa się język programowania stworzony przez Bjarnego Stroustrupa?",
+      "answer": "C++",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1716,
+      "category": "Psychologia",
+      "question": "Kto przeprowadził słynny eksperyment z posłuszeństwem wobec autorytetu i rzekomym rażeniem prądem?",
+      "answer": "Milgram",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1717,
+      "category": "Psychologia",
+      "question": "Kto kierował stanfordzkim eksperymentem więziennym w 1971 roku?",
+      "answer": "Zimbardo",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1718,
+      "category": "Psychologia",
+      "question": "Jak nazywa się efekt, w którym osoby mało kompetentne przeceniają swoje umiejętności?",
+      "answer": "Dunninga-Krugera",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1719,
+      "category": "Psychologia",
+      "question": "Kto opisał stadia rozwoju poznawczego dziecka, m.in. sensoryczno-motoryczne?",
+      "answer": "Piaget",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1720,
+      "category": "Psychologia",
+      "question": "Jak nazywa się błąd poznawczy polegający na szukaniu informacji zgodnych z własnymi poglądami – efekt potwierdzenia czy efekt aureoli?",
+      "answer": "potwierdzenia",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1721,
+      "category": "Psychologia",
+      "question": "Jak nazywa się efekt, gdy jedna pozytywna cecha wpływa na ocenę całej osoby?",
+      "answer": "aureoli",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1722,
+      "category": "Psychologia",
+      "question": "Który twórca behawioryzmu przeprowadził eksperyment z „małym Albertem”?",
+      "answer": "Watson",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1723,
+      "category": "Psychologia",
+      "question": "Który psycholog skonstruował klatkę do badania warunkowania sprawczego szczurów i gołębi?",
+      "answer": "Skinner",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1724,
+      "category": "Psychologia",
+      "question": "Według Freuda osobowość tworzą id, ego i…?",
+      "answer": "superego",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1725,
+      "category": "Psychologia",
+      "question": "Z ilu czynników składa się model osobowości zwany Wielką Piątką?",
+      "answer": "5",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1726,
+      "category": "Psychologia",
+      "question": "Kto opracował krzywą zapominania?",
+      "answer": "Ebbinghaus",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1727,
+      "category": "Psychologia",
+      "question": "Ile elementów mieści pamięć krótkotrwała według „magicznej liczby” George'a Millera?",
+      "answer": "7",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1728,
+      "category": "Psychologia",
+      "question": "Czy dawną nazwą dysocjacyjnego zaburzenia tożsamości była „osobowość mnoga”?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1729,
+      "category": "Psychologia",
+      "question": "Czyjego imienia jest efekt, w którym oczekiwania nauczyciela wpływają na wyniki ucznia?",
+      "answer": "Pigmaliona",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1730,
+      "category": "Psychologia",
+      "question": "Teoria emocji Jamesa–… – czyje nazwisko uzupełnia jej nazwę?",
+      "answer": "Langego",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1731,
+      "category": "Psychologia",
+      "question": "Jak nazywa się choroba neurodegeneracyjna opisana w 1906 roku, objawiająca się utratą pamięci?",
+      "answer": "Alzheimera",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1732,
+      "category": "Psychologia",
+      "question": "Który psycholog jest autorem teorii inteligencji wielorakich?",
+      "answer": "Gardner",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1733,
+      "category": "Psychologia",
+      "question": "Jak nazywał się psycholog urodzony we Włocławku, twórca teorii tożsamości społecznej?",
+      "answer": "Tajfel",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1734,
+      "category": "Psychologia",
+      "question": "Od imienia którego mitologicznego młodzieńca nazwano narcyzm?",
+      "answer": "Narcyz",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1735,
+      "category": "Historia",
+      "question": "W którym roku odbył się zjazd gnieźnieński?",
+      "answer": "1000",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1736,
+      "category": "Historia",
+      "question": "Jak nazywa się angielski dokument z 1215 roku ograniczający władzę króla?",
+      "answer": "Magna Carta",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1737,
+      "category": "Historia",
+      "question": "W którym roku Turcy zdobyli Konstantynopol?",
+      "answer": "1453",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1738,
+      "category": "Historia",
+      "question": "Jakie imię nosił król Polski zwany Łokietkiem?",
+      "answer": "Władysław",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1739,
+      "category": "Historia",
+      "question": "W którym roku odbyła się bitwa pod Cedynią?",
+      "answer": "972",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1740,
+      "category": "Historia",
+      "question": "Jak nazywał się pokój kończący w 1648 roku wojnę trzydziestoletnią?",
+      "answer": "westfalski",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1741,
+      "category": "Historia",
+      "question": "Jak nazywał się traktat pokojowy z Niemcami z 1919 roku?",
+      "answer": "wersalski",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1742,
+      "category": "Historia",
+      "question": "W którym roku odbyła się bitwa pod Waterloo?",
+      "answer": "1815",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1743,
+      "category": "Historia",
+      "question": "Jak nazywał się kongres, który w latach 1814–1815 przebudował mapę Europy?",
+      "answer": "wiedeński",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1744,
+      "category": "Historia",
+      "question": "Jak nazywał się ostatni car Rosji?",
+      "answer": "Mikołaj II",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1745,
+      "category": "Historia",
+      "question": "Który król Polski był jednocześnie królem Szwecji?",
+      "answer": "Zygmunt III Waza",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1746,
+      "category": "Historia",
+      "question": "Który hetman zwyciężył Szwedów pod Kircholmem w 1605 roku?",
+      "answer": "Chodkiewicz",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1747,
+      "category": "Historia",
+      "question": "Który hetman zwyciężył Rosjan pod Kłuszynem w 1610 roku?",
+      "answer": "Żółkiewski",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1748,
+      "category": "Historia",
+      "question": "W którym roku dokonano pierwszego rozbioru Polski?",
+      "answer": "1772",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1749,
+      "category": "Historia",
+      "question": "W którym roku dokonano trzeciego rozbioru Polski?",
+      "answer": "1795",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1750,
+      "category": "Historia",
+      "question": "Kto był naczelnikiem powstania z 1794 roku?",
+      "answer": "Kościuszko",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1751,
+      "category": "Historia",
+      "question": "Jak nazywa się konstytucja z 1505 roku, „nic nowego bez wspólnej zgody”?",
+      "answer": "Nihil novi",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1752,
+      "category": "Historia",
+      "question": "W którym roku zawarto unię w Krewie?",
+      "answer": "1385",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1753,
+      "category": "Historia",
+      "question": "Który książę sprowadził Krzyżaków do Polski w 1226 roku?",
+      "answer": "Konrad Mazowiecki",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1754,
+      "category": "Historia",
+      "question": "Jak nazywał się ostatni cesarz zachodniorzymski?",
+      "answer": "Romulus Augustulus",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1755,
+      "category": "Historia",
+      "question": "W którym roku upadło Cesarstwo Zachodniorzymskie?",
+      "answer": "476",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1756,
+      "category": "Historia",
+      "question": "Który władca Franków został koronowany na cesarza w 800 roku?",
+      "answer": "Karol Wielki",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1757,
+      "category": "Historia",
+      "question": "Jak nazywano epidemię dżumy w XIV-wiecznej Europie?",
+      "answer": "czarna śmierć",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1758,
+      "category": "Historia",
+      "question": "Który król Anglii zerwał z Rzymem i miał sześć żon?",
+      "answer": "Henryk VIII",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1759,
+      "category": "Historia",
+      "question": "Jak nazywa się kryzys z 1962 roku, gdy świat był na krawędzi wojny jądrowej?",
+      "answer": "kubański",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1760,
+      "category": "Historia",
+      "question": "W którym roku miał miejsce Poznański Czerwiec?",
+      "answer": "1956",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1761,
+      "category": "Historia",
+      "question": "W którym roku doszło w Polsce do wydarzeń zwanych Marcem?",
+      "answer": "1968",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1762,
+      "category": "Historia",
+      "question": "Jak nazywał się kapelan Solidarności zamordowany w 1984 roku?",
+      "answer": "Popiełuszko",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1763,
+      "category": "Historia",
+      "question": "Kto był pierwszym niekomunistycznym premierem Polski po 1989 roku?",
+      "answer": "Mazowiecki",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1764,
+      "category": "Historia",
+      "question": "Jak nazywał się król perski pokonany przez Aleksandra Wielkiego pod Gaugamelą?",
+      "answer": "Dariusz III",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1765,
+      "category": "Historia",
+      "question": "W którym roku p.n.e. odbyła się bitwa pod Maratonem?",
+      "answer": "490",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1766,
+      "category": "Historia",
+      "question": "Jak nazywa się akt z 1573 roku gwarantujący pokój religijny w Rzeczypospolitej?",
+      "answer": "konfederacja warszawska",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1767,
+      "category": "Historia",
+      "question": "Jaką rzekę przekroczył Juliusz Cezar, rozpoczynając wojnę domową?",
+      "answer": "Rubikon",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1768,
+      "category": "Historia",
+      "question": "W którym roku zawarto pokój ryski kończący wojnę polsko-bolszewicką?",
+      "answer": "1921",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1769,
+      "category": "Historia",
+      "question": "Jak nazywał się przywódca rewolucji kubańskiej z 1959 roku?",
+      "answer": "Castro",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1770,
+      "category": "Historia",
+      "question": "Za panowania której dynastii chińskiej powstała obecna postać Wielkiego Muru?",
+      "answer": "Ming",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1771,
+      "category": "Historia",
+      "question": "W którym roku Japonia zaatakowała Pearl Harbor?",
+      "answer": "1941",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1772,
+      "category": "Historia",
+      "question": "Jak nazywał się pierwszy król Polski wybrany w wolnej elekcji?",
+      "answer": "Walezy",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1773,
+      "category": "Geografia",
+      "question": "Jaka jest stolica Mongolii?",
+      "answer": "Ułan Bator",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1774,
+      "category": "Geografia",
+      "question": "Jaka jest stolica Kazachstanu?",
+      "answer": "Astana",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1775,
+      "category": "Geografia",
+      "question": "Jaka jest stolica Nowej Zelandii?",
+      "answer": "Wellington",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1776,
+      "category": "Geografia",
+      "question": "Jaka jest stolica Etiopii?",
+      "answer": "Addis Abeba",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1777,
+      "category": "Geografia",
+      "question": "Jaka jest stolica Wietnamu?",
+      "answer": "Hanoi",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1778,
+      "category": "Geografia",
+      "question": "Jaka jest stolica Kolumbii?",
+      "answer": "Bogota",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1779,
+      "category": "Geografia",
+      "question": "Jaka jest stolica Maroka?",
+      "answer": "Rabat",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1780,
+      "category": "Geografia",
+      "question": "Jaka jest stolica Nigerii?",
+      "answer": "Abudża",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1781,
+      "category": "Geografia",
+      "question": "Jaka jest stolica Pakistanu?",
+      "answer": "Islamabad",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1782,
+      "category": "Geografia",
+      "question": "Jaka jest stolica Mjanmy?",
+      "answer": "Naypyidaw",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1783,
+      "category": "Geografia",
+      "question": "Jaka jest stolica Słowenii?",
+      "answer": "Lublana",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1784,
+      "category": "Geografia",
+      "question": "Jaka jest stolica Mołdawii?",
+      "answer": "Kiszyniów",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1785,
+      "category": "Geografia",
+      "question": "Jaka jest stolica Gruzji?",
+      "answer": "Tbilisi",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1786,
+      "category": "Geografia",
+      "question": "Jaka jest stolica Islandii?",
+      "answer": "Reykjavík",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1787,
+      "category": "Geografia",
+      "question": "Jaka jest stolica Albanii?",
+      "answer": "Tirana",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1788,
+      "category": "Geografia",
+      "question": "Jak nazywa się najwyższy szczyt Kaukazu?",
+      "answer": "Elbrus",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1789,
+      "category": "Geografia",
+      "question": "Jak nazywa się najgłębszy rów oceaniczny świata?",
+      "answer": "Mariański",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1790,
+      "category": "Geografia",
+      "question": "Jak nazywa się największe jezioro Afryki?",
+      "answer": "Wiktorii",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1791,
+      "category": "Geografia",
+      "question": "Jak nazywa się największe pod względem powierzchni jezioro świata?",
+      "answer": "Kaspijskie",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1792,
+      "category": "Geografia",
+      "question": "Która rzeka jest najdłuższa w Azji?",
+      "answer": "Jangcy",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1793,
+      "category": "Geografia",
+      "question": "Jak nazywa się najwyższy wodospad świata?",
+      "answer": "Salto Angel",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1794,
+      "category": "Geografia",
+      "question": "Z którym państwem oprócz Peru dzieli się jezioro Titicaca?",
+      "answer": "Boliwia",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1795,
+      "category": "Geografia",
+      "question": "Ile państw ma dostęp do Morza Kaspijskiego?",
+      "answer": "5",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1796,
+      "category": "Geografia",
+      "question": "Na którym półwyspie leży kontynentalna część Danii?",
+      "answer": "Jutlandzkim",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1797,
+      "category": "Geografia",
+      "question": "Jak nazywa się miejscowość, w której znajduje się najbardziej na północ wysunięty punkt Polski?",
+      "answer": "Jastrzębia Góra",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1798,
+      "category": "Geografia",
+      "question": "W pobliżu jakiej wsi leży najniższy punkt Polski (ok. 1,8 m p.p.m.)?",
+      "answer": "Raczki Elbląskie",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1799,
+      "category": "Geografia",
+      "question": "Która rzeka jest drugą pod względem długości rzeką Polski?",
+      "answer": "Odra",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1800,
+      "category": "Geografia",
+      "question": "W którym województwie leży Biebrzański Park Narodowy?",
+      "answer": "podlaskim",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1801,
+      "category": "Geografia",
+      "question": "Który polski park narodowy, obok Pienińskiego, jest najstarszy?",
+      "answer": "Białowieski",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1802,
+      "category": "Geografia",
+      "question": "Jakie góry tradycyjnie oddzielają Europę od Azji?",
+      "answer": "Ural",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1803,
+      "category": "Geografia",
+      "question": "Na której wyspie wznosi się wulkan Pico del Teide?",
+      "answer": "Teneryfa",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1804,
+      "category": "Geografia",
+      "question": "Jak nazywa się cieśnina między Danią a Szwecją, nad którą leży Kopenhaga?",
+      "answer": "Sund",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1805,
+      "category": "Geografia",
+      "question": "Które afrykańskie państwo nosiło dawniej nazwę Złote Wybrzeże?",
+      "answer": "Ghana",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1806,
+      "category": "Geografia",
+      "question": "Które państwo nosiło dawniej nazwę Syjam?",
+      "answer": "Tajlandia",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1807,
+      "category": "Geografia",
+      "question": "Jak dawniej nazywała się Sri Lanka?",
+      "answer": "Cejlon",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1808,
+      "category": "Geografia",
+      "question": "Które państwo nosiło dawniej nazwę Persja?",
+      "answer": "Iran",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1809,
+      "category": "Geografia",
+      "question": "Jak nazywa się przylądek na południowym krańcu Ameryki Południowej?",
+      "answer": "Horn",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1810,
+      "category": "Geografia",
+      "question": "Jak ogólnie nazywa się typ ciepłego, suchego wiatru, którego tatrzańską odmianą jest halny?",
+      "answer": "fen",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1811,
+      "category": "Geografia",
+      "question": "Ile państw należy do Unii Europejskiej po wyjściu Wielkiej Brytanii?",
+      "answer": "27",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1812,
+      "category": "Geografia",
+      "question": "W którym państwie znajduje się święta góra Aborygenów Uluru?",
+      "answer": "Australia",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1813,
+      "category": "Biologia",
+      "question": "Jak nazywa się podział komórki prowadzący do powstania gamet?",
+      "answer": "mejoza",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1814,
+      "category": "Biologia",
+      "question": "Jak nazywa się podział komórki na dwie identyczne komórki potomne?",
+      "answer": "mitoza",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1815,
+      "category": "Biologia",
+      "question": "Ile chromosomów ma komórka somatyczna człowieka?",
+      "answer": "46",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1816,
+      "category": "Biologia",
+      "question": "Jak nazywa się zasada azotowa, która w RNA zastępuje tyminę?",
+      "answer": "uracyl",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1817,
+      "category": "Biologia",
+      "question": "W którym organellum zachodzi fotosynteza?",
+      "answer": "chloroplast",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1818,
+      "category": "Biologia",
+      "question": "Jak nazywa się gruczoł zwany „dyrygentem” układu hormonalnego?",
+      "answer": "przysadka",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1819,
+      "category": "Biologia",
+      "question": "Ile par nerwów czaszkowych ma człowiek?",
+      "answer": "12",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1820,
+      "category": "Biologia",
+      "question": "Jak nazywa się kość ramienia między barkiem a łokciem?",
+      "answer": "ramienna",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1821,
+      "category": "Biologia",
+      "question": "Jak nazywa się najdłuższy nerw w ciele człowieka?",
+      "answer": "kulszowy",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1822,
+      "category": "Biologia",
+      "question": "Czy rekiny mają szkielet kostny?",
+      "answer": "nie",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1823,
+      "category": "Biologia",
+      "question": "Jak nazywa się australijski ssak z dziobem, który składa jaja?",
+      "answer": "dziobak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1824,
+      "category": "Biologia",
+      "question": "Jak nazywa się nauka o tkankach?",
+      "answer": "histologia",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1825,
+      "category": "Biologia",
+      "question": "Jak miała na imię owca sklonowana w 1996 roku?",
+      "answer": "Dolly",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1826,
+      "category": "Biologia",
+      "question": "Ile komór ma serce ryby?",
+      "answer": "1",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1827,
+      "category": "Biologia",
+      "question": "Jak nazywa się hormon szyszynki regulujący rytm snu?",
+      "answer": "melatonina",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1828,
+      "category": "Biologia",
+      "question": "Jak nazywa się nauka o płazach i gadach?",
+      "answer": "herpetologia",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1829,
+      "category": "Biologia",
+      "question": "Jak nazywa się największa żyjąca jaszczurka?",
+      "answer": "waran z Komodo",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1830,
+      "category": "Biologia",
+      "question": "Jak nazywa się roślina owadożerna z zatrzaskującymi się liśćmi?",
+      "answer": "muchołówka",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1831,
+      "category": "Biologia",
+      "question": "Jak nazywa się kolczasty ssak z Australii, który składa jaja?",
+      "answer": "kolczatka",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1832,
+      "category": "Biologia",
+      "question": "Ile kręgów szyjnych ma żyrafa?",
+      "answer": "7",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1833,
+      "category": "Biologia",
+      "question": "Jak nazywał się polski biolog, twórca szczepionki przeciw tyfusowi plamistemu?",
+      "answer": "Weigl",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1834,
+      "category": "Biologia",
+      "question": "Jak nazywa się enzym w ślinie rozkładający skrobię?",
+      "answer": "amylaza",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1835,
+      "category": "Chemia",
+      "question": "Który pierwiastek ma symbol Si?",
+      "answer": "krzem",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1836,
+      "category": "Chemia",
+      "question": "Który pierwiastek ma symbol Sn?",
+      "answer": "cyna",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1837,
+      "category": "Chemia",
+      "question": "Który pierwiastek ma symbol Sb?",
+      "answer": "antymon",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1838,
+      "category": "Chemia",
+      "question": "Jaka jest liczba atomowa węgla?",
+      "answer": "6",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1839,
+      "category": "Chemia",
+      "question": "Jaka jest liczba atomowa tlenu?",
+      "answer": "8",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1840,
+      "category": "Chemia",
+      "question": "Czyjego nazwiska jest stała określająca liczbę cząstek w jednym molu?",
+      "answer": "Avogadra",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1841,
+      "category": "Chemia",
+      "question": "Jak nazywa się wiązanie chemiczne polegające na uwspólnieniu pary elektronów?",
+      "answer": "kowalencyjne",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1842,
+      "category": "Chemia",
+      "question": "Jaki pierwiastek Maria Skłodowska-Curie odkryła razem z polonem?",
+      "answer": "rad",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1843,
+      "category": "Chemia",
+      "question": "Jak nazywa się izotop wodoru z jednym neutronem w jądrze?",
+      "answer": "deuter",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1844,
+      "category": "Chemia",
+      "question": "Ile pierwiastków zawiera obecnie układ okresowy?",
+      "answer": "118",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1845,
+      "category": "Chemia",
+      "question": "Jak nazywa się reakcja, podczas której wydziela się ciepło?",
+      "answer": "egzotermiczna",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1846,
+      "category": "Chemia",
+      "question": "Który gaz szlachetny jest najlżejszy?",
+      "answer": "hel",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1847,
+      "category": "Chemia",
+      "question": "Jaki jest wzór kwasu siarkowego(VI)?",
+      "answer": "H2SO4",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1848,
+      "category": "Chemia",
+      "question": "Jak potocznie nazywa się wodorowęglan sodu NaHCO3?",
+      "answer": "soda oczyszczona",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1849,
+      "category": "Chemia",
+      "question": "Który metal ma najwyższą temperaturę topnienia?",
+      "answer": "wolfram",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1850,
+      "category": "Chemia",
+      "question": "Jak nazywa się przejście ciała stałego bezpośrednio w gaz?",
+      "answer": "sublimacja",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1851,
+      "category": "Chemia",
+      "question": "Jak nazywa się przejście gazu bezpośrednio w ciało stałe?",
+      "answer": "resublimacja",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1852,
+      "category": "Chemia",
+      "question": "Kto razem z Karolem Olszewskim jako pierwszy skroplił tlen i azot?",
+      "answer": "Wróblewski",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1853,
+      "category": "Fizyka",
+      "question": "Jak nazywa się jednostka ładunku elektrycznego?",
+      "answer": "kulomb",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1854,
+      "category": "Fizyka",
+      "question": "Jak nazywa się jednostka indukcji magnetycznej?",
+      "answer": "tesla",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1855,
+      "category": "Fizyka",
+      "question": "Jak nazywa się jednostka częstotliwości?",
+      "answer": "herc",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1856,
+      "category": "Fizyka",
+      "question": "Jak nazywa się jednostka ciśnienia w układzie SI?",
+      "answer": "paskal",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1857,
+      "category": "Fizyka",
+      "question": "Jak nazywa się zasada Heisenberga dotycząca pomiaru położenia i pędu cząstki?",
+      "answer": "nieoznaczoności",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1858,
+      "category": "Fizyka",
+      "question": "Kto sformułował prawo o sile wyporu działającej na ciało zanurzone w cieczy?",
+      "answer": "Archimedes",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1859,
+      "category": "Fizyka",
+      "question": "Jak nazywa się cząstka będąca kwantem światła?",
+      "answer": "foton",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1860,
+      "category": "Fizyka",
+      "question": "Czyjego nazwiska jest bozon odkryty w CERN w 2012 roku?",
+      "answer": "Higgsa",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1861,
+      "category": "Fizyka",
+      "question": "Ile w przybliżeniu metrów na sekundę wynosi prędkość dźwięku w powietrzu?",
+      "answer": "340",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1862,
+      "category": "Fizyka",
+      "question": "Jak nazywa się zjawisko zaniku oporu elektrycznego w bardzo niskiej temperaturze?",
+      "answer": "nadprzewodnictwo",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1863,
+      "category": "Fizyka",
+      "question": "Jak nazywa się czas, po którym rozpada się połowa jąder izotopu – okres…?",
+      "answer": "półtrwania",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1864,
+      "category": "Fizyka",
+      "question": "Kto odkrył zjawisko promieniotwórczości w 1896 roku?",
+      "answer": "Becquerel",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1865,
+      "category": "Fizyka",
+      "question": "Jak nazywa się zjawisko wybijania elektronów z metalu przez światło, za którego wyjaśnienie Einstein dostał Nobla?",
+      "answer": "fotoelektryczne",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1866,
+      "category": "Fizyka",
+      "question": "Czyjego nazwiska jest prawo mówiące, że ciśnienie w cieczy rozchodzi się jednakowo we wszystkich kierunkach?",
+      "answer": "Pascala",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1867,
+      "category": "Fizyka",
+      "question": "Jak nazywa się jednostka aktywności promieniotwórczej w układzie SI?",
+      "answer": "bekerel",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1868,
+      "category": "Fizyka",
+      "question": "Jak nazywa się wielkość fizyczna będąca iloczynem masy i prędkości?",
+      "answer": "pęd",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1869,
+      "category": "Astronomia",
+      "question": "Jak nazywa się największy księżyc Jowisza i całego Układu Słonecznego?",
+      "answer": "Ganimedes",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1870,
+      "category": "Astronomia",
+      "question": "Jak nazywa się najwyższy wulkan w Układzie Słonecznym, leżący na Marsie?",
+      "answer": "Olympus Mons",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1871,
+      "category": "Astronomia",
+      "question": "Jak nazywa się najbliższa nam duża galaktyka spiralna?",
+      "answer": "Andromeda",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1872,
+      "category": "Astronomia",
+      "question": "Ile w przybliżeniu miliardów lat liczy Wszechświat?",
+      "answer": "13,8",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1873,
+      "category": "Astronomia",
+      "question": "Jakim skrótem oznacza się jednostkę astronomiczną?",
+      "answer": "au",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1874,
+      "category": "Astronomia",
+      "question": "Czyjego nazwiska jest pas lodowych ciał za orbitą Neptuna?",
+      "answer": "Kuipera",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1875,
+      "category": "Astronomia",
+      "question": "Jak nazywa się planeta karłowata, największy obiekt pasa planetoid?",
+      "answer": "Ceres",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1876,
+      "category": "Astronomia",
+      "question": "Jak nazywa się czerwony nadolbrzym w gwiazdozbiorze Oriona?",
+      "answer": "Betelgeza",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1877,
+      "category": "Astronomia",
+      "question": "Kto odkrył cztery największe księżyce Jowisza?",
+      "answer": "Galileusz",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1878,
+      "category": "Astronomia",
+      "question": "Jak nazywa się sonda, która jako pierwsza opuściła heliosferę?",
+      "answer": "Voyager 1",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1879,
+      "category": "Astronomia",
+      "question": "Czyim imieniem nazwano teleskop kosmiczny wystrzelony w 2021 roku, następcę Hubble'a?",
+      "answer": "Webba",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1880,
+      "category": "Astronomia",
+      "question": "Czyjego nazwiska jest kometa powracająca w pobliże Ziemi co około 76 lat?",
+      "answer": "Halleya",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1881,
+      "category": "Astronomia",
+      "question": "Jak nazywa się punkt orbity Ziemi położony najbliżej Słońca?",
+      "answer": "peryhelium",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1882,
+      "category": "Astronomia",
+      "question": "Czy doba na Wenus trwa dłużej niż jej rok?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1883,
+      "category": "Astronomia",
+      "question": "Jak nazywa się drugi Polak w kosmosie, który poleciał na ISS w 2025 roku?",
+      "answer": "Uznański",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1884,
+      "category": "Matematyka",
+      "question": "Jak nazywa się ciąg, w którym każdy wyraz jest sumą dwóch poprzednich?",
+      "answer": "Fibonacciego",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1885,
+      "category": "Matematyka",
+      "question": "Ile wynosi 0! (zero silnia)?",
+      "answer": "1",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1886,
+      "category": "Matematyka",
+      "question": "Ile stopni wynosi suma kątów wewnętrznych sześciokąta?",
+      "answer": "720",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1887,
+      "category": "Matematyka",
+      "question": "Czyim nazwiskiem nazywana jest liczba e, podstawa logarytmu naturalnego?",
+      "answer": "Eulera",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1888,
+      "category": "Matematyka",
+      "question": "Ile wynosi logarytm dziesiętny z 1000?",
+      "answer": "3",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1889,
+      "category": "Matematyka",
+      "question": "Jak nazywa się wielościan foremny o 20 ścianach?",
+      "answer": "dwudziestościan",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1890,
+      "category": "Matematyka",
+      "question": "Ile istnieje wielościanów foremnych?",
+      "answer": "5",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1891,
+      "category": "Matematyka",
+      "question": "Kto w 1994 roku udowodnił Wielkie Twierdzenie Fermata?",
+      "answer": "Wiles",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1892,
+      "category": "Matematyka",
+      "question": "Jak nazywał się lwowski matematyk, od którego nazwiska pochodzi nazwa przestrzeni w analizie funkcjonalnej?",
+      "answer": "Banach",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1893,
+      "category": "Matematyka",
+      "question": "Który starożytny matematyk napisał „Elementy”?",
+      "answer": "Euklides",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1894,
+      "category": "Matematyka",
+      "question": "Ile wynosi pierwiastek kwadratowy z 2 w przybliżeniu do dwóch miejsc po przecinku?",
+      "answer": "1,41",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1895,
+      "category": "Matematyka",
+      "question": "Ile jest liczb pierwszych mniejszych od 20?",
+      "answer": "8",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1896,
+      "category": "Matematyka",
+      "question": "Jak nazywa się wykres funkcji kwadratowej?",
+      "answer": "parabola",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1897,
+      "category": "Matematyka",
+      "question": "Ile wynosi 2 do potęgi dziesiątej?",
+      "answer": "1024",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1898,
+      "category": "Matematyka",
+      "question": "Jak nazywa się kąt większy od 180, a mniejszy od 360 stopni?",
+      "answer": "wklęsły",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1899,
+      "category": "Matematyka",
+      "question": "Ile wynosi suma liczb naturalnych od 1 do 100?",
+      "answer": "5050",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1900,
+      "category": "Matematyka",
+      "question": "Który matematyk według anegdoty jako dziecko błyskawicznie zsumował liczby od 1 do 100?",
+      "answer": "Gauss",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1901,
+      "category": "Matematyka",
+      "question": "Ile wynosi kwadrat jednostki urojonej i?",
+      "answer": "-1",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1902,
+      "category": "Ekonomia",
+      "question": "Kto jest autorem dzieła „Bogactwo narodów”?",
+      "answer": "Smith",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1903,
+      "category": "Ekonomia",
+      "question": "Czyich nazwisk jest prawo, że „gorszy pieniądz wypiera lepszy”?",
+      "answer": "Kopernika-Greshama",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1904,
+      "category": "Ekonomia",
+      "question": "Który brytyjski ekonomista był twórcą teorii interwencjonizmu państwowego z lat 30. XX wieku?",
+      "answer": "Keynes",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1905,
+      "category": "Ekonomia",
+      "question": "Jakim skrótem oznacza się produkt krajowy brutto?",
+      "answer": "PKB",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1906,
+      "category": "Ekonomia",
+      "question": "Czyjego nazwiska jest współczynnik mierzący nierówność dochodów?",
+      "answer": "Giniego",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1907,
+      "category": "Ekonomia",
+      "question": "Jak nazywał się wicepremier, autor polskiego planu reform gospodarczych z 1990 roku?",
+      "answer": "Balcerowicz",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1908,
+      "category": "Ekonomia",
+      "question": "Jak nazywa się indeks 20 największych spółek warszawskiej giełdy?",
+      "answer": "WIG20",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1909,
+      "category": "Ekonomia",
+      "question": "Jak nazywa się rynek zdominowany przez spadki kursów – rynek niedźwiedzia czy byka?",
+      "answer": "niedźwiedzia",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1910,
+      "category": "Ekonomia",
+      "question": "W którym roku banknoty i monety euro weszły do obiegu?",
+      "answer": "2002",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1911,
+      "category": "Ekonomia",
+      "question": "Jakim skrótem oznacza się Nowojorską Giełdę Papierów Wartościowych?",
+      "answer": "NYSE",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1912,
+      "category": "Ekonomia",
+      "question": "Czyjego nazwiska jest krzywa pokazująca zależność wpływów podatkowych od wysokości stawek?",
+      "answer": "Laffera",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1913,
+      "category": "Ekonomia",
+      "question": "W którym roku krach na nowojorskiej giełdzie zapoczątkował Wielki Kryzys?",
+      "answer": "1929",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1914,
+      "category": "Medycyna",
+      "question": "Jak potocznie nazywa się nagminne zapalenie przyusznic?",
+      "answer": "świnka",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1915,
+      "category": "Medycyna",
+      "question": "Jak nazywa się lekarz zajmujący się chorobami nerek?",
+      "answer": "nefrolog",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1916,
+      "category": "Medycyna",
+      "question": "Jak nazywa się lekarz zajmujący się chorobami układu hormonalnego?",
+      "answer": "endokrynolog",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1917,
+      "category": "Medycyna",
+      "question": "Jaką chorobę wywołują prątki Kocha?",
+      "answer": "gruźlica",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1918,
+      "category": "Medycyna",
+      "question": "Jak nazywa się zastawka między lewym przedsionkiem a lewą komorą serca?",
+      "answer": "mitralna",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1919,
+      "category": "Medycyna",
+      "question": "Jak nazywa się choroba przenoszona przez kleszcze, wywoływana przez krętki Borrelia?",
+      "answer": "borelioza",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1920,
+      "category": "Medycyna",
+      "question": "Jaką chorobę przenoszą komary widliszki?",
+      "answer": "malaria",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1921,
+      "category": "Medycyna",
+      "question": "Kto jest nazywany ojcem medycyny?",
+      "answer": "Hipokrates",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1922,
+      "category": "Medycyna",
+      "question": "Jakim skrótem oznacza się badanie elektrycznej czynności serca?",
+      "answer": "EKG",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1923,
+      "category": "Medycyna",
+      "question": "Jakim skrótem oznacza się badanie elektrycznej czynności mózgu?",
+      "answer": "EEG",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1924,
+      "category": "Medycyna",
+      "question": "Jaka grupa krwi należy do uniwersalnego biorcy?",
+      "answer": "AB",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1925,
+      "category": "Medycyna",
+      "question": "Kto odkrył grupy krwi układu AB0?",
+      "answer": "Landsteiner",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1926,
+      "category": "Medycyna",
+      "question": "Który polski uczony razem z Emilem von Dungernem wprowadził oznaczenia grup krwi A, B i 0?",
+      "answer": "Hirszfeld",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1927,
+      "category": "Medycyna",
+      "question": "Jak nazywa się choroba autoimmunologiczna polegająca na nietolerancji glutenu?",
+      "answer": "celiakia",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1928,
+      "category": "Medycyna",
+      "question": "Jak nazywa się bakteria wywołująca wrzody żołądka, odkryta przez Marshalla i Warrena?",
+      "answer": "Helicobacter pylori",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1929,
+      "category": "Sport",
+      "question": "W którym roku odbyły się pierwsze nowożytne igrzyska olimpijskie?",
+      "answer": "1896",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1930,
+      "category": "Sport",
+      "question": "Kto był inicjatorem wskrzeszenia igrzysk olimpijskich?",
+      "answer": "Coubertin",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1931,
+      "category": "Sport",
+      "question": "Ile złotych medali olimpijskich zdobyła Irena Szewińska?",
+      "answer": "3",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1932,
+      "category": "Sport",
+      "question": "Jak nazywa się tyczkarz, mistrz olimpijski z Moskwy 1980, słynny z wymownego gestu?",
+      "answer": "Kozakiewicz",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1933,
+      "category": "Sport",
+      "question": "Ile metrów długości ma basen olimpijski?",
+      "answer": "50",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1934,
+      "category": "Sport",
+      "question": "Ile metrów szerokości ma bramka do piłki nożnej?",
+      "answer": "7,32",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1935,
+      "category": "Sport",
+      "question": "Ile w przybliżeniu metrów ma mila?",
+      "answer": "1609",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1936,
+      "category": "Sport",
+      "question": "W którym państwie wymyślono siatkówkę?",
+      "answer": "USA",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1937,
+      "category": "Sport",
+      "question": "Jak nazywa się najstarszy turniej tenisowy świata?",
+      "answer": "Wimbledon",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1938,
+      "category": "Sport",
+      "question": "Ile kilogramów waży kula w pchnięciu kulą mężczyzn?",
+      "answer": "7,26",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1939,
+      "category": "Sport",
+      "question": "Które włoskie miasto było razem z Cortiną d'Ampezzo gospodarzem zimowych igrzysk w 2026 roku?",
+      "answer": "Mediolan",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1940,
+      "category": "Sport",
+      "question": "Jak nazywa się Justyna, polska biegaczka narciarska, mistrzyni olimpijska z Vancouver i Soczi?",
+      "answer": "Kowalczyk",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1941,
+      "category": "Sport",
+      "question": "Ile punktów jest warta czarna bila w snookerze?",
+      "answer": "7",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1942,
+      "category": "Sport",
+      "question": "Ile punktów wynosi maksymalny break w snookerze?",
+      "answer": "147",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1943,
+      "category": "Sport",
+      "question": "Jak nazywa się madrycki klub piłkarski, rekordzista pod względem zwycięstw w Pucharze Europy i Lidze Mistrzów?",
+      "answer": "Real",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1944,
+      "category": "Sport",
+      "question": "Która reprezentacja zdobyła najwięcej tytułów mistrza świata w piłce nożnej?",
+      "answer": "Brazylia",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1945,
+      "category": "Literatura",
+      "question": "Kto napisał „Ulissesa”?",
+      "answer": "Joyce",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1946,
+      "category": "Literatura",
+      "question": "Kto napisał cykl „W poszukiwaniu straconego czasu”?",
+      "answer": "Proust",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1947,
+      "category": "Literatura",
+      "question": "Kto napisał „Sto lat samotności”?",
+      "answer": "Márquez",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1948,
+      "category": "Literatura",
+      "question": "Kto napisał „Czarodziejską górę”?",
+      "answer": "Mann",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1949,
+      "category": "Literatura",
+      "question": "Kto napisał „Moby Dicka”?",
+      "answer": "Melville",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1950,
+      "category": "Literatura",
+      "question": "Kto napisał „Martwe dusze”?",
+      "answer": "Gogol",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1951,
+      "category": "Literatura",
+      "question": "Kto napisał zbiór opowiadań „Medaliony”?",
+      "answer": "Nałkowska",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1952,
+      "category": "Literatura",
+      "question": "Kto napisał „Inny świat”?",
+      "answer": "Herling-Grudziński",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1953,
+      "category": "Literatura",
+      "question": "Kto napisał reportaż „Cesarz” o dworze Hajle Sellasje?",
+      "answer": "Kapuściński",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1954,
+      "category": "Literatura",
+      "question": "Kto napisał „Zniewolony umysł”?",
+      "answer": "Miłosz",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1955,
+      "category": "Literatura",
+      "question": "Kto napisał dramat „Tango”?",
+      "answer": "Mrożek",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1956,
+      "category": "Literatura",
+      "question": "Pod jakim pseudonimem tworzył Stanisław Ignacy Witkiewicz?",
+      "answer": "Witkacy",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1957,
+      "category": "Literatura",
+      "question": "Kto napisał powieść „Noce i dnie”?",
+      "answer": "Dąbrowska",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1958,
+      "category": "Literatura",
+      "question": "Kto napisał „Rękopis znaleziony w Saragossie”?",
+      "answer": "Potocki",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1959,
+      "category": "Literatura",
+      "question": "Jakie imię nosił Wokulski, bohater „Lalki”?",
+      "answer": "Stanisław",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1960,
+      "category": "Literatura",
+      "question": "Jak nazywa się poemat Homera o powrocie Odyseusza do domu?",
+      "answer": "Odyseja",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1961,
+      "category": "Literatura",
+      "question": "Kto napisał „Boską komedię”?",
+      "answer": "Dante",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1962,
+      "category": "Literatura",
+      "question": "Kto napisał „Dumę i uprzedzenie”?",
+      "answer": "Austen",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1963,
+      "category": "Literatura",
+      "question": "Która z sióstr Brontë napisała „Wichrowe Wzgórza” – Emily czy Charlotte?",
+      "answer": "Emily",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1964,
+      "category": "Literatura",
+      "question": "Kto napisał „Paragraf 22”?",
+      "answer": "Heller",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1965,
+      "category": "Literatura",
+      "question": "Kto napisał „Buszującego w zbożu”?",
+      "answer": "Salinger",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1966,
+      "category": "Literatura",
+      "question": "Jak ma na imię ukochana Kmicica w „Potopie”?",
+      "answer": "Oleńka",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1967,
+      "category": "Literatura",
+      "question": "Kto napisał „Kamienie na szaniec”?",
+      "answer": "Kamiński",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1968,
+      "category": "Literatura",
+      "question": "Kto napisał „Pamiętnik z powstania warszawskiego”?",
+      "answer": "Białoszewski",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1969,
+      "category": "Język polski",
+      "question": "Jak nazywa się wyraz brzmiący tak samo jak inny, ale inaczej zapisywany, np. „może” i „morze”?",
+      "answer": "homofon",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1970,
+      "category": "Język polski",
+      "question": "Jak nazywa się zestawienie słów o sprzecznym znaczeniu, np. „gorący lód”?",
+      "answer": "oksymoron",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1971,
+      "category": "Język polski",
+      "question": "Jak nazywa się powtórzenie tego samego wyrazu na początku kolejnych wersów?",
+      "answer": "anafora",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1972,
+      "category": "Język polski",
+      "question": "Jak nazywa się zdanie bez podmiotu, np. „Grzmi”?",
+      "answer": "bezpodmiotowe",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1973,
+      "category": "Język polski",
+      "question": "Czy „na pewno” piszemy łącznie?",
+      "answer": "nie",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1974,
+      "category": "Język polski",
+      "question": "Czy „naprawdę” piszemy łącznie?",
+      "answer": "tak",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1975,
+      "category": "Język polski",
+      "question": "Jak nazywa się wiersz złożony z 14 wersów o ustalonym układzie?",
+      "answer": "sonet",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1976,
+      "category": "Język polski",
+      "question": "Jak nazywa się trzywersowy japoński utwór poetycki?",
+      "answer": "haiku",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1977,
+      "category": "Język polski",
+      "question": "Jak nazywa się wyraz zapożyczony z języka angielskiego?",
+      "answer": "anglicyzm",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1978,
+      "category": "Język polski",
+      "question": "Jak nazywa się wyraz utworzony z pierwszych liter innych wyrazów, np. PKP?",
+      "answer": "skrótowiec",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1979,
+      "category": "Język polski",
+      "question": "Jak brzmi dopełniacz liczby mnogiej słowa „dłoń”?",
+      "answer": "dłoni",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1980,
+      "category": "Język polski",
+      "question": "Jak brzmi mianownik liczby mnogiej słowa „człowiek”?",
+      "answer": "ludzie",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1981,
+      "category": "Język polski",
+      "question": "Ile samogłosek ustnych ma język polski?",
+      "answer": "6",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1982,
+      "category": "Sztuka",
+      "question": "Kto namalował „Ogród rozkoszy ziemskich”?",
+      "answer": "Bosch",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1983,
+      "category": "Sztuka",
+      "question": "Kto namalował „Dziewczynę z perłą”?",
+      "answer": "Vermeer",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1984,
+      "category": "Sztuka",
+      "question": "Kto namalował „Szał uniesień”?",
+      "answer": "Podkowiński",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1985,
+      "category": "Sztuka",
+      "question": "Który polski symbolista namalował „Melancholię” i „Śmierć Ellenai”?",
+      "answer": "Malczewski",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1986,
+      "category": "Sztuka",
+      "question": "Kto namalował obraz „Babie lato” z 1875 roku?",
+      "answer": "Chełmoński",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1987,
+      "category": "Sztuka",
+      "question": "Jak nazywa się technika malowania na mokrym tynku?",
+      "answer": "fresk",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1988,
+      "category": "Sztuka",
+      "question": "Kto zaprojektował barcelońską świątynię Sagrada Família?",
+      "answer": "Gaudí",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1989,
+      "category": "Sztuka",
+      "question": "Z którym kierunkiem w sztuce kojarzony jest Andy Warhol?",
+      "answer": "pop-art",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1990,
+      "category": "Sztuka",
+      "question": "Kto namalował „Kompozycję z czerwonym, żółtym i niebieskim”?",
+      "answer": "Mondrian",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1991,
+      "category": "Muzyka",
+      "question": "Kto skomponował „Bolero”?",
+      "answer": "Ravel",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1992,
+      "category": "Muzyka",
+      "question": "Kto skomponował balet „Święto wiosny”?",
+      "answer": "Strawiński",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1993,
+      "category": "Muzyka",
+      "question": "Kto skomponował cykl „Pierścień Nibelunga”?",
+      "answer": "Wagner",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1994,
+      "category": "Muzyka",
+      "question": "Ile symfonii skomponował Beethoven?",
+      "answer": "9",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1995,
+      "category": "Muzyka",
+      "question": "Kto skomponował balet „Jezioro łabędzie”?",
+      "answer": "Czajkowski",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1996,
+      "category": "Muzyka",
+      "question": "Jak nazywa się utwór muzyczny do tekstu mszy żałobnej?",
+      "answer": "requiem",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1997,
+      "category": "Muzyka",
+      "question": "Kto skomponował balet „Harnasie”?",
+      "answer": "Szymanowski",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1998,
+      "category": "Muzyka",
+      "question": "Co ile lat odbywa się Międzynarodowy Konkurs Pianistyczny im. Fryderyka Chopina?",
+      "answer": "5",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 1999,
+      "category": "Muzyka",
+      "question": "Jak nazywa się Seong-Jin, zwycięzca Konkursu Chopinowskiego w 2015 roku?",
+      "answer": "Cho",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 2000,
+      "category": "Muzyka",
+      "question": "Które oznaczenie tempa jest bardzo wolne – largo czy presto?",
+      "answer": "largo",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 2001,
+      "category": "Film",
+      "question": "Kto wyreżyserował film „Ida”, laureata Oscara?",
+      "answer": "Pawlikowski",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 2002,
+      "category": "Film",
+      "question": "Kto wyreżyserował „Popiół i diament”?",
+      "answer": "Wajda",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 2003,
+      "category": "Film",
+      "question": "W którym roku Andrzej Wajda otrzymał honorowego Oscara?",
+      "answer": "2000",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 2004,
+      "category": "Film",
+      "question": "Kto wyreżyserował cykl „Dekalog”?",
+      "answer": "Kieślowski",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 2005,
+      "category": "Film",
+      "question": "Kto wyreżyserował „Obywatela Kane'a”?",
+      "answer": "Welles",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 2006,
+      "category": "Film",
+      "question": "Kto skomponował muzykę do „Gwiezdnych wojen”?",
+      "answer": "Williams",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 2007,
+      "category": "Film",
+      "question": "Kto wyreżyserował „Psychozę” z 1960 roku?",
+      "answer": "Hitchcock",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 2008,
+      "category": "Prawo",
+      "question": "Ilu sędziów liczy Trybunał Konstytucyjny w Polsce?",
+      "answer": "15",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 2009,
+      "category": "Prawo",
+      "question": "Jak brzmi ostatnie słowo łacińskiej zasady „nullum crimen sine…”?",
+      "answer": "lege",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 2010,
+      "category": "Prawo",
+      "question": "W którym mieście ma siedzibę Międzynarodowy Trybunał Sprawiedliwości?",
+      "answer": "Haga",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 2011,
+      "category": "Prawo",
+      "question": "W którym mieście ma siedzibę Trybunał Sprawiedliwości Unii Europejskiej?",
+      "answer": "Luksemburg",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 2012,
+      "category": "Prawo",
+      "question": "Ilu członków liczy Rada Bezpieczeństwa ONZ?",
+      "answer": "15",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 2013,
+      "category": "Prawo",
+      "question": "Ile państw ma prawo weta w Radzie Bezpieczeństwa ONZ?",
+      "answer": "5",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 2014,
+      "category": "Geografia",
+      "question": "Jaka jest stolica Peru?",
+      "answer": "Lima",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 2015,
+      "category": "Historia",
+      "question": "W którym roku Jan Sobieski pokonał Turków w bitwie pod Chocimiem?",
+      "answer": "1673",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 2016,
+      "category": "Chemia",
+      "question": "Który pierwiastek ma symbol Mn?",
+      "answer": "mangan",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 2017,
+      "category": "Biologia",
+      "question": "Jak nazywa się nauka o ssakach?",
+      "answer": "teriologia",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 2018,
+      "category": "Astronomia",
+      "question": "Jak nazywa się największy księżyc Neptuna?",
+      "answer": "Tryton",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 2019,
+      "category": "Fizyka",
+      "question": "Jak nazywa się jednostka pojemności elektrycznej?",
+      "answer": "farad",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 2020,
+      "category": "Informatyka",
+      "question": "Czyjego nazwiska jest robak internetowy z 1988 roku, jeden z pierwszych w historii?",
+      "answer": "Morrisa",
+      "source": "Nowe pytania"
+    },
+    {
+      "id": 2021,
+      "category": "Medycyna",
+      "question": "Jak nazywa się lekarz zajmujący się chorobami krwi?",
+      "answer": "hematolog",
+      "source": "Nowe pytania"
     }
   ]
 }

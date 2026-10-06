@@ -2,16 +2,15 @@ import { useEffect, useState } from "react";
 import { io, type Socket } from "socket.io-client";
 import toast from "react-hot-toast";
 import * as Shared from "@enavti/shared-types";
+import { getServerUrl } from "@/lib/serverUrl";
 
 export function useSocket(lobbyId: string, router: any) {
   const [socket, setSocket] = useState<Socket | null>(null);
   const [players, setPlayers] = useState<Shared.Player[]>([]);
   const [gameState, setGameState] = useState<Shared.GameState>(null);
 
-  const clientUrl = process.env.NEXT_PUBLIC_CLIENT_URL || "http://localhost";
-
   useEffect(() => {
-    const newSocket = io(`${clientUrl}:3001`, {
+    const newSocket = io(getServerUrl(), {
       transports: ["websocket", "polling"],
     });
     setSocket(newSocket);
@@ -36,7 +35,7 @@ export function useSocket(lobbyId: string, router: any) {
     return () => {
       newSocket.disconnect();
     };
-  }, [lobbyId, clientUrl, router]);
+  }, [lobbyId, router]);
 
   return { socket, players, gameState };
 }

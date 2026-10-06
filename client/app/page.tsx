@@ -7,8 +7,7 @@ import { ERROR_MSG } from "../../lib/constants/errorMessages";
 import toast from "react-hot-toast";
 import { Forward } from "lucide-react";
 import { motion, useAnimation } from "framer-motion";
-
-const CLIENT_URL = process.env.NEXT_PUBLIC_CLIENT_URL || "http://localhost";
+import { getServerUrl } from "@/lib/serverUrl";
 
 export default function Home() {
   const [lobbyCode, setLobbyCode] = useState("");
@@ -29,7 +28,7 @@ export default function Home() {
     setIsCreating(true);
 
     try {
-      const response = await axios.post(`${CLIENT_URL}:3001/createLobby`, {
+      const response = await axios.post(`${getServerUrl()}/createLobby`, {
         headers: { "Content-Type": "application/json" },
       });
 

@@ -28,6 +28,11 @@ const io = new Server(httpServer, {
 
 const lobbies = new Map<string, Shared.Lobby>();
 
+const DEBUG_ENABLED = process.env.NODE_ENV !== "production";
+
+// How long the "host" waits before reacting to an answer, like on TV
+const HOST_REACTION_DELAY = 800;
+
 //SHORT RANDOM ID
 const generateLobbyId = (): string => {
   return Math.random().toString(36).substring(2, 8).toUpperCase();
@@ -186,13 +191,18 @@ io.on("connection", (socket) => {
       const userAnswer = message.trim().toLowerCase();
       const correctAnswer = lobby.activeQuestion.answer.trim().toLowerCase();
 
+      // Close the question now, so another message isn't judged during the pause
+      delete lobby.activeQuestion;
+
+      await wait(HOST_REACTION_DELAY);
+
       let announcementDuration = 0;
 
       if (userAnswer.includes(correctAnswer)) {
         console.log(`[Server] ${player.name} answered correctly`);
         announcementDuration = 2000;
         io.to(lobbyId).emit("announcement", {
-          type: "info",
+          type: "right-answer",
           message: "Dobrze.",
           duration: announcementDuration,
         } as Shared.Announcement);
@@ -208,7 +218,7 @@ io.on("connection", (socket) => {
           announcementDuration = 3000;
 
           io.to(lobbyId).emit("announcement", {
-            type: "info",
+            type: "wrong-answer",
             message: `Nie, to "${correctAnswer}"`,
             duration: announcementDuration,
           } as Shared.Announcement);
@@ -223,8 +233,6 @@ io.on("connection", (socket) => {
         players: lobby.players,
         gameState: lobby.gameState,
       });
-
-      delete lobby.activeQuestion;
 
       await wait(announcementDuration + 1000);
       continueRoundOne(lobby, lobbyId);
@@ -261,13 +269,18 @@ io.on("connection", (socket) => {
         const userAnswer = message.trim().toLowerCase();
         const correctAnswer = lobby.activeQuestion.answer.trim().toLowerCase();
 
+        // Close the question now, so another message isn't judged during the pause
+        delete lobby.activeQuestion;
+
+        await wait(HOST_REACTION_DELAY);
+
         let announcementDuration = 0;
 
         if (userAnswer.includes(correctAnswer)) {
           console.log(`[Server] ${player.name} answered correctly in Round Two`);
           announcementDuration = 2000;
           io.to(lobbyId).emit("announcement", {
-            type: "info",
+            type: "right-answer",
             message: "Dobrze.",
             duration: announcementDuration,
           } as Shared.Announcement);
@@ -293,8 +306,6 @@ io.on("connection", (socket) => {
             gameState: lobby.gameState,
           });
 
-          delete lobby.activeQuestion;
-
           await wait(announcementDuration + 1000);
 
           io.to(lobbyId).emit("announcement", {
@@ -310,7 +321,7 @@ io.on("connection", (socket) => {
             announcementDuration = 3000;
 
             io.to(lobbyId).emit("announcement", {
-              type: "info",
+              type: "wrong-answer",
               message: `Nie, to "${correctAnswer}"`,
               duration: announcementDuration,
             } as Shared.Announcement);
@@ -324,8 +335,6 @@ io.on("connection", (socket) => {
             players: lobby.players,
             gameState: lobby.gameState,
           });
-
-          delete lobby.activeQuestion;
 
           await wait(announcementDuration + 1000);
           
@@ -488,6 +497,72 @@ io.on("connection", (socket) => {
 
     playRoundOne(lobby, lobbyId);
   });
+
+  // TEMPORARY DEBUG MENU - disabled when NODE_ENV=production
+  if (DEBUG_ENABLED) {
+    socket.on("debug-state-req", ({ lobbyId }, callback) => {
+      const lobby = lobbies.get(lobbyId);
+      if (typeof callback !== "function") return;
+      if (!lobby) return callback({ error: "Lobby not found" });
+
+      const { timeoutId, ...activeQuestion } = lobby.activeQuestion ?? {};
+      const roundOneTotal = lobby.roundOneQuestions?.length ?? 0;
+      const nextRoundOneQuestion =
+        lobby.gameState === "roundOne" && lobby.currentQuestionIndex !== undefined
+          ? lobby.roundOneQuestions?.[lobby.currentQuestionIndex + 1]
+          : undefined;
+
+      callback({
+        id: lobby.id,
+        gameState: lobby.gameState,
+        players: lobby.players,
+        activeQuestion: lobby.activeQuestion
+          ? { ...activeQuestion, timerRunning: !!timeoutId }
+          : null,
+        currentQuestionIndex: lobby.currentQuestionIndex,
+        roundOneTotal,
+        nextRoundOneQuestion: nextRoundOneQuestion ?? null,
+        roundTwoState: lobby.roundTwoState ?? null,
+        roundTwoPoolSize: lobby.roundTwoQuestions?.length ?? 0,
+        serverTime: Date.now(),
+      });
+    });
+
+    socket.on("debug-action", ({ lobbyId, action }) => {
+      const lobby = lobbies.get(lobbyId);
+      if (!lobby) return;
+      console.log(`[Debug] ${action} in lobby ${lobbyId}`);
+
+      switch (action) {
+        case "reset-lives":
+          lobby.players.forEach((player) => (player.lives = 3));
+          break;
+        case "skip-to-round-two":
+          if (lobby.activeQuestion?.timeoutId) {
+            clearInterval(lobby.activeQuestion.timeoutId);
+          }
+          delete lobby.activeQuestion;
+          io.to(lobbyId).emit("timer-stop");
+          startRoundTwo(lobby, lobbyId);
+          return;
+        case "end-game":
+          if (lobby.activeQuestion?.timeoutId) {
+            clearInterval(lobby.activeQuestion.timeoutId);
+          }
+          delete lobby.activeQuestion;
+          io.to(lobbyId).emit("timer-stop");
+          lobby.gameState = "ended";
+          break;
+        default:
+          return;
+      }
+
+      io.to(lobbyId).emit("lobby-update", {
+        players: lobby.players,
+        gameState: lobby.gameState,
+      });
+    });
+  }
 });
 
 const prepareRoundOneQuestions = (players: Shared.Player[]) => {
@@ -697,7 +772,7 @@ const handleTimeout = async (
     const announcementDuration = 3000;
 
     io.to(lobbyId).emit("announcement", {
-      type: "info",
+      type: "wrong-answer",
       message: `To "${lobby.activeQuestion.answer}"`,
       duration: announcementDuration,
     } as Shared.Announcement);
@@ -910,7 +985,7 @@ const askRoundTwoQuestion = async (
   startAnswerTimer(lobby, lobbyId, targetPlayer);
 };
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.SERVER_PORT || 3001;
 
 httpServer.listen(PORT, () => {
   console.log(`[Server] Express + Socket.IO server running on port ${PORT}`);

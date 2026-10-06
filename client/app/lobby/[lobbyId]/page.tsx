@@ -8,6 +8,7 @@ import { useSocket } from "@/hooks/useSocket";
 import { Copy, Forward, LoaderCircle, Power } from "lucide-react";
 import { JoinMenu } from "@/components/JoinMenu/JoinMenu";
 import { motion, useAnimation } from "framer-motion";
+import DebugPanel from "@/components/DebugPanel/DebugPanel";
 
 export default function LobbyPage() {
   const [playerName, setPlayerName] = useState<string | null>(null);
@@ -193,6 +194,11 @@ export default function LobbyPage() {
           )}
         </div>
       </main>
+
+      {/* TEMPORARY DEBUG MENU */}
+      {process.env.NODE_ENV !== "production" && (
+        <DebugPanel socket={socket} lobbyId={lobbyId} />
+      )}
     </div>
   );
 }

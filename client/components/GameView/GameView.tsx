@@ -3,8 +3,16 @@ import { AnimatePresence, motion } from "framer-motion";
 import * as Shared from "@enavti/shared-types";
 import * as Types from "./GameView.Types";
 import { useChat } from "@/hooks/useChat";
-import { Info, MessageCircleQuestionMark, User } from "lucide-react";
+import { useGameSounds } from "@/hooks/useGameSounds";
+import {
+  BookOpen,
+  Info,
+  MessageCircleQuestionMark,
+  User,
+  X,
+} from "lucide-react";
 import { ModalContent } from "../Modals";
+import { Rules } from "../Modals/Rules";
 
 const getBackgroundImage = (gameState: Shared.GameState): string => {
   switch (gameState) {
@@ -28,6 +36,7 @@ export default function GameView({
   gameState,
 }: Types.GameViewProps) {
   const { getChatBubbleForPlayer } = useChat(socket);
+  useGameSounds(socket, players, gameState);
   const backgroundImage = useMemo(
     () => getBackgroundImage(gameState),
     [gameState],
@@ -45,6 +54,8 @@ export default function GameView({
     totalTime: number;
     targetPlayer: string;
   } | null>(null);
+
+  const [rulesOpen, setRulesOpen] = useState(false);
 
   const announcementTimeoutRef = React.useRef<NodeJS.Timeout | null>(null);
 
@@ -68,6 +79,22 @@ export default function GameView({
         document.title = "ENAVTI";
     }
   }, [gameState, players, currentPlayerId]);
+
+  // Rules are only available while gathering players
+  useEffect(() => {
+    if (gameState !== "lobby") setRulesOpen(false);
+  }, [gameState]);
+
+  useEffect(() => {
+    if (!rulesOpen) return;
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setRulesOpen(false);
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [rulesOpen]);
 
   useEffect(() => {
     if (!socket) return;
@@ -111,9 +138,9 @@ export default function GameView({
     socket.on("timer-stop", handleTimerStop);
 
     return () => {
-      socket.off("announcement");
-      socket.off("timer-update");
-      socket.off("timer-stop");
+      socket.off("announcement", handleAnnouncement);
+      socket.off("timer-update", handleTimerUpdate);
+      socket.off("timer-stop", handleTimerStop);
       if (announcementTimeoutRef.current) {
         clearTimeout(announcementTimeoutRef.current);
       }
@@ -313,13 +340,65 @@ export default function GameView({
         })}
       </div>
 
+      {/* Rules Modal */}
+      <AnimatePresence>
+        {rulesOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="absolute inset-0 z-50 flex items-center justify-center"
+          >
+            <div
+              className="absolute inset-0 bg-black/70"
+              onClick={() => setRulesOpen(false)}
+            />
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8, rotateX: -15 }}
+              animate={{ opacity: 1, scale: 1, rotateX: 0 }}
+              exit={{ opacity: 0, scale: 0.8, rotateX: 15 }}
+              transition={{ duration: 0.4, type: "spring", bounce: 0.3 }}
+              className="container w-[400px] h-[400px] relative z-50"
+            >
+              <button
+                onClick={() => setRulesOpen(false)}
+                className="absolute top-3 right-3 opacity-50 hover:opacity-100"
+                aria-label="Close rules"
+              >
+                <X size={20} />
+              </button>
+              <Rules />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       {/* Game state */}
       {gameState === "lobby" ? (
-        <div className="container w-fit absolute top-4 left-4 flex gap-2">
-          <>
+        <div className="absolute top-4 left-4 flex gap-2">
+          <div className="container w-fit flex gap-2">
             <User />
             <span>{players.length}</span>
-          </>
+          </div>
+          <motion.button
+            whileTap={{
+              scale: 0.95,
+              transition: { duration: 0.1 },
+            }}
+            whileHover={{
+              scale: 1.05,
+              filter: "brightness(1.5)",
+              transition: { duration: 0.1 },
+            }}
+            onClick={() => setRulesOpen(true)}
+            className="container w-fit flex items-center justify-center"
+            aria-label="Show rules"
+            title="Rules"
+          >
+            <BookOpen />
+          </motion.button>
         </div>
       ) : null}
     </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono, Josefin_Sans, Ubuntu } from "next/font/google";
 import { Toaster } from "react-hot-toast";
+import { ButtonSounds } from "@/components/ButtonSounds";
 import "./globals.css";
 
 const jetbrains = JetBrains_Mono({
@@ -38,6 +39,7 @@ export default function RootLayout({
             },
           }}
         />
+        <ButtonSounds />
         {children}
       </body>
     </html>

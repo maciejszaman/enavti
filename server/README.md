@@ -442,7 +442,7 @@ Look for `[Server]` prefix in console
 
 ### Test Locally
 
-1. Start server: `npm run dev` (or `node server.ts`)
+1. Start server: `bun run dev` (or `bun server.ts`)
 2. Server runs on `http://localhost:3001`
 3. Connect multiple clients to same lobby ID
 
