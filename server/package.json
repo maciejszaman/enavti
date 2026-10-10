@@ -8,10 +8,11 @@
     "build": "tsc --noEmit"
   },
   "dependencies": {
+    "@enavti/shared-types": "workspace:*",
+    "cors": "^2.8.5",
     "express": "^4.21.2",
     "socket.io": "^4.8.1",
-    "cors": "^2.8.5",
-    "@enavti/shared-types": "workspace:*"
+    "socket.io-client": "^4.8.1"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",

@@ -1,4 +1,4 @@
-﻿# EN.AV.TI v0.5
+﻿# EN.AV.TI v0.6
 
 ### online browser gameshow with friends
 
@@ -9,25 +9,25 @@
 - [x] get rid of chakraui
 - [x] animate all UI
 
-- [ ] clean up the server logic
+- [x] clean up the server logic
 
 - [x] better "Shuffling players" UI
 - [x] timer for answering questions
-- [ ] sounds
+- [] sounds
 
 - [ ] the gameplay loop
   - [x] lobby
   - [x] round one
     - [x] 3 seconds to answer each question
     - [ ] summary to show who goes to the second round
-  - [ ] round two
+  - [x] round two
   - [ ] final round
   - [ ] post-game summary
 
 - [ ] characters
-  - [ ] 4 different characters
+  - [x] 4 different characters
   - [ ] 4 skins for each
-  - [ ] animations
+  - [x] animations made by claude
 
 - [ ] **get better questions**
 

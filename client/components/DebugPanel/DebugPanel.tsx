@@ -18,7 +18,13 @@ type DebugSnapshot = {
   error?: string;
   id: string;
   gameState: string | null;
-  players: { id: string; name: string; lives?: number; score?: number }[];
+  players: {
+    id: string;
+    name: string;
+    lives?: number;
+    score?: number;
+    eliminated?: boolean;
+  }[];
   activeQuestion: {
     questionId: number;
     text: string;
@@ -189,8 +195,8 @@ export default function DebugPanel({
                   currentChooser: playerName(
                     snapshot.roundTwoState.currentChooser as string,
                   ),
-                  lastChooser: playerName(
-                    snapshot.roundTwoState.lastChooser as string,
+                  currentPlayerId: playerName(
+                    snapshot.roundTwoState.currentPlayerId as string,
                   ),
                 },
                 null,
@@ -203,7 +209,9 @@ export default function DebugPanel({
               {snapshot?.players.map((p, i) => (
                 <tr
                   key={p.id}
-                  className={p.id === socket?.id ? "text-yellow-300" : ""}
+                  className={`${p.id === socket?.id ? "text-yellow-300" : ""} ${
+                    p.eliminated ? "opacity-40 line-through" : ""
+                  }`}
                 >
                   <td>{i + 1}.</td>
                   <td>{p.name}</td>
@@ -224,6 +232,10 @@ export default function DebugPanel({
               ["reset-lives", "Reset lives"],
               ["skip-to-round-two", "Skip to round 2"],
               ["end-game", "End game"],
+              ["fill-bots", "Fill with bots"],
+              ["add-bot", "+1 bot"],
+              ["remove-bot", "-1 bot"],
+              ["remove-bots", "Remove bots"],
             ].map(([action, label]) => (
               <button
                 key={action}

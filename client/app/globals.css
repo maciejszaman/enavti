@@ -36,17 +36,26 @@ body {
     @apply px-3 py-2 bg-[#111111] border-2 border-[#27272a] border-b-4 rounded-xl;
   }
 
+  /* Colors (bg, border, text) are set by the ChatBubble component */
   .chatBubble {
-    @apply px-3 py-2 min-w-24 max-w-48 text-center z-30 border-2 border-[#afafaf] border-b-4 bg-white rounded-lg;
+    @apply px-3 py-2 min-w-24 max-w-48 text-center border-2 border-b-4 rounded-lg shadow-lg shadow-black/25;
+  }
+
+  /* Rotated square whose right + bottom borders form the V under the bubble */
+  .chatBubbleTail {
+    @apply absolute left-1/2 -bottom-[9px] w-3.5 h-3.5 border-0 border-r-[3px] border-b-[3px];
+    transform: translateX(-50%) rotate(45deg);
   }
 
   .divider {
     @apply h-[2px] rounded-lg w-full bg-[#27272a];
   }
 
+  /* Always full size, however narrow the seat it stands on */
   .playerCharacterImg {
     height: 300px;
     width: auto;
+    max-width: none;
   }
 
   .jetbrains {

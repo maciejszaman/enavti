@@ -1,8 +1,9 @@
-// chime01 = low, chime02 = mid, chime03 = high
+// chime01 = low, chime02 = mid, chime03 = high, jingle = the between-rounds tune
 const SOUND_FILES = {
   low: "/audio/chime01.mp3",
   mid: "/audio/chime02.mp3",
   high: "/audio/chime03.mp3",
+  jingle: "/audio/jingle-between-rounds.mp3",
 } as const;
 
 type Pitch = keyof typeof SOUND_FILES;
@@ -23,6 +24,7 @@ export const SOUNDS = {
   wrongAnswer: { pitch: "low", volume: 0.7 },
   gameStart: { pitch: "low", volume: 0.6, rate: 0.9 },
   info: { pitch: "high", volume: 0.3, rate: 0.85 },
+  betweenRounds: { pitch: "jingle", volume: 0.6 },
 } satisfies Record<string, SoundPreset>;
 
 export type SoundName = keyof typeof SOUNDS;

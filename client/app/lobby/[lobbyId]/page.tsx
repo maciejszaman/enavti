@@ -9,6 +9,7 @@ import { Copy, Forward, LoaderCircle, Power } from "lucide-react";
 import { JoinMenu } from "@/components/JoinMenu/JoinMenu";
 import { motion, useAnimation } from "framer-motion";
 import DebugPanel from "@/components/DebugPanel/DebugPanel";
+import { MIN_PLAYERS } from "@/lib/gameRules";
 
 export default function LobbyPage() {
   const [playerName, setPlayerName] = useState<string | null>(null);
@@ -68,9 +69,12 @@ export default function LobbyPage() {
     setChatMessage("");
   };
 
+  const enoughPlayers = players.length >= MIN_PLAYERS;
+
   const handleStartGame = () => {
     if (!socket) return;
     if (socket.id !== players[0]?.id) return;
+    if (!enoughPlayers) return;
     socket.emit("start-game", { lobbyId });
   };
 
@@ -175,18 +179,29 @@ export default function LobbyPage() {
                   socket?.id === players[0]?.id &&
                   gameState === "lobby" && (
                     <motion.button
-                      whileTap={{
-                        scale: 0.9,
-                        transition: { duration: 0.1 },
-                      }}
-                      whileHover={{
-                        scale: 1.1,
-                        transition: { duration: 0.1 },
-                      }}
+                      whileTap={
+                        enoughPlayers
+                          ? { scale: 0.9, transition: { duration: 0.1 } }
+                          : undefined
+                      }
+                      whileHover={
+                        enoughPlayers
+                          ? { scale: 1.1, transition: { duration: 0.1 } }
+                          : undefined
+                      }
                       onClick={handleStartGame}
-                      className="container border-2 border-[#afafaf] border-b-4 bg-white text-[#111111] shadow-md shadow-white/20 w-fit whitespace-nowrap flex gap-2 justify-center items-center"
+                      disabled={!enoughPlayers}
+                      title={
+                        enoughPlayers
+                          ? undefined
+                          : `At least ${MIN_PLAYERS} players are needed to start`
+                      }
+                      className="container border-2 border-[#afafaf] border-b-4 bg-white text-[#111111] shadow-md shadow-white/20 w-fit whitespace-nowrap flex gap-2 justify-center items-center disabled:opacity-40 disabled:cursor-not-allowed"
                     >
-                      <Power size={16} /> Start Game
+                      <Power size={16} />
+                      {enoughPlayers
+                        ? "Start Game"
+                        : `${players.length}/${MIN_PLAYERS} players`}
                     </motion.button>
                   )}
               </div>

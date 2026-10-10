@@ -4,6 +4,9 @@ export interface Player {
   character?: Character;
   lives?: number;
   score?: number;
+  // Out of the game (failed round one, lost all lives, or joined mid-game).
+  // Stays in the lobby as a spectator and can still chat.
+  eliminated?: boolean;
 }
 
 export interface Question {
@@ -27,15 +30,21 @@ export interface Lobby {
     askedAt: Date;
     timeoutId?: ReturnType<typeof setInterval>;
   };
+  // How many players took part when the game started (late joiners don't count)
+  startingPlayerCount?: number;
   roundOneQuestions?: Question[];
+  // Player ids in the order they get asked in round one (one entry per question)
+  roundOneTurns?: string[];
+  // Player id -> how many round one questions they missed (wrong or timed out)
+  roundOneMisses?: Record<string, number>;
   roundTwoQuestions?: Question[];
-  roundTwoState?:{
-    currentPlayerIndex: number;
-    waitingForPlayerChoice: boolean
-    currentChooser?: string | null;
-    nextPlayerIndex?: number;
-    lastChooser?: string;
-  }
+  roundTwoState?: {
+    currentPlayerId: string;
+    waitingForPlayerChoice: boolean;
+    currentChooser?: string;
+    // Who chose the current player. If they miss, this player chooses again.
+    chosenBy?: string;
+  };
 
   roundThreeQuestions?: Question[];
   currentQuestionIndex?: number;

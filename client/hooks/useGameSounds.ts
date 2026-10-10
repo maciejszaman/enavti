@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import type { Socket } from "socket.io-client";
 import * as Shared from "@enavti/shared-types";
 import { playSound, preloadSounds } from "@/lib/sound";
+import { isMutedChat } from "@/lib/gameRules";
 
 export function useGameSounds(
   socket: Socket | null,
@@ -9,6 +10,9 @@ export function useGameSounds(
   gameState: Shared.GameState,
 ) {
   const prevPlayerCount = useRef<number | null>(null);
+  // Latest state for the socket handlers
+  const latest = useRef({ players, gameState });
+  latest.current = { players, gameState };
 
   useEffect(() => {
     preloadSounds();
@@ -34,10 +38,18 @@ export function useGameSounds(
         case "info":
           playSound("info");
           break;
+        // Shuffling players before round one, summary between round one and two
+        case "modal":
+          playSound("betweenRounds");
+          break;
       }
     };
 
-    const handleChat = () => playSound("chat");
+    const handleChat = (message: Shared.ChatMessage) => {
+      const { players, gameState } = latest.current;
+      if (isMutedChat(players, gameState, message.playerId, socket.id)) return;
+      playSound("chat");
+    };
 
     socket.on("announcement", handleAnnouncement);
     socket.on("chat-message-broadcast", handleChat);
